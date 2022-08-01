@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +7,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        krona: ["Krona"],
+      },
+      colors: {
+        primary: "#040142",
+        secondary: "#040142",
+      },
+    },
   },
   plugins: [],
-}
+};
