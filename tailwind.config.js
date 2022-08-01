@@ -15,6 +15,15 @@ module.exports = {
         primary: "#040142",
         secondary: "#040142",
       },
+      borderWidth: {
+        16: "16px",
+      },
+      textUnderlineOffset: {
+        "-2": "-2px",
+      },
+      padding: {
+        32: "8rem", 
+      },
     },
   },
   plugins: [],
