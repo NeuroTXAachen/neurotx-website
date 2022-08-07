@@ -6,13 +6,23 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode : 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       fontFamily: {
         krona: ["Krona"],
       },
+      height: {
+        '128': '40rem',
+      },
+      width:{
+        '128': '40rem',
+      },
       colors: {
-        primary: "#040142",
+        primary: "#EB0000",
         secondary: "#040142",
       },
       borderWidth: {
@@ -23,7 +33,7 @@ module.exports = {
       },
       padding: {
         32: "8rem", 
-      },
+      }
     },
   },
   plugins: [],
