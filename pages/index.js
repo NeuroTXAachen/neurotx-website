@@ -316,16 +316,10 @@ const Home = () => {
       </div>
       <div className="absolute top-[6376px] left-[0px] w-[1728px] h-[357px]">
         <footer
-          className="absolute top-[0px] left-[0px] w-[1728px] h-[357px] text-left text-sm text-indigo font-chivo"
-          footer
+          className="absolute top-[0px] bg-white left-[0px] w-[1496px] h-[357px] text-left text-sm text-indigo font-chivo"
         >
-          <img
-            className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="../square.svg"
-          />
           <div
-            className="absolute h-[48.97%] w-[19.97%] top-[23.48%] left-[53.3%] leading-[39.5px] inline-block"
+            className="absolute h-[48.97%] w-[15%] top-[23.48%] left-[650px] leading-[39.5px] inline-block"
             footercontact
           >
             <p className="[margin-block-start:0] [margin-block-end:0px]">
@@ -345,7 +339,7 @@ const Home = () => {
             </p>
           </div>
           <div
-            className="absolute h-[48.97%] w-[21.35%] top-[23.48%] left-[77.55%] leading-[39.5px] inline-block"
+            className="absolute h-[48.97%] w-[20%] top-[23.48%] left-[1100px] leading-[39.5px] inline-block"
             footeraddress
           >
             <p className="[margin-block-start:0] [margin-block-end:0px]">
@@ -365,13 +359,13 @@ const Home = () => {
             </p>
           </div>
           <strong
-            className="absolute h-[9.2%] w-[30.03%] top-[68.91%] left-[5.79%] leading-[39.5px] flex italic font-black items-center"
+            className="absolute h-[9.2%] w-[25%] top-[68.91%] left-[50px] leading-[39.5px] flex italic font-black items-center"
             copyright
           >
             Copyright © 2022 NeuroTX-Aachen
           </strong>
           <p
-            className="m-[0] absolute h-[33.56%] w-[34.09%] top-[23.53%] left-[5.79%] leading-[39.5px] inline-block"
+            className="m-[0] absolute h-[33.56%] w-[30%] top-[23.53%] left-[50px] leading-[39.5px] inline-block"
             legal
           >
             NeuroTX Aachen e.V. ist eingetragen beim Amtsgericht Aachen, Nr.
