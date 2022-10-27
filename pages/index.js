@@ -6,60 +6,60 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative bg-indigo w-full h-[6733px] overflow-hidden text-left text-base text-white font-chivo">
+    <main className="relative bg-indigo w-full h-[6733px] overflow-hidden text-left text-base text-white">
       <img
-        className="absolute top-[0px] left-[590px] w-[1210px] h-[1050px]"
+        className="absolute top-[0px] left-[540px] w-[1210px] h-[1210px]"
         alt=""
-        src="../images/Rectangle 6.png"
+        src="/images/square.png"
       />
       <img
-        className="absolute top-[0px] left-[752px] w-[976px] h-[1157.88px] object-cover"
+        className="absolute top-[0px] left-[702px] w-[976px] h-[1157.88px] object-cover"
         alt=""
-        src="../images/image 3.png"
+        src="images/image 3.png"
       />
       <img
-        className="absolute top-[3942px] left-[0px] w-[1088px] h-[955px]"
+        className="absolute top-[3942px] left-[0px] w-[1088px] h-[1088px]"
         alt=""
-        src="../rectangle-34.svg"
+        src="/images/square.png"
       />
       <img
-        className="absolute top-[4420px] left-[818px] w-[910px] h-[1049.28px] object-cover"
+        className="absolute top-[4420px] left-[768px] w-[910px] h-[1049.28px] object-cover"
         alt=""
         src="../image-2@2x.png"
       />
       <img
-        className="absolute top-[5676px] left-[950px] w-[1088px] h-[955px]"
+        className="absolute top-[5676px] left-[900px] w-[1088px] h-[1088px]"
         alt=""
-        src="../rectangle-10.svg"
+        src="/images/square.png"
       />
       <h1
-        className="m-[0] absolute top-[200px] left-[110px] text-2xl leading-[120px] font-normal font-krona-one inline-block"
+        className="m-[0] absolute top-[200px] left-[60px] text-2xl leading-[120px] font-krona-one inline-block"
         tagline1
       >
         thinking
       </h1>
       <h1
-        className="m-[0] absolute top-[361px] left-[470px] text-2xl leading-[120px] font-normal font-krona-one inline-block"
+        className="m-[0] absolute top-[361px] left-[420px] text-2xl leading-[120px] font-krona-one inline-block"
         tagline2
       >
         the
       </h1>
       <h1
-        className="m-[0] absolute top-[489px] left-[1032px] text-2xl leading-[120px] font-normal font-krona-one inline-block"
+        className="m-[0] absolute top-[489px] left-[932px] text-2xl leading-[120px] font-krona-one inline-block"
         tagline4
       >
         next
       </h1>
       <h1
-        className="m-[0] absolute top-[609px] left-[1169px] text-2xl leading-[120px] font-normal font-krona-one inline-block"
+        className="m-[0] absolute top-[609px] left-[1119px] text-2xl leading-[120px] font-krona-one inline-block"
         tagline3
       >
         move
       </h1>
       <img
-        className="absolute top-[89px] left-[500px] rounded-[95px] w-[729px] h-[720px] object-cover"
+        className="absolute top-[89px] left-[420px] rounded-[95px] w-[729px] h-[720px] object-cover"
         alt=""
-        src="/images/DSC08470-2 1.png"
+        src="images/DSC08470-2 1.png"
       />
       <div className="absolute top-[2034px] left-[-524px] w-[2455.95px] h-[1763.64px]">
         <img
@@ -68,11 +68,11 @@ const Home = () => {
           src="../image-31@2x.png"
         />
         <img
-          className="absolute top-[0px] left-[1258.95px] w-[1197px] h-[1038px]"
+          className="absolute top-[0px] left-[1258.95px] w-[1197px] h-[1197px]"
           alt=""
-          src="../rectangle-101.svg"
+          src="images/square.png"
         />
-        <div className="absolute top-[423px] left-[667px] text-xl font-krona-one inline-block w-[770px] h-[96px]">
+        <div className="absolute top-[423px] left-[667px] text-4xl font-krona-one inline-block w-[770px] h-[96px]">
           projects
         </div>
         <div className="absolute top-[946px] left-[1590px] leading-[155.6%] inline-block w-[376px] h-[194px]">
@@ -114,7 +114,7 @@ const Home = () => {
           <span>!</span>
         </div>
         <div className="absolute top-[30px] left-[773px] bg-red w-[61px] h-[129px] [transform:_rotate(90deg)] [transform-origin:0_0]" />
-        <div className="absolute top-[0px] left-[0px] text-[50px] leading-[120px] font-krona-one flex items-center justify-center w-[1454px] h-[122px]">
+        <div className="absolute top-[0px] left-[0px] text-xl leading-[120px] font-krona-one flex items-center justify-center w-[1454px] h-[122px]">
           We believe BCI is the future
         </div>
       </div>
@@ -149,10 +149,10 @@ const Home = () => {
             <i className="font-black font-chivo text-red">PayPal</i>
           </p>
         </div>
-        <div className="absolute top-[11px] left-[754px] text-lg leading-[120px] font-krona-one flex items-center w-[446px] h-[122px]">
+        <div className="absolute top-[11px] left-[754px] text-3xl leading-[120px] font-krona-one flex items-center w-[446px] h-[122px]">
           join us
         </div>
-        <div className="absolute top-[0px] left-[0px] text-lg leading-[120px] font-krona-one flex items-center w-[700px] h-[133px]">
+        <div className="absolute top-[0px] left-[0px] text-3xl leading-[120px] font-krona-one flex items-center w-[700px] h-[133px]">
           support us
         </div>
         <div className="absolute top-[154px] left-[122px] bg-red w-[14px] h-[77px]" />
@@ -162,7 +162,7 @@ const Home = () => {
         className="absolute top-[3513px] left-[147px] w-[1377px] h-[785px]"
         events
       >
-        <div className="absolute top-[0px] left-[0px] text-xl font-krona-one inline-block w-[458px] h-[96px]">
+        <div className="absolute top-[0px] left-[0px] text-4xl font-krona-one inline-block w-[458px] h-[96px]">
           events
         </div>
         <div className="absolute top-[535px] left-[179px] leading-[155.6%] inline-block w-[458px] h-[157px]">
@@ -209,7 +209,7 @@ const Home = () => {
       <div className="absolute top-[2105px] left-[1123px] leading-[155.6%] text-center inline-block w-[404px] h-[150px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
       </div>
-      <i className="absolute top-[2004px] left-[534px] text-[30px] leading-[155.6%] inline-block font-black text-center w-[696px] h-[201px]">
+      <i className="absolute top-[2004px] left-[534px] text-lg leading-[155.6%] inline-block font-black text-center w-[696px] h-[201px]">
         BCI - Brain Computer Interface
       </i>
       <img
@@ -223,7 +223,7 @@ const Home = () => {
         src="../screen-shot-20220803-at-1750-1@2x.png"
       />
       <div
-        className="absolute top-[4415px] left-[268px] w-[1167px] h-[793px] text-center text-[56px] font-krona-one"
+        className="absolute top-[4415px] left-[268px] w-[1167px] h-[793px] text-center text-2xl font-krona-one"
         team
       >
         <div className="absolute top-[121px] left-[325px] bg-red w-[496px] h-[71px]" />
@@ -288,11 +288,11 @@ const Home = () => {
         <img
           className="absolute top-[0px] left-[0px] w-[537px] h-[91px] object-cover"
           alt=""
-          src="../1-9699781@2x.png"
+          src="images/interface.png"
         />
       </div>
       <div
-        className="absolute top-[5888px] left-[103px] w-[1262px] h-[323px] text-center text-lg font-krona-one"
+        className="absolute top-[5888px] left-[103px] w-[1262px] h-[323px] text-center text-3xl font-krona-one"
         partners
       >
         <img
@@ -314,80 +314,74 @@ const Home = () => {
           src="../screen-shot-20220803-at-1712-1@2x.png"
         />
       </div>
-      <footer
-        className="absolute top-[6376px] left-[0px] w-[1728px] h-[357px] text-left text-sm text-indigo font-chivo"
-        footer
-      >
-        <img
-          className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-          alt=""
-          src="../rectangle-19.svg"
-        />
-        <div
-          className="absolute h-[48.97%] w-[19.97%] top-[23.48%] left-[53.3%] leading-[39.5px] inline-block"
-          footercontact
+      <div className="absolute top-[6376px] left-[0px] w-[1728px] h-[357px]">
+        <footer
+          className="absolute top-[0px] left-[0px] w-[1728px] h-[357px] text-left text-sm text-indigo font-chivo"
+          footer
         >
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span className="font-black">Contact us</span>
+          <img
+            className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
+            alt=""
+            src="../square.svg"
+          />
+          <div
+            className="absolute h-[48.97%] w-[19.97%] top-[23.48%] left-[53.3%] leading-[39.5px] inline-block"
+            footercontact
+          >
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span className="font-black">Contact us</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>neurotx.aachen@gmail.com</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>Instagram</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>Facebook</span>
+            </p>
+            <p className="m-[0]">
+              <span>Twitter</span>
+            </p>
+          </div>
+          <div
+            className="absolute h-[48.97%] w-[21.35%] top-[23.48%] left-[77.55%] leading-[39.5px] inline-block"
+            footeraddress
+          >
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span className="font-black">Adresse</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>NeuroTX Aachen e.V.,</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>Collective Incubator e.V.</span>
+            </p>
+            <p className="[margin-block-start:0] [margin-block-end:0px]">
+              <span>Jülicher Str. 209</span>
+            </p>
+            <p className="m-[0]">
+              <span>52070 Aachen</span>
+            </p>
+          </div>
+          <strong
+            className="absolute h-[9.2%] w-[30.03%] top-[68.91%] left-[5.79%] leading-[39.5px] flex italic font-black items-center"
+            copyright
+          >
+            Copyright © 2022 NeuroTX-Aachen
+          </strong>
+          <p
+            className="m-[0] absolute h-[33.56%] w-[34.09%] top-[23.53%] left-[5.79%] leading-[39.5px] inline-block"
+            legal
+          >
+            NeuroTX Aachen e.V. ist eingetragen beim Amtsgericht Aachen, Nr.
+            VR 6094. Vertretungsberechtigter Vorstand gemäß § 26 BGB: Mohamed
+            Alhaskir.
           </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>neurotx.aachen@gmail.com</span>
-          </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>Instagram</span>
-          </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>Facebook</span>
-          </p>
-          <p className="m-[0]">
-            <span>Twitter</span>
-          </p>
-        </div>
-        <div
-          className="absolute h-[48.97%] w-[21.35%] top-[23.48%] left-[77.55%] leading-[39.5px] inline-block"
-          footeraddress
-        >
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span className="font-black">Adresse</span>
-          </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>NeuroTX Aachen e.V.,</span>
-          </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>Collective Incubator e.V.</span>
-          </p>
-          <p className="[margin-block-start:0] [margin-block-end:0px]">
-            <span>Jülicher Str. 209</span>
-          </p>
-          <p className="m-[0]">
-            <span>52070 Aachen</span>
-          </p>
-        </div>
-        <strong
-          className="absolute h-[9.2%] w-[30.03%] top-[68.91%] left-[5.79%] leading-[39.5px] flex italic font-black items-center"
-          copyright
-        >
-          Copyright © 2022 NeuroTX-Aachen
-        </strong>
-        <p
-          className="m-[0] absolute h-[33.56%] w-[34.09%] top-[23.53%] left-[5.79%] leading-[39.5px] inline-block"
-          legal
-        >
-          NeuroTX Aachen e.V. ist eingetragen beim Amtsgericht Aachen, Nr.
-          VR 6094. Vertretungsberechtigter Vorstand gemäß § 26 BGB: Mohamed
-          Alhaskir.
-        </p>
-      </footer>
-      <img
-        className="absolute top-[68px] left-[0px] w-[150px] h-[6678px]"
-        alt=""
-      />
-      <img
-        className="absolute top-[68px] left-[1578px] w-[150px] h-[6678px]"
-        alt=""
-      />
+        </footer>
+      </div>
       <p
-        className="m-[0] absolute top-[578px] left-[110px] leading-[155.6%] inline-block w-[544px] h-[201px]"
+        className="m-[0] absolute top-[578px] left-[60px] leading-[155.6%] inline-block w-[544px] h-[201px]"
         intro
       >
         <span>{`We are `}</span>
@@ -398,85 +392,54 @@ const Home = () => {
         <i className="font-black">neurotechnology</i>
         <span>.</span>
       </p>
-      <div className="absolute top-[773px] left-[110px] w-[259px] h-[57px] text-center">
+      <div className="absolute top-[773px] left-[60px] w-[259px] h-[57px] text-center">
         <div className="absolute top-[0px] left-[0px] bg-red [border:7px_solid_#eb0000] box-border w-[259px] h-[57px]" />
         <i className="absolute top-[0px] left-[0px] leading-[52.5px] capitalize flex font-black items-center justify-center w-[259px] h-[57px]">
           Join us!
         </i>
       </div>
-      <header className="absolute top-[0px] left-[0px] w-[1728px] h-[90px] text-center text-xs text-white font-krona-one">
-        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-          <div className="absolute h-[75.56%] w-full top-[0%] right-[0%] bottom-[24.44%] left-[0%] bg-indigo" />
-          <div
-            className="absolute h-full w-[5.21%] top-[0%] right-[88.66%] bottom-[0%] left-[6.13%] overflow-hidden cursor-pointer"
-            onClick={onLogoComponentClick}
-          >
-            <div className="absolute top-[0px] left-[0px] bg-red w-[135px] h-[135px]" />
-            <img
-              className="absolute top-[11px] left-[12px] w-[68px] h-[68px] object-cover"
-              alt=""
-              src="../images/logo.png"
-            />
-          </div>
-          <nav
-            className="absolute h-[48.89%] w-[46.06%] top-[24.44%] right-[5.61%] bottom-[26.67%] left-[48.32%] hidden"
-            nav
-          >
-            <div className="absolute h-[97.73%] w-[9.67%] top-[2.27%] right-[90.33%] bottom-[0%] left-[0%]">
-              <div className="absolute h-full w-full top-[0%] left-[0%] text-xs font-krona-one text-indigo text-center inline-block">
-                home
+      <div className="absolute top-[0px] left-[0px] w-full h-[90px]">
+        <header className="absolute top-[0px] left-[0px] w-full h-[90px] text-center text-xs text-white font-krona-one">
+          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+            
+              <div className="absolute top-[0px] left-[50px] bg-red w-[90px] h-[90px]" >
+              <img
+                className="absolute top-[11px] left-[12px] w-[68px] h-[68px] object-cover"
+                alt=""
+                src="images/logo.png"
+              />
+            </div>
+
+            <div className="absolute p-6 flex flex-row justify-evenly right-[0px] w-[700px] h-[90px]">
+            <div className="  h-full w-full inline-block">
+                <a className="">home</a>
               </div>
-            </div>
-            <div className="absolute h-[97.73%] w-[8.54%] top-[2.27%] right-[70.23%] bottom-[0%] left-[21.23%]">
-              <div className="absolute h-full w-full top-[0%] left-[0%] text-xs font-krona-one text-indigo text-center inline-block">
-                learn
+  
+        
+              <div className="  h-full w-full inline-block">
+                <a className="">learn</a>
               </div>
-            </div>
-            <div className="absolute h-[97.73%] w-[13.57%] top-[2.27%] right-[45.1%] bottom-[0%] left-[41.33%]">
-              <div className="absolute h-full w-full top-[0%] left-[0%] text-xs font-krona-one text-indigo text-center inline-block">
-                projects
+  
+            
+              <div className=" h-full w-full inline-block">
+                <a className="">projects</a>
               </div>
-            </div>
-            <div className="absolute h-[97.73%] w-[9.42%] top-[2.27%] right-[24.12%] bottom-[0%] left-[66.46%]">
-              <div className="absolute h-full w-full top-[0%] left-[0%] text-xs font-krona-one text-indigo text-center inline-block">
-                team
+  
+          
+              <div className=" h-full w-full inline-block">
+                <a className="">team</a>
               </div>
-            </div>
-            <div className="absolute h-[97.73%] w-[12.56%] top-[0%] right-[0%] bottom-[2.27%] left-[87.44%]">
-              <div className="absolute h-full w-full top-[0%] left-[0%] text-xs font-krona-one text-indigo text-center inline-block">
-                contact
+  
+            
+              <div className=" h-full w-full inline-block">
+                <a className="">contact</a>
               </div>
-            </div>
-          </nav>
-          <div className="absolute top-[23px] left-[835px] w-[77px] h-[43px]">
-            <div className="absolute h-full w-full top-[0%] left-[0%] inline-block">
-              home
+
             </div>
           </div>
-          <div className="absolute top-[23px] left-[1004px] w-[68px] h-[43px]">
-            <div className="absolute h-full w-full top-[0%] left-[0%] inline-block">
-              learn
-            </div>
-          </div>
-          <div className="absolute top-[23px] left-[1164px] w-[108px] h-[43px]">
-            <div className="absolute h-full w-full top-[0%] left-[0%] inline-block">
-              projects
-            </div>
-          </div>
-          <div className="absolute top-[23px] left-[1364px] w-[75px] h-[43px]">
-            <div className="absolute h-full w-full top-[0%] left-[0%] inline-block">
-              team
-            </div>
-          </div>
-          <div className="absolute top-[23px] left-[1531px] w-[100px] h-[43px]">
-            <div className="absolute h-full w-full top-[0%] left-[0%] inline-block">
-              contact
-            </div>
-          </div>
-        </div>
-      </header>
-      <div className="absolute h-[0.19%] w-[5.5%] top-[0.91%] right-[46.67%] bottom-[98.89%] left-[47.83%] border-t-[13px_solid_#eb0000] box-border" />
-    </div>
+        </header>
+      </div>
+      </main>
   );
 };
 

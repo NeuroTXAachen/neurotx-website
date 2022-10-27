@@ -3,10 +3,8 @@ import Navbar from "./navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div  className="dark mx-auto w-full">
-      <Navbar />
+    <div  className="dark">
       {children}
-      <Footer />
     </div>
   );
 };
