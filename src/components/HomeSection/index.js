@@ -97,14 +97,13 @@ const HomeSection = ({
               <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</Description>
             </SquaredWrapper>
           </BciWrapper>
-          
           <BciTextWrapper>
             <DescriptionWrapper>
               <Description style={{textAlign: "center"}}>Wanna learn more? Check out our Free Webinars!</Description>
             </DescriptionWrapper>
           </BciTextWrapper>
-            
         </BciSectionWrapper>
+
       </HomeContainer>
       
     </>
