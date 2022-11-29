@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
+
 export const HomeContainer = styled.div`
   color: #ffff;
   opacity: 100%;
@@ -144,6 +145,7 @@ export const SubtitleWrapper = styled.div`
    `
 export const Subtitle = styled.p`
   position: relative;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   z-index: 10;
   max-width: 544px;

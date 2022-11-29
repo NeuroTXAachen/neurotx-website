@@ -25,7 +25,7 @@ const Navbar = ({ toggle }) => {
             <Nav colorChange={colorChange}>
                 <NavbarContainer>
                     <NavLogo to='home'>
-                      <LogoImage width= {68} src={require('../../images/logo.png')} alt="Logo" />
+                      <LogoImage width= {50} src={require('../../images/logo.png')} alt="Logo" />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                       <FaBars />
