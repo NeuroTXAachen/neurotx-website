@@ -3,10 +3,9 @@ import { Link as LinkS } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background-color: #0000006A;
-    -webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
-    height: 55px;
+    background: ${({ colorChange }) => (colorChange ? "#ffff" : "#040142")};
+    color: ${({ colorChange }) => (colorChange ? "#040142" : "#ffff")};
+    height: 90px;
     display: flex;
     font-family: "Krona One";
     font-size: 1rem;
@@ -42,8 +41,8 @@ export const NavLogo = styled(LinkS)`
     font-size: 2rem;
     display: flex;
     align-items: center;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     font-weight: bold;
     text-decoration: none;
     position:absolute;
@@ -106,7 +105,7 @@ export const NavMenu = styled.ul`
     display: flex;
     list-style: none;
     position:absolute;
-    top: 5%;
+    top: 10%;
     left:50%;
     @media screen and (max-width: 1248px) and (min-width: 769px){
         display: flex;
@@ -143,13 +142,12 @@ export const NavMenu2 = styled.ul`
     }
 `
 export const NavItem = styled.li`
-    height:20px;
+    height:60px;
     margin-left: 55px;
-    color: #fff;
     &:first-of-type {
         margin-left: 15px;
         padding-left: 15px;
-        border-spacing:15px 1em;
+        border-spacing:15px 2em;
     }
     
 `
@@ -158,8 +156,8 @@ export const NavLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size:18px;
-    padding: 0 1rem;
+    font-size:20px;
+    padding: 0 0.8rem;
     padding-top:18px;
     height: 100%;
     cursor: pointer;
@@ -167,7 +165,7 @@ export const NavLinks = styled(LinkS)`
         border-bottom: 3px solid #fff;
     }
     &:hover{
-        border-bottom: 8px solid #EB0000;
+        border-bottom: 13px solid #EB0000;
     }
     
 `
