@@ -3,9 +3,10 @@ import { Link as LinkS } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: ${({ colorChange }) => (colorChange ? "#ffff" : "#040142")};
-    color: ${({ colorChange }) => (colorChange ? "#040142" : "#ffff")};
-    height: 90px;
+    background: #00000069;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    height: 60px;
     display: flex;
     font-family: "Krona One";
     font-size: 1rem;
@@ -41,8 +42,8 @@ export const NavLogo = styled(LinkS)`
     font-size: 2rem;
     display: flex;
     align-items: center;
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     font-weight: bold;
     text-decoration: none;
     position:absolute;
@@ -105,7 +106,7 @@ export const NavMenu = styled.ul`
     display: flex;
     list-style: none;
     position:absolute;
-    top: 10%;
+    top: 5%;
     left:50%;
     @media screen and (max-width: 1248px) and (min-width: 769px){
         display: flex;
@@ -122,6 +123,7 @@ export const NavMenu = styled.ul`
 export const NavMenu2 = styled.ul`
     display: flex;
     list-style: none;
+    background: #00000069;
     position:absolute;
     top: 10%;
     left:75%;
@@ -142,7 +144,7 @@ export const NavMenu2 = styled.ul`
     }
 `
 export const NavItem = styled.li`
-    height:60px;
+    height:50px;
     margin-left: 55px;
     &:first-of-type {
         margin-left: 15px;
@@ -154,18 +156,19 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
     display: flex;
+    color: #fff;
     align-items: center;
     text-decoration: none;
     font-size:20px;
     padding: 0 0.8rem;
-    padding-top:18px;
+    padding-top: 0px;
     height: 100%;
     cursor: pointer;
     &.active{
         border-bottom: 3px solid #fff;
     }
     &:hover{
-        border-bottom: 13px solid #EB0000;
+        border-bottom: 5px solid #EB0000;
     }
     
 `
