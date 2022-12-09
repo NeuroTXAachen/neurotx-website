@@ -15,6 +15,16 @@ import {
   DescriptionWrapper
 } from "./BciSection";
 
+import { 
+  ProjectSectionWrapper, 
+  SectionHeading,
+  ProjectVideo,
+  RedAccent,
+  Projects,
+  ProjectDescriptionSection,
+  ProjectDescription,
+} from "./ProjectSection";
+
 
 import {
   HomeContainer,
@@ -43,11 +53,15 @@ const HomeSection = ({
   description,
   waveImage,
   smallWaveImg,
+  coverphoto,
   backgroundPhilipp,
   redBgPoint,
   cpuImage,
   brainImage,
-  dottedImage
+  dottedImage,
+  projectdescription1,
+  projectdescription2,
+  projectdescription3,
 }) => {
 
 
@@ -105,6 +119,41 @@ const HomeSection = ({
           </BciTextWrapper>
             
         </BciSectionWrapper>
+
+        <RedDotImg src={redBgPoint} alt="redbgpoint"/>
+        <ProjectSectionWrapper>
+          
+          <SectionHeading>projects</SectionHeading>
+          <Projects>
+          <RedAccent></RedAccent>
+          <ProjectVideo src={coverphoto}/>
+          <ProjectDescriptionSection>
+
+          <ProjectDescription>{projectdescription1}</ProjectDescription>
+          <ProjectDescription>{projectdescription2}</ProjectDescription>
+          <WaveImg src={waveImage} alt="waveImg"/>
+          <ProjectDescription>{projectdescription3}</ProjectDescription>
+
+          </ProjectDescriptionSection>
+          </Projects>
+        </ProjectSectionWrapper>
+
+        <ProjectSectionWrapper>
+          
+          <SectionHeading>events</SectionHeading>
+          <Projects>
+          <RedAccent></RedAccent>
+          <ProjectVideo src={coverphoto}/>
+          <ProjectDescriptionSection>
+
+          <ProjectDescription>{projectdescription1}</ProjectDescription>
+          <ProjectDescription>{projectdescription2}</ProjectDescription>
+          <WaveImg src={waveImage} alt="waveImg" style="tranform: ScaleX(-1);"/>
+          <ProjectDescription>{projectdescription3}</ProjectDescription>
+
+          </ProjectDescriptionSection>
+          </Projects>
+        </ProjectSectionWrapper>
       </HomeContainer>
       
     </>

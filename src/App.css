@@ -15,3 +15,9 @@
   src: local("KronaOne"),
     url(./fonts/KronaOne/KronaOne-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./fonts/Montserrat/static/Montserrat-Medium.ttf) format("truetype");
+}

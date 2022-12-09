@@ -145,6 +145,7 @@ export const Subtitle = styled.p`
   line-height: 1.2;
   z-index: 10;
   max-width: 544px;
+  font: "Montserrat";
   font-size: 24px;
   color: #fff;
   align-items:center;
@@ -156,7 +157,7 @@ export const Subtitle = styled.p`
 export const WaveImg = styled.img`
   position: absolute;
   width: 100%;
-  top: -100px;
+  margin-top: -100px;
   /* padding-left: 810px; */
   z-index: 0;
   opacity: 1;
