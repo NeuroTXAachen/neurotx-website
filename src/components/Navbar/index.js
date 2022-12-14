@@ -2,6 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, LogoImage, } from './NavbarElement'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from '../../pages/Contact'
 
 const Navbar = ({ toggle }) => {
 
@@ -25,7 +28,7 @@ const Navbar = ({ toggle }) => {
             <Nav colorChange={colorChange}>
                 <NavbarContainer>
                     <NavLogo to='home'>
-                      <LogoImage width= {68} src={require('../../images/logo.png')} alt="Logo" />
+                      <LogoImage width= {50} src={require('../../images/logo.png')} alt="Logo" />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                       <FaBars />
@@ -47,7 +50,7 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='team'>
+                            <NavLinks to='/Contact'>
                                 contact
                             </NavLinks>
                         </NavItem>
