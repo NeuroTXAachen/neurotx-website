@@ -15,6 +15,19 @@ export const ProjectVideo = styled.img`
     z-index: 1;
 `;
 
+export const VidFrame = styled.div`
+  display: flex;
+  /* position: fixed; */
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  max-width: 40%;
+  min-width: 40%;
+  overflow: hidden;
+  height: 682px;
+  max-height: 682px;
+`;
+
 export const RedAccent = styled.div`
     width: 10px;
     height: 60px;

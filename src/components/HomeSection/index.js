@@ -22,6 +22,7 @@ import {
   RedAccent,
   Projects,
   ProjectDescriptionSection,
+  VidFrame,
   ProjectDescription,
 } from "./ProjectSection";
 
@@ -43,6 +44,7 @@ import {
   WaveImg,
   ServiceButtonWrapper,
 } from "./HomeElements";
+import VideoComponent from "../VideoComponent/VideoComponent";
 
 const HomeSection = ({
   id,
@@ -62,6 +64,7 @@ const HomeSection = ({
   projectdescription1,
   projectdescription2,
   projectdescription3,
+  vidJSOptions,
 }) => {
 
 
@@ -124,7 +127,9 @@ const HomeSection = ({
           <SectionHeading>projects</SectionHeading>
           <Projects>
           <RedAccent></RedAccent>
-          <ProjectVideo src={coverphoto}/>
+          <VidFrame>
+            <VideoComponent options={vidJSOptions} />
+          </VidFrame>
           <ProjectDescriptionSection>
 
           <ProjectDescription>{projectdescription1}</ProjectDescription>
@@ -141,12 +146,13 @@ const HomeSection = ({
           <SectionHeading>events</SectionHeading>
           <Projects>
           <RedAccent></RedAccent>
+          
           <ProjectVideo src={coverphoto}/>
           <ProjectDescriptionSection>
 
           <ProjectDescription>{projectdescription1}</ProjectDescription>
           <ProjectDescription>{projectdescription2}</ProjectDescription>
-          <WaveImg src={waveImage} alt="waveImg" style="tranform: ScaleX(-1);"/>
+          {/* <WaveImg src={waveImage} alt="waveImg" style="tranform: ScaleX(-1);"/> */}
           <ProjectDescription>{projectdescription3}</ProjectDescription>
 
           </ProjectDescriptionSection>
