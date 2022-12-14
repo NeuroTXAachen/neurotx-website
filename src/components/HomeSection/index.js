@@ -46,6 +46,7 @@ import {
   AdaptiveDiv,
 } from "./HomeElements";
 import VideoComponent from "../VideoComponent/VideoComponent";
+import { PartnerImg, SplitDiv, SplitSectionImgWrapper, SplitSectionTextWrapper, SplitSectionWrapper } from "./FinalSection";
 
 const HomeSection = ({
   id,
@@ -66,6 +67,7 @@ const HomeSection = ({
   projectdescription2,
   projectdescription3,
   vidJSOptions,
+  partnersImgs,
 }) => {
 
 
@@ -162,6 +164,58 @@ const HomeSection = ({
             </div>
           </Projects>
         </ProjectSectionWrapper>
+
+        <RedDotImg src={redBgPoint} alt="redbgpoint" size={"805px"} marginTop={"-420px"} right={"70%"}/>
+        <ProjectSectionWrapper>
+          <BciHeading >We are a team of <br/> 15 members <br/> and growing!</BciHeading>
+
+          {/* TODO create cards component from the outside 
+              insert here as mini cards with appropriate class definition 
+              REASON => use also in team as cards */}
+
+          <SplitDiv>
+            <SplitSectionWrapper width={"50%"}>
+              <SectionHeading>support Us</SectionHeading>  
+
+                <SplitSectionTextWrapper>
+                  <RedAccent margin={"40px"}/>
+                  <Description >
+                  If you wish to contribute to our efforts, donate to us directly or via PayPal.
+                  Your ideas are also very important to us, so feel free to get in touch with us via email.
+                  Contact us / PayPal
+                  </Description>
+                </SplitSectionTextWrapper>
+            </SplitSectionWrapper>
+            <SplitSectionWrapper width={"50%"}>
+              <SectionHeading>join us</SectionHeading>
+
+              <SplitSectionTextWrapper>
+                <RedAccent margin={"40px"} />
+                <Description >
+                You cannot wait to build the future by your own hands, while getting to know great people along the way? 
+                Feel free to get in touch with us. No prior knowledge about Neurotechnology? 
+                Don’t worry, you can learn on the fly! Get in touch
+                </Description>
+              </SplitSectionTextWrapper>
+            </SplitSectionWrapper>
+          </SplitDiv>
+          
+          <RedDotImg src={redBgPoint} alt="redbgpoint" size={"805px"} marginTop={"120px"}/>
+          <SplitDiv>
+            <SplitSectionWrapper width={"100%"}>
+              <SectionHeading>our partners</SectionHeading>
+              <SplitSectionImgWrapper>
+                <PartnerImg src={partnersImgs.asta} />
+                <PartnerImg src={partnersImgs.collectiveInc} />
+                <PartnerImg src={partnersImgs.techAachen} />
+              </SplitSectionImgWrapper>
+            </SplitSectionWrapper>
+          </SplitDiv>
+        </ProjectSectionWrapper>
+
+        {/* <FooterComponent>
+            // creating a whole component 
+        </FooterComponent> */}
       </HomeContainer>
       
     </>

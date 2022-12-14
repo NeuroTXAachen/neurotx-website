@@ -13,7 +13,7 @@ export const BciHeading = styled.h2`
   text-align: center;
   width: 100%;
   letter-spacing: 0em;
-  margin-bottom: 40px;
+  margin-bottom: ${({ marginBottom }) => marginBottom ? marginBottom : "40px"};
   `;
 export const Description = styled.p`
   font-family: Montserrat;
@@ -37,6 +37,7 @@ export const DescriptionWrapper = styled.div`
 
 export const BciTextWrapper = styled.div`
   display: flex;
+  width: ${({ width }) => width ? width : "none"};
   flex-direction: column;
   justify-content: center;
   align-items: center;

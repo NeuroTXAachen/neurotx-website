@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectSectionWrapper = styled.div`
+    margin-bottom: 180px;
     z-index: 1;
     `;
 export const SectionHeading = styled.h1`
@@ -35,7 +36,7 @@ export const RedAccent = styled.div`
     width: 10px;
     height: 60px;
     background-color: #FF0000;
-    margin: 0 2rem 0 12rem;
+    margin: ${( {margin} ) => margin ? margin : "0 2rem 0 12rem"};
 `;
 export const Projects = styled.div`
     display: flex;

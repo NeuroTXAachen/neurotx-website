@@ -42,5 +42,10 @@ export const homeDataObj = {
       fullscreenToggle: false,
       playbackRateMenuButton: false,
     }
+  },
+  partnersImgs: {
+    asta: require("../../images/asta.png"),
+    collectiveInc: require("../../images/collectiveIncubator.png"),
+    techAachen: require("../../images/techAachen_Logo 2.png"),
   }
 }

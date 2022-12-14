@@ -177,9 +177,9 @@ export const AdaptiveDiv = styled.div`
 
 export const RedDotImg = styled.img`
   position: absolute;
-  margin-top: -190px;
-  width: 70%;
-  right: -150px;
+  margin-top: ${({ marginTop }) => marginTop ? marginTop : "-190px"};
+  width: ${({size}) => size ? size : "70%"};
+  right: ${({right}) => right ? right : "-150px"};
   /* padding-left: 590px; */
   z-index: 0;
   opacity: 1;
