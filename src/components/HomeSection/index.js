@@ -45,6 +45,7 @@ import {
   ServiceButtonWrapper,
   AdaptiveDiv,
 } from "./HomeElements";
+
 import VideoComponent from "../VideoComponent/VideoComponent";
 import { PartnerImg, SplitDiv, SplitSectionImgWrapper, SplitSectionTextWrapper, SplitSectionWrapper } from "./FinalSection";
 
