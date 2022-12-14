@@ -157,7 +157,8 @@ export const Subtitle = styled.p`
 export const WaveImg = styled.img`
   position: absolute;
   width: 100%;
-  margin-top: -100px;
+  margin-top: ${({marginTop}) => marginTop ? marginTop : "-100px"};
+  right: ${({right}) => right ? right : "none"};
   /* padding-left: 810px; */
   z-index: 0;
   opacity: 1;

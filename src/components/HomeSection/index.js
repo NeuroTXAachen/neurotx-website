@@ -166,9 +166,10 @@ const HomeSection = ({
         </ProjectSectionWrapper>
 
         <RedDotImg src={redBgPoint} alt="redbgpoint" size={"805px"} marginTop={"-420px"} right={"70%"}/>
+        <WaveImg src={waveImage} alt="waveImage" right={"-55%"} marginTop={"-20%"} />
         <ProjectSectionWrapper>
           <BciHeading >We are a team of <br/> 15 members <br/> and growing!</BciHeading>
-
+          <div style={{margin: "830px"}}></div>
           {/* TODO create cards component from the outside 
               insert here as mini cards with appropriate class definition 
               REASON => use also in team as cards */}
