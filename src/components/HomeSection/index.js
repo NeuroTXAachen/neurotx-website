@@ -18,12 +18,12 @@ import {
 import { 
   ProjectSectionWrapper, 
   SectionHeading,
-  ProjectVideo,
   RedAccent,
   Projects,
   ProjectDescriptionSection,
   VidFrame,
   ProjectDescription,
+  ProjectImg,
 } from "./ProjectSection";
 
 
@@ -43,6 +43,7 @@ import {
   ButtonServices,
   WaveImg,
   ServiceButtonWrapper,
+  AdaptiveDiv,
 } from "./HomeElements";
 import VideoComponent from "../VideoComponent/VideoComponent";
 
@@ -123,7 +124,6 @@ const HomeSection = ({
 
         <RedDotImg src={redBgPoint} alt="redbgpoint"/>
         <ProjectSectionWrapper>
-          
           <SectionHeading>projects</SectionHeading>
           <Projects>
           <RedAccent></RedAccent>
@@ -134,28 +134,32 @@ const HomeSection = ({
 
           <ProjectDescription>{projectdescription1}</ProjectDescription>
           <ProjectDescription>{projectdescription2}</ProjectDescription>
-          <WaveImg src={waveImage} alt="waveImg"/>
           <ProjectDescription>{projectdescription3}</ProjectDescription>
 
           </ProjectDescriptionSection>
           </Projects>
+          <AdaptiveDiv rotation={"70deg"}>
+            <WaveImg src={waveImage} alt="waveImg"/>
+          </AdaptiveDiv>
         </ProjectSectionWrapper>
 
         <ProjectSectionWrapper>
-          
-          <SectionHeading>events</SectionHeading>
+          <SectionHeading>events</SectionHeading>          
           <Projects>
-          <RedAccent></RedAccent>
-          
-          <ProjectVideo src={coverphoto}/>
-          <ProjectDescriptionSection>
-
-          <ProjectDescription>{projectdescription1}</ProjectDescription>
-          <ProjectDescription>{projectdescription2}</ProjectDescription>
-          {/* <WaveImg src={waveImage} alt="waveImg" style="tranform: ScaleX(-1);"/> */}
-          <ProjectDescription>{projectdescription3}</ProjectDescription>
-
-          </ProjectDescriptionSection>
+            <RedAccent></RedAccent>
+            <div style={{width: "50%", zIndex: "2"}}>
+              <ProjectImg src={coverphoto}/>
+              <ProjectImg src={coverphoto}/>
+              <ProjectDescriptionSection width={"70%"}>
+                <ProjectDescription>{projectdescription1}</ProjectDescription>
+              </ProjectDescriptionSection>
+            </div>
+            <div style={{width: "25%", zIndex: "2"}}>
+                <ProjectImg marginTop={"25%"} width={"90%"} src={coverphoto}/>
+                <ProjectDescriptionSection width={"100%"}>
+                  <ProjectDescription>{projectdescription1}</ProjectDescription>
+                </ProjectDescriptionSection>
+            </div>
           </Projects>
         </ProjectSectionWrapper>
       </HomeContainer>

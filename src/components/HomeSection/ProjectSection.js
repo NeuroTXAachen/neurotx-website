@@ -9,10 +9,12 @@ export const SectionHeading = styled.h1`
     font-size: 70px;
 
     `;
-export const ProjectVideo = styled.img`
-    width: 40rem;
-    height: 40rem;
-    z-index: 1;
+export const ProjectImg = styled.img`
+    width: ${({width}) => width ? width : "45%"};
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: ${({marginTop}) => marginTop ? marginTop : "none"};
+    z-index: 2;
 `;
 
 export const VidFrame = styled.div`
@@ -24,8 +26,9 @@ export const VidFrame = styled.div`
   max-width: 40%;
   min-width: 40%;
   overflow: hidden;
-  height: 682px;
-  max-height: 682px;
+  height: 702px;
+  z-index: 2;
+  max-height: 702px;
 `;
 
 export const RedAccent = styled.div`
@@ -39,7 +42,11 @@ export const Projects = styled.div`
     
 `;
 export const ProjectDescriptionSection = styled.div`
-    width: 20rem;
+    width: ${( {width} ) => width ? width : "20rem"};
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
     margin-left: 2rem;
     z-index: 1;
 `;

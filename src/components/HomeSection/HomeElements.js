@@ -169,6 +169,12 @@ export const WaveImg = styled.img`
   }
 `;
 
+export const AdaptiveDiv = styled.div`
+  transform: ${({ rotation }) => rotation ? "rotate(" + rotation + ")" : "none"};
+  top: ${({ top }) => top ? top : "none"};
+  top: ${({ left }) => left ? left : "none"};
+`;
+
 export const RedDotImg = styled.img`
   position: absolute;
   margin-top: -190px;
