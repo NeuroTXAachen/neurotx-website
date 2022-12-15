@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const BciSectionWrapper = styled.div`
-  
+  @media screen and (max-width: 789px) {
+    padding-top: 68px;
+  }
 `;
 
 
@@ -14,6 +16,11 @@ export const BciHeading = styled.h2`
   width: 100%;
   letter-spacing: 0em;
   margin-bottom: ${({ marginBottom }) => marginBottom ? marginBottom : "40px"};
+  @media screen and (max-width: 789px) {
+    padding-top: 68px;
+    font-size: 24px;
+    line-height: 30px;
+  }
   `;
 export const Description = styled.p`
   font-family: Montserrat;
@@ -23,6 +30,13 @@ export const Description = styled.p`
   font-weight: 500;
   line-height: 40px;
   letter-spacing: 0em;
+  @media screen and (max-width: 789px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
   `;
 
 export const DescriptionWrapper = styled.div`
@@ -37,6 +51,7 @@ export const DescriptionWrapper = styled.div`
 
 export const BciTextWrapper = styled.div`
   display: flex;
+  position: relative;
   width: ${({ width }) => width ? width : "none"};
   flex-direction: column;
   justify-content: center;

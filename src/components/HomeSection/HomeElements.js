@@ -12,7 +12,7 @@ export const HomeContainer = styled.div`
   background-color: #040142;
   z-index: 0;
   @media screen and (max-width: 768px) {
-    height: 1200px;
+    height: fit-content;
   }
 `;
 
@@ -27,23 +27,26 @@ export const ForegroundWrapper = styled.div`
 export const ForegroundHome = styled.img`
   position: relative;
   width: 45%;
-  top: 140px;
+  top: 100px;
   left: 29%;
   z-index: 1;
   opacity: 1;
   background-color: transparent;
   align-items: center;
   @media screen and (max-width: 768px) {
-    right: 2%;
+    left: 23%;
     top: 210px;
-    width: 70%;
+    width: 75%;
   }
 `;
 
 export const HomeWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
-  height: fit-content;
+  height: 1500px;
+  @media only screen and (max-width: 600px) {
+    height: 900px;
+  }
   `;
 export const BodyTextWrapper = styled.div`
   position: 'solid';
@@ -54,8 +57,9 @@ export const BodyTextWrapper = styled.div`
     font: 10px;
   }
   @media only screen and (max-width: 600px) {
-    text-align: center;
     position: 'solid';
+    display: flex;
+    flex-direction: column;
     margin: 10px
   }
 `;
@@ -64,16 +68,18 @@ export const Heading1 = styled.p`
   position: relative;
   line-height: 1.2;
   font-size: 120px;
-  padding-top: 135px;
-  margin-left: 6%;
+  padding-top: 14%;
+  margin-left: 8%;
   color: #fff;
   font-weight: 400;
-  align-items:center;
+  @media screen and (min-width: 1200px) and (max-width: 1568px) {
+    font-size: 90px;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 80px;
+    font-size: 50px;
     margin-left: 0%;
+    padding-top: 28%;
     padding-left: 0%;
-    text-align: left;
   }
 `;
 
@@ -81,15 +87,17 @@ export const Heading2 = styled.p`
   position: relative;
   font-size: 120px;
   line-height: 1.2;
-  margin-left: 28%;
+  margin-left: 30%;
   font-weight: 400;
   color: #fff;
-  align-items:center;
+  @media screen and (min-width: 1200px) and (max-width: 1568px) {
+    font-size: 90px;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 80px;
-    margin-bottom: 0px;
+    font-size: 50px;
+    left: 0;
     margin-left: 0%;
-    text-align: left;
+    padding-left: 0%;
   }
 `;
 
@@ -97,34 +105,38 @@ export const Heading3 = styled.p`
   position: relative;
   line-height: 1.2;
   font-size: 120px;
-  margin-top: -20px;
-  margin-left: 58%;
+  margin-top: 10px;
+  margin-left: 63%;
   font-weight: 400;
   color: #fff;
-  align-items:center;
-  
+  @media screen and (min-width: 1200px) and (max-width: 1568px) {
+    font-size: 90px;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 80px;
-    margin-top: -97px;
-    margin-left: 35%;
-    text-align: left;
+    font-size: 50px;
+    left: 0;
+    margin-top: 0px;
+    margin-left: 0%;
+    padding-left: 0%;
   }
 `;
 
 export const Heading4 = styled.p`
   position: relative;
-  margin-left: 65%;
+  margin-left: 71%;
   font-size: 120px;
   line-height: 1.2;
   font-weight: 400;
   color: #fff;
-  align-items:center;
+  @media screen and (min-width: 1200px) and (max-width: 1568px) {
+    font-size: 90px;
+  }
   /* border-bottom: solid 1px #808080; */
   @media screen and (max-width: 768px) {
-    font-size: 80px;
+    font-size: 50px;
+    left: 0;
     margin-left: 0%;
     padding-left: 0%;
-    text-align: left;
   }
 `;
 
@@ -134,7 +146,7 @@ export const SubtitleWrapper = styled.div`
    margin-left: 6%;
    @media screen and (max-width: 768px) {
     position: relative;
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: left;
     margin-left: 0%;
     padding: 0% 5% 0% 15%;
@@ -185,9 +197,7 @@ export const RedDotImg = styled.img`
   z-index: 0;
   opacity: 1;
   @media screen and (max-width: 768px) {
-    top: 150px;
-    margin-top: 0px;
-    scale: 1.5;
+    display: none;
     
   }
 `;

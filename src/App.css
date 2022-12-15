@@ -1,10 +1,10 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "Krona One";
 }
 
 .Home {
+  font-family: "Krona One";
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

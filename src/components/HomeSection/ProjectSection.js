@@ -8,6 +8,11 @@ export const SectionHeading = styled.h1`
     font-family: "Krona One", sans-serif;
     margin: 5rem;
     font-size: 70px;
+    @media screen and (max-width: 789px) {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
 
     `;
 export const ProjectImg = styled.img`
@@ -30,6 +35,11 @@ export const VidFrame = styled.div`
   height: 702px;
   z-index: 2;
   max-height: 702px;
+  @media screen and (max-width:798px){
+    width: 90%;
+    max-width: 90%;
+    height: 400px;
+  }
 `;
 
 export const RedAccent = styled.div`
@@ -37,10 +47,15 @@ export const RedAccent = styled.div`
     height: 60px;
     background-color: #FF0000;
     margin: ${( {margin} ) => margin ? margin : "0 2rem 0 12rem"};
-`;
+    @media screen and (max-width: 789px) {
+        display: none;
+    }
+    `;
 export const Projects = styled.div`
     display: flex;
-    
+    @media screen and (max-width: 789px) {
+        flex-direction: column;
+    }
 `;
 export const ProjectDescriptionSection = styled.div`
     width: ${( {width} ) => width ? width : "20rem"};
@@ -55,4 +70,11 @@ export const ProjectDescription = styled.p`
     margin-top: 4.5rem;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
+    @media screen and (max-width: 789px) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+    }
 `;

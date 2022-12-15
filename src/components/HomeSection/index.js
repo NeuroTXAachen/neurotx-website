@@ -73,8 +73,7 @@ const HomeSection = ({
 
 
   return (
-    <>
-      <HomeContainer lightBg={false} id={id}>
+      <HomeContainer id={id}>
         <RedDotImg src={redBgPoint} alt="redbgpoint"/>
         <HomeWrapper>
           <BodyTextWrapper id="de">
@@ -101,7 +100,7 @@ const HomeSection = ({
           <BciTextWrapper>
             <BciHeading>We believe BCI is the Future</BciHeading>
             <DescriptionWrapper>
-              <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</Description>
+              <Description>Brain-computer interfaces, or BCIs, are a cutting-edge technology that allows us to control devices with our thoughts by measuring brain activity and translating it into digital commands.</Description>
             </DescriptionWrapper>
           </BciTextWrapper>
           <BciWrapper>
@@ -129,17 +128,17 @@ const HomeSection = ({
         <ProjectSectionWrapper>
           <SectionHeading>projects</SectionHeading>
           <Projects>
-          <RedAccent></RedAccent>
-          <VidFrame>
-            <VideoComponent options={vidJSOptions} />
-          </VidFrame>
-          <ProjectDescriptionSection>
+            <RedAccent></RedAccent>
+            <VidFrame>
+              <VideoComponent options={vidJSOptions} />
+            </VidFrame>
+            <ProjectDescriptionSection>
 
-          <ProjectDescription>{projectdescription1}</ProjectDescription>
-          <ProjectDescription>{projectdescription2}</ProjectDescription>
-          <ProjectDescription>{projectdescription3}</ProjectDescription>
+            <ProjectDescription>{projectdescription1}</ProjectDescription>
+            <ProjectDescription>{projectdescription2}</ProjectDescription>
+            <ProjectDescription>{projectdescription3}</ProjectDescription>
 
-          </ProjectDescriptionSection>
+            </ProjectDescriptionSection>
           </Projects>
           <AdaptiveDiv rotation={"70deg"}>
             <WaveImg src={waveImage} alt="waveImg"/>
@@ -214,13 +213,8 @@ const HomeSection = ({
             </SplitSectionWrapper>
           </SplitDiv>
         </ProjectSectionWrapper>
-
-        {/* <FooterComponent>
-            // creating a whole component 
-        </FooterComponent> */}
       </HomeContainer>
-      
-    </>
+
   );
 };
 
