@@ -39,6 +39,9 @@ $center-big-play-button: true; // true default
   
   /* The main font color changes the ICON COLORS as well as the text */
   color: $primary-foreground-color;
+  @media screen and (max-width: 789px) {
+    margin-top: 200px;
+  }
 }
 
 /* The "Big Play Button" is the play button that shows before the video plays.
@@ -74,6 +77,9 @@ $center-big-play-button: true; // true default
     top: 27%;
     margin-left: -($big-play-width / 2);
     margin-top: -($big-play-height / 2);   
+    @media screen and (max-width: 789px) {
+      top: 42%;
+    }
   } @else {
     /* Align top left. 0.5em = 15px default */
     left: 0.5em;
