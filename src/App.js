@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes,
   Route, Navigate} from "react-router-dom";
 
 import Contact from "./pages/Contact";
+import Team from "./pages/Team";
+import Projects from "./pages/Projects";
 
 import Home from './pages';
 // const Home = React.lazy(() => {
@@ -20,19 +22,10 @@ function App() {
     <Router>
       
         <Routes>
-          {/* This route is for home component 
-          with exact path "/", in component props 
-          we passes the imported component*/}
           <Route exact path="/home" element={<Home/>} />
-            
-          {/* This route is for contactus component
-          with exact path "/contactus", in 
-          component props we passes the imported component*/}
+          <Route path="/projects" element={<Projects/>} />
           <Route path="/contact" element={<Contact/>} />
-            
-          {/* If any route mismatches the upper 
-          route endpoints then, redirect triggers 
-          and redirects app to home component with to="/" */}
+          <Route path="/team" element={<Team/>} /> 
           <Route path="/" element={<Navigate replace to="/home"/>} />
 
         </Routes>

@@ -108,7 +108,7 @@ export const NavMenu = styled.ul`
     list-style: none;
     position:absolute;
     top: 5%;
-    left:50%;
+    left:40%;
     @media screen and (max-width: 1253px) and (min-width: 994px){
         display: flex;
         list-style: none;

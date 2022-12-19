@@ -1,5 +1,5 @@
 export const contactDataObj = {
-    id: 'home',
+    id: 'team',
     bgLine1: 'thinking',
     bgLine2: 'the',
     bgLine3: 'next',

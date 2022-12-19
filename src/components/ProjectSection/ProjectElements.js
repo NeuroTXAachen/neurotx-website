@@ -47,56 +47,6 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const FormWrapper = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-  margin-left: 15rem;
-  max-width: 1050px;
-`;
-
-export const FormRow = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 2rem;
-`;
-
-export const FormField = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-right: 25px;
-`;
-export const Label = styled.label`
-  position: relative;
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 10px;
-`;
-
-export const NameInput = styled.input`
-  position: relative;
-  width: 500px;
-  height: 50px;
-  font-size: 24px;
-  
-`;
-export const Input = styled.input`
-  position: relative;
-  width: 1032px;
-  height: 50px;
-  font-size: 24px;
-`;
-
-export const Message = styled.input`
-  position: relative;
-  width: 1032px;
-  height: 300px;
-  font-size: 24px;
-`;
-
 export const ButtonServices = styled.button`
   width: 259px;
   height: 57px;
@@ -141,4 +91,41 @@ export const RedDotImg = styled.img`
     display: none;
     
   }
+`;
+
+export const ProjectItem = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 5rem 15rem;
+`;
+export const ProjectText = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-top: 10rem;
+`;
+
+export const Image = styled.img`
+  width: 25rem;
+`;
+
+export const Name = styled.p`
+  position: relative;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 1rem;
+  border-left: 8px solid #FF0000;
+  padding-left: 1rem;
+`;
+
+export const Description = styled.p`
+  position: relative;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 1rem;
 `;

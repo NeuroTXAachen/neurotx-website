@@ -1,6 +1,5 @@
-import { SubtitleWrapper } from '../HomeSection/HomeElements';
 import {
-    ContactContainer,
+    Container,
     Heading,
     Subtitle,
     FormWrapper,
@@ -16,7 +15,7 @@ import {
 
 const ContactSection = ({redBgPoint}) => {
     return (
-        <ContactContainer>
+        <Container>
             <RedDotImg src={redBgPoint} alt='Red Dot'/>
             <Heading>{'contact'}</Heading>
             <Subtitle>{'Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions.'}</Subtitle>
@@ -67,7 +66,7 @@ const ContactSection = ({redBgPoint}) => {
                     <ButtonServices>Send</ButtonServices>
                 </FormRow>
                 </FormWrapper>
-        </ContactContainer>
+        </Container>
     );
 }
 export default ContactSection;
