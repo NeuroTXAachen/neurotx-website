@@ -130,7 +130,7 @@ const HomeSection = ({
           <Projects>
             <RedAccent></RedAccent>
             <VidFrame>
-              <VideoComponent options={vidJSOptions} />
+              {/* <VideoComponent options={vidJSOptions} /> */}
             </VidFrame>
             <ProjectDescriptionSection>
 
@@ -176,7 +176,7 @@ const HomeSection = ({
 
           <SplitDiv>
             <SplitSectionWrapper width={"50%"}>
-              <SectionHeading>support Us</SectionHeading>  
+              <SectionHeading>support us</SectionHeading>  
 
                 <SplitSectionTextWrapper>
                   <RedAccent margin={"40px"}/>

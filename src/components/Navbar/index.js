@@ -2,9 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, LogoImage, } from './NavbarElement'
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contact from '../../pages/Contact'
+
 
 const Navbar = ({ toggle }) => {
 
@@ -35,7 +33,7 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='home'>
+                            <NavLinks to='/home'>
                                 home
                             </NavLinks>
                         </NavItem>
@@ -50,7 +48,7 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/Contact'>
+                            <NavLinks to='/contact'>
                                 contact
                             </NavLinks>
                         </NavItem>

@@ -26,7 +26,7 @@ export const ForegroundWrapper = styled.div`
 `;
 export const ForegroundHome = styled.img`
   position: relative;
-  width: 45%;
+  width: 48%;
   top: 100px;
   left: 29%;
   z-index: 1;
@@ -152,6 +152,7 @@ export const SubtitleWrapper = styled.div`
     padding: 0% 5% 0% 15%;
   }
    `
+// Used more than once
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
@@ -203,7 +204,7 @@ export const RedDotImg = styled.img`
 `;
 
 export const ServiceButtonWrapper = styled(LinkS)``;
-  
+// Used more than once
 export const ButtonServices = styled.button`
   width: 259px;
   margin-top: 20px;
