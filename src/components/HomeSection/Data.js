@@ -23,7 +23,7 @@ export const homeDataObj = {
     controls: true,
     muted: true,
     sources: [{
-      // src: require("../../videos"),
+      src: require("../../videos/ef84a11d-884e-4c27-b777-aa1b489ab79a.mp4"),
       type: 'video/mp4'
     }], 
     controlBar: {

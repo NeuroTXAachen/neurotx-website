@@ -130,7 +130,7 @@ const HomeSection = ({
           <Projects>
             <RedAccent></RedAccent>
             <VidFrame>
-              {/* <VideoComponent options={vidJSOptions} /> */}
+              <VideoComponent options={vidJSOptions} />
             </VidFrame>
             <ProjectDescriptionSection>
 

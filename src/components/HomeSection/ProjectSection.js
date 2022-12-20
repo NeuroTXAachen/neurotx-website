@@ -11,6 +11,7 @@ export const SectionHeading = styled.h1`
     @media screen and (max-width: 789px) {
         font-weight: 400;
         font-size: 32px;
+        margin: 20px;
         line-height: 40px;
     }
 
@@ -39,6 +40,8 @@ export const VidFrame = styled.div`
     width: 90%;
     max-width: 90%;
     height: 400px;
+    margin: auto;
+    margin-top: 20px;
   }
 `;
 

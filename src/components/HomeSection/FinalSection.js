@@ -7,6 +7,9 @@ export const SplitDiv = styled.div`
   margin: auto;
   position: relative;
   display: flex;
+  @media screen and (max-width: 789px) {
+    flex-direction: column;
+  }
 `;
 
 export const SplitSectionWrapper = styled.div`
@@ -14,6 +17,10 @@ export const SplitSectionWrapper = styled.div`
   justify-content: left;
   align-items: left;
   z-index: 2;
+  @media screen and (max-width: 789px) {
+    width: 100%;
+    margin: auto;
+  }
 `;
 
 export const SplitSectionTextWrapper = styled.div`
@@ -29,9 +36,17 @@ export const SplitSectionImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: auto;
+  @media screen and (max-width: 789px) {
+    flex-direction: column;
+  }
 `;
 
 export const PartnerImg = styled.img`
   width : 13%;
   margin: 0 5%;
+  @media screen and (max-width: 789px) {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 `;
