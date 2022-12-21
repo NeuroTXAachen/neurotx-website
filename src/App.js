@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Routes,
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import Projects from "./pages/Projects";
-
+import Learn from "./pages/Learn";
 import Home from './pages';
+
 // const Home = React.lazy(() => {
 //     return new Promise(resolve => {
 //       setTimeout(() => resolve(import('./pages')), 5000);
@@ -23,6 +24,7 @@ function App() {
       
         <Routes>
           <Route exact path="/home" element={<Home/>} />
+          <Route path="/learn" element={<Learn/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/team" element={<Team/>} /> 
