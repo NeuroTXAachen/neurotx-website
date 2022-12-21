@@ -22,6 +22,10 @@ export const ProjectImg = styled.img`
     margin-right: 2%;
     margin-top: ${({marginTop}) => marginTop ? marginTop : "none"};
     z-index: 2;
+    @media screen and (max-width: 769px) {
+        width: 90%;
+        margin: auto;
+    }
 `;
 
 export const VidFrame = styled.div`
@@ -79,5 +83,16 @@ export const ProjectDescription = styled.p`
         font-weight: 500;
         font-size: 16px;
         line-height: 170%;
+    }
+`;
+
+export const EventWrapper = styled.div`
+    width: ${({width}) => width ? width : "50%"};
+    z-index: 2;
+    @media screen and (max-width: 769px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;

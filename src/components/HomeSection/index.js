@@ -24,6 +24,7 @@ import {
   VidFrame,
   ProjectDescription,
   ProjectImg,
+  EventWrapper,
 } from "./ProjectSection";
 
 
@@ -78,9 +79,11 @@ const HomeSection = ({
         <HomeWrapper>
           <BodyTextWrapper id="de">
             <ForegroundWrapper>
+              <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
               <ForegroundHome src={backgroundPhilipp} />
-              <WaveImg src={waveImage} alt="waveImg"/>
+              </div>
             </ForegroundWrapper>
+            <WaveImg src={waveImage} alt="waveImg"/>
             <Heading1>{bgLine1}</Heading1>
             <Heading2>{bgLine2}</Heading2>
             <Heading3>{bgLine3}</Heading3>
@@ -149,19 +152,19 @@ const HomeSection = ({
           <SectionHeading>events</SectionHeading>          
           <Projects>
             <RedAccent></RedAccent>
-            <div style={{width: "50%", zIndex: "2"}}>
+            <EventWrapper>
               <ProjectImg src={coverphoto}/>
               <ProjectImg src={coverphoto}/>
               <ProjectDescriptionSection width={"70%"}>
                 <ProjectDescription>{projectdescription1}</ProjectDescription>
               </ProjectDescriptionSection>
-            </div>
-            <div style={{width: "25%", zIndex: "2"}}>
+            </EventWrapper>
+            <EventWrapper width={"25%"}>
                 <ProjectImg marginTop={"25%"} width={"90%"} src={coverphoto}/>
                 <ProjectDescriptionSection width={"100%"}>
                   <ProjectDescription>{projectdescription1}</ProjectDescription>
                 </ProjectDescriptionSection>
-            </div>
+            </EventWrapper>
           </Projects>
         </ProjectSectionWrapper>
 

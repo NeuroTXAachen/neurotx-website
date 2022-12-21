@@ -28,11 +28,10 @@ export const ForegroundHome = styled.img`
   position: relative;
   width: 48%;
   top: 100px;
-  left: 29%;
   z-index: 1;
   opacity: 1;
   background-color: transparent;
-  align-items: center;
+  margin: auto;
   @media screen and (max-width: 768px) {
     left: 23%;
     top: 210px;
