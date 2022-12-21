@@ -7,7 +7,21 @@ export const BciSectionWrapper = styled.div`
 `;
 
 
-
+export const TeamHeading = styled.h2`
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 77px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0em;
+  margin-bottom: ${({ marginBottom }) => marginBottom ? marginBottom : "40px"};
+  @media screen and (max-width: 789px) {
+    padding-top: 68px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  `;
 export const BciHeading = styled.h2`
   font-size: 50px;
   font-weight: 400;
@@ -19,6 +33,8 @@ export const BciHeading = styled.h2`
   @media screen and (max-width: 789px) {
     padding-top: 68px;
     font-size: 24px;
+    font-weight: 400;
+    width: 60%;
     line-height: 30px;
   }
   `;
@@ -30,7 +46,7 @@ export const Description = styled.p`
   font-weight: 500;
   line-height: 40px;
   letter-spacing: 0em;
-  @media screen and (max-width: 789px) {
+  @media screen and (max-width: 769px) {
     font-size: 16px;
     font-weight: 500;
     line-height: 27px;
@@ -45,6 +61,12 @@ export const DescriptionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 180px;
+  @media screen and (max-width: 769px) {
+    width: 70%;
+    margin-left: 15px;
+    margin-right: auto;
+    justify-content: left;
+  }
   `;
 
 
@@ -56,6 +78,11 @@ export const BciTextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 769px) {
+    align-items: left;
+    justify-content: left;
+  }
+
   `;
 
 export const BciWrapper = styled.div`

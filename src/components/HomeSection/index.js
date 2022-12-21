@@ -12,7 +12,8 @@ import {
   BciHeading,
   BciSectionWrapper,
   BciTextWrapper,
-  DescriptionWrapper
+  DescriptionWrapper,
+  TeamHeading
 } from "./BciSection";
 
 import { 
@@ -25,6 +26,7 @@ import {
   ProjectDescription,
   ProjectImg,
   EventWrapper,
+  EventWrapper2,
 } from "./ProjectSection";
 
 
@@ -136,12 +138,15 @@ const HomeSection = ({
           <SectionHeading>projects</SectionHeading>
           <Projects>
             <RedAccent></RedAccent>
+            <ProjectDescriptionSection id={"disappearingProjSection"}>
+              <ProjectDescription >{projectdescription1}</ProjectDescription>
+            </ProjectDescriptionSection>
             <VidFrame>
               <VideoComponent options={vidJSOptions} />
             </VidFrame>
             <ProjectDescriptionSection>
 
-            <ProjectDescription>{projectdescription1}</ProjectDescription>
+            <ProjectDescription id={"containedProjDesc"}>{projectdescription1}</ProjectDescription>
             <ProjectDescription>{projectdescription2}</ProjectDescription>
             <ProjectDescription>{projectdescription3}</ProjectDescription>
 
@@ -163,19 +168,19 @@ const HomeSection = ({
                 <ProjectDescription>{projectdescription1}</ProjectDescription>
               </ProjectDescriptionSection>
             </EventWrapper>
-            <EventWrapper width={"25%"}>
+            <EventWrapper2 width={"25%"}>
                 <ProjectImg marginTop={"25%"} width={"90%"} src={coverphoto}/>
                 <ProjectDescriptionSection width={"100%"}>
                   <ProjectDescription>{projectdescription1}</ProjectDescription>
                 </ProjectDescriptionSection>
-            </EventWrapper>
+            </EventWrapper2>
           </Projects>
         </ProjectSectionWrapper>
 
         <RedDotImg src={redBgPoint} alt="redbgpoint" size={"805px"} marginTop={"-420px"} right={"70%"}/>
         <WaveImg src={waveImage} alt="waveImage" right={"-55%"} marginTop={"-20%"} />
         <ProjectSectionWrapper>
-          <BciHeading >We are a team of <br/> 15 members <br/> and growing!</BciHeading>
+          <TeamHeading>We are a team of <br/> 15 members <br/> and growing!</TeamHeading>
           <div style={{margin: "830px"}}></div>
           {/* TODO create cards component from the outside 
               insert here as mini cards with appropriate class definition 

@@ -72,6 +72,11 @@ export const ProjectDescriptionSection = styled.div`
     align-items: flex-end;
     margin-left: 2rem;
     z-index: 1;
+    @media screen and (max-width: 789px) {
+        margin-left: 0rem;
+        width: 80%;
+        margin: auto;
+    }
 `;
 export const ProjectDescription = styled.p`
     margin-top: 4.5rem;
@@ -79,6 +84,7 @@ export const ProjectDescription = styled.p`
     font-size: 24px;
     @media screen and (max-width: 789px) {
         font-family: 'Montserrat';
+        margin-top: 1.5rem;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -90,9 +96,23 @@ export const EventWrapper = styled.div`
     width: ${({width}) => width ? width : "50%"};
     z-index: 2;
     @media screen and (max-width: 769px) {
-        width: 100%;
+        width: 90%;
+        margin-left: 20px;
+        margin-right: auto;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+
+    }
+`;
+export const EventWrapper2 = styled.div`
+    width: ${({width}) => width ? width : "50%"};
+    z-index: 2;
+    @media screen and (max-width: 769px) {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 `;
