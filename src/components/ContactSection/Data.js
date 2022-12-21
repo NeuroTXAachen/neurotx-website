@@ -1,9 +1,5 @@
 export const contactDataObj = {
-    id: 'team',
-    bgLine1: 'thinking',
-    bgLine2: 'the',
-    bgLine3: 'next',
-    bgLine4: 'move',
+    id: 'contact',
     description: "We are NeuroTX,  a student team from Aachen, Germany aiming to cultivate a learning environment and  hands-on experience in the field of neurotechnology",
     waveImage: require('../../images/waves.png'),
     smallWaveImg: require('../../images/image 3.png'),
@@ -13,6 +9,7 @@ export const contactDataObj = {
     brainImage: require('../../images/brain.png'),
     dottedImage: require('../../images/interface.png'),
     coverphoto: require('../../images/coverphoto.png'),
+    paypalImage: require('../../images/PaypalButton.png'),
     projectdescription1 : "Our projects involve mainly brain signal processing from EEG, and its translation into real-world applications by a brain-computer interface.",
     projectdescription2 : "Having the benefit of the disabled in mind, we are developing Xavier, a prototype electric wheelchair controlled by brain signals.",
     projectdescription3 : "But that’s not all. Discover More of our projects!",

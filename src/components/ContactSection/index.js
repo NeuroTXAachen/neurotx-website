@@ -4,19 +4,25 @@ import {
     Subtitle,
     FormWrapper,
     Label,
-    NameInput,
     FormRow,
     FormField,
+    NameFormField,
     Input,
     Message,
     ButtonServices,
     RedDotImg,
+    RedAccent,
+    SubSectionText,
+    SubSection,
+    DonateSection,
     SectionWrapper,
     SubLabel,
-    Map
+    Map,
+    Link,
+    Image
 }from './ContactElements';
 
-const ContactSection = ({redBgPoint}) => {
+const ContactSection = ({redBgPoint,paypalImage}) => {
     return (
         <Container>
             <RedDotImg src={redBgPoint} alt='Red Dot'/>
@@ -24,27 +30,27 @@ const ContactSection = ({redBgPoint}) => {
             <Subtitle>{'Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions.'}</Subtitle>
             <FormWrapper>
                 <FormRow>
-                    <FormField>
+                    <NameFormField>
                     <Label>First Name*</Label>
-                    <NameInput type="text" name="firstname" placeholder="Your first name.." />
-                    </FormField>
+                    <Input type="text" name="firstname"  />
+                    </NameFormField>
                 
-                    <FormField>
+                    <NameFormField>
                     <Label>Last Name*</Label>
-                    <NameInput type="text" name="lastname" placeholder="Your last name.." />
-                    </FormField>
+                    <Input type="text" name="lastname"  />
+                    </NameFormField>
                 </FormRow>
                 <FormRow>
                     <FormField>
                     <Label>Email*</Label>
-                    <Input type="email" name="email" placeholder="Your email.." />
+                    <Input type="email" name="email"  />
                     </FormField>
                     
                 </FormRow>
                 <FormRow>
                     <FormField>
                     <Label>Field of Study*</Label>
-                    <Input type="text" name="studies" placeholder="Your field of study.." />
+                    <Input type="text" name="studies" />
                     </FormField>
                 </FormRow>
                 <FormRow>
@@ -52,7 +58,7 @@ const ContactSection = ({redBgPoint}) => {
                         <Label>University*</Label>
                     </FormField>
                     <FormField>
-                        <Input type="radio" name='RWTH Aachen' value='RWTH Aachen'/> RWTH Aachen
+                        <Input type="radio" name='RWTH Aachen' value='RWTH Aachen' checked={true}/> RWTH Aachen
                         <Input type="radio" name='FH Aachen' value='FH Aachen'/> FH Aachen
                         <Input type="radio" name='other' value='other'/> Other
                     </FormField>
@@ -73,13 +79,38 @@ const ContactSection = ({redBgPoint}) => {
                     <SubLabel>
                         location
                     </SubLabel>
-                    <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.444949381945!2d6.106493143556574!3d50.78758461346544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09b20c34800b5%3A0x40128dcd06f393a0!2sCollective%20Incubator!5e0!3m2!1sde!2sin!4v1671626238398!5m2!1sde!2sin" width="1050" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <SubSection>
+                    <RedAccent/>
+                    <SubSectionText>   NeuroTX Aachen e.V., <br/>
+                                    Collective Incubator e. V. <br/>
+                                    Jülicher Str. 209 <br/>
+                                    52070 Aachen
+                    </SubSectionText>
+                    </SubSection>
+                    <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.444949381945!2d6.106493143556574!3d50.78758461346544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09b20c34800b5%3A0x40128dcd06f393a0!2sCollective%20Incubator!5e0!3m2!1sde!2sin!4v1671626238398!5m2!1sde!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </Map>
                     </SectionWrapper>
                 <SectionWrapper>
                     <SubLabel>
                         donation
                     </SubLabel>
+                    <SubSection>
+                    <RedAccent/>
+                    <SubSectionText> 
+                        NeuroTX Aachen e.V. is a non-profit student initiative, so every financial supports are valuable for us. If you wish to contribute to our efforts, please donate to us directly or via PayPal.
+                    </SubSectionText>
+                    </SubSection>
+                    <DonateSection>
+                        <Link to="https://www.paypal.com/paypalme/neurotx">
+                            <Image src={paypalImage}/>
+                        </Link>
+                        <SubSectionText>
+                        Bank Account <br/>
+                        Account owner : NEUROTX AACHEN <br/> 
+                        IBAN : DE57 3905 0000 1073 5990 50 
+                        </SubSectionText>
+                    </DonateSection>
+                        
                 </SectionWrapper>
         </Container>
     );
