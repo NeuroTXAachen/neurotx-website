@@ -44,7 +44,9 @@ const FooterContainer = styled.div`
   color: #040142;
   width: 100%;
   font-family: "Montserrat";
-  height: 200px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #ffff;
   display: flex;
   flex-direction: row;
