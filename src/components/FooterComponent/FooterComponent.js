@@ -2,20 +2,33 @@ import React from "react"
 import styled from "styled-components"
 
 const NeuroTXDisc = styled.div`
-  width: 40%;
+  width: 50vw;
+  padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 789px) {
+    text-align: center;
+    width: 60%;
+    padding: 2.5rem 0rem;
+  }
 `;
 
 const Description = styled.p`
-  width: 90%;
+  font-weight: 200;
+  width: 100%;
 `;
 
 const ContactDiv = styled.div`
-  width: 20%;
+  width: 25vw;
   display: block;
   justify-content: left;
   align-items: left;
+  padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 789px) {
+    text-align: center;
+    width: 100%;
+    padding: 2.5rem 0rem;
+  }
 `;
 
 const ContactItem = styled.div`
@@ -24,8 +37,7 @@ const ContactItem = styled.div`
 
 const FooterBold = styled.p`
   font-style: italic;
-  font-weight: 800;
-  line-height: 39.5px;
+  font-weight: 1000;
   `;
 
 const ContactItemLink = styled.a`
@@ -34,15 +46,22 @@ const ContactItemLink = styled.a`
 `;
 
 const AddressDiv = styled.div`
-  width: 20%;
+  width: 25vw;
   left: 200px;
+  padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 789px) {
+    text-align: center;
+    width: 100%;
+    padding: 2.5rem 0rem;
+  }
   `;
 
 const FooterContainer = styled.div`
   font-size: 22px;
   color: #040142;
   width: 100%;
+  line-height: 50px;
   font-family: "Montserrat";
   height: auto;
   padding-top: 20px;
@@ -54,6 +73,9 @@ const FooterContainer = styled.div`
   @media screen and (max-width: 789px) {
     height: fit-content;
     flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
   }
 `;
 
