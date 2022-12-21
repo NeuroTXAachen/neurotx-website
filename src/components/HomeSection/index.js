@@ -33,6 +33,7 @@ import {
   HomeWrapper,
   SubtitleWrapper,
   ForegroundWrapper,
+  HeadingDiv,
   Heading1,
   Heading2,
   Heading3,
@@ -75,19 +76,22 @@ const HomeSection = ({
 
   return (
       <HomeContainer id={id}>
-        <RedDotImg src={redBgPoint} alt="redbgpoint"/>
         <HomeWrapper>
+          <RedDotImg src={redBgPoint} alt="redbgpoint"/>
+          
           <BodyTextWrapper id="de">
             <ForegroundWrapper>
               <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
               <ForegroundHome src={backgroundPhilipp} />
               </div>
             </ForegroundWrapper>
-            <WaveImg src={waveImage} alt="waveImg"/>
-            <Heading1>{bgLine1}</Heading1>
-            <Heading2>{bgLine2}</Heading2>
-            <Heading3>{bgLine3}</Heading3>
-            <Heading4>{bgLine4}</Heading4>
+            <WaveImg src={waveImage} alt="waveImg" right={"-55%"} />
+            <HeadingDiv>
+              <Heading1>{bgLine1}</Heading1>
+              <Heading2>{bgLine2}</Heading2>
+              <Heading3>{bgLine3}</Heading3>
+              <Heading4>{bgLine4}</Heading4>
+            </HeadingDiv>
             <SubtitleWrapper>
               <Subtitle>
                 {description}
