@@ -108,14 +108,17 @@ export const NavMenu = styled.ul`
     list-style: none;
     position:absolute;
     top: 5%;
-    left:50%;
+    right: 60px;
+    left: auto;
     @media screen and (max-width: 1353px) and (min-width: 769px){
         display: flex;
         list-style: none;
         top: 0%;
         left: 30%;
-        }
+        right: 20px;
+    }
     @media screen and (max-width: 768px) {
+        right: 0px;
         display: none;
     }
 `
