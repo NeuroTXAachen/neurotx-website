@@ -27,8 +27,8 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Icon = styled.div`
     position: absolute;
+    right: 1.5rem;
     top: 1.2rem;
-    right: 1/5rem;
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
@@ -58,11 +58,33 @@ export const SidebarLink = styled(LinkR)`
     &.active{
         border-bottom: 3px solid #fff;
         transition: 0.2s ease-in-out;
-        border-width: 0 0 3px;
+        border-width: fit
     }
     &:hover{
         border-bottom: 5px solid #EB0000;
         transition: 0.2s ease-in-out;
     }
+   
+`
+export const NavLogo = styled(LinkS)`
+    color: #fff;
+    background-color: #EB0000;
+    justify-self: flex-start;
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    font-weight: bold;
+    text-decoration: none;
+    position:absolute;
+    top: 0%;
+`
+export const LogoImage = styled.img`
+    padding: 11px;
+    margin-top: 0px;
+    font-size:100%;   
    
 `

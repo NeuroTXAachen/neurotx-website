@@ -1,9 +1,12 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, NavLogo,LogoImage } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <NavLogo to='home'>
+                      <LogoImage width= {50} src={require('../../images/logo.png')} alt="Logo" />
+            </NavLogo>
             <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
