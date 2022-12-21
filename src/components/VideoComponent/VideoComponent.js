@@ -29,7 +29,7 @@ let VideoComponent = ({ options })  => {
   }, [options, vidref, playerref])
 
   return(
-    <video ref={vidref} className={"video-js vjs-default-skin vjs-1-1"} />
+    <video ref={vidref} className={"video-js vjs-default-skin vjs-1-1 vjs-show-big-play-button-on-pause"} />
   )
 }
 
