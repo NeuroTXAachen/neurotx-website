@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   color: #ffff;
   opacity: 100%;
@@ -18,17 +19,14 @@ export const Heading = styled.p`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
-  padding-top: 5rem;
-  margin-left: 5rem;
+  padding-top: 10vh;
+  margin: 0 5rem 0 5rem;
   color: #fff;
   font-weight: 400;
-  @media screen and (min-width: 1200px) and (max-width: 1568px) {
-    font-size: 90px;
-  }
   @media screen and (max-width: 768px) {
-    font-size: 50px;
-    margin-left: 0%;
-    padding-top: 28%;
+    font-size: 60px;
+    margin: 5vw;
+    padding-top: 5vh;
     padding-left: 0%;
   }
 `;
@@ -36,14 +34,16 @@ export const Heading = styled.p`
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
   z-index: 10;
-  margin-left: 5rem;
+  margin: 0 5rem 0 5rem;
   max-width: 900px;
   font-size: 24px;
   color: #fff;
   align-items:center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
+    margin: 5vw;
   }
 `;
 
@@ -51,7 +51,14 @@ export const MemberWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 5rem 10rem;
+  margin:  5vw auto;
+  max-width: 1200px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 `;
 
 export const ButtonServices = styled.button`
@@ -106,10 +113,18 @@ export const MemberItem = styled.div`
   flex-direction: column;
   width: 25%;
   margin: 0 2.5rem;
+  @media screen and (max-width: 768px) {
+    display: inline;
+    width: 90%;
+    margin: 5vw auto;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const Name = styled.p`
@@ -120,6 +135,12 @@ export const Name = styled.p`
   margin-top: 1rem;
   border-left: 8px solid #FF0000;
   padding-left: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    min-height: 300px;
+    margin-left: 5vw;
+    display: inline;
+  }
 `;
 
 export const Description = styled.p`
