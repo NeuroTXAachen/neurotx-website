@@ -10,7 +10,10 @@ import {
     Input,
     Message,
     ButtonServices,
-    RedDotImg
+    RedDotImg,
+    SectionWrapper,
+    SubLabel,
+    Map
 }from './ContactElements';
 
 const ContactSection = ({redBgPoint}) => {
@@ -66,6 +69,18 @@ const ContactSection = ({redBgPoint}) => {
                     <ButtonServices>Send</ButtonServices>
                 </FormRow>
                 </FormWrapper>
+                <SectionWrapper>
+                    <SubLabel>
+                        location
+                    </SubLabel>
+                    <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.444949381945!2d6.106493143556574!3d50.78758461346544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09b20c34800b5%3A0x40128dcd06f393a0!2sCollective%20Incubator!5e0!3m2!1sde!2sin!4v1671626238398!5m2!1sde!2sin" width="1050" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </Map>
+                    </SectionWrapper>
+                <SectionWrapper>
+                    <SubLabel>
+                        donation
+                    </SubLabel>
+                </SectionWrapper>
         </Container>
     );
 }

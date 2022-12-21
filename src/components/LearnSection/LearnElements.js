@@ -47,54 +47,34 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const FormWrapper = styled.div`
+export const VideoWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-  margin-left: 15rem;
+  margin-left: 5rem;
   max-width: 1050px;
 `;
-
-export const FormRow = styled.div`
+export const Video = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+`;
+export const RedAccent = styled.div`
+  position: relative;
+  width: 1rem;
+  height: 5rem;
+  background-color: #FF0000;
+  margin: 0 2rem 0 5rem; 
 `;
 
-export const FormField = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-right: 25px;
-`;
 export const Label = styled.label`
   position: relative;
-  font-size: 24px;
+  font-size: 50px;
+  margin-bottom: 2rem;
   color: #fff;
-  margin-bottom: 10px;
-`;
-
-export const NameInput = styled.input`
-  position: relative;
-  width: 500px;
-  height: 50px;
-  font-size: 24px;
-  
-`;
-export const Input = styled.input`
-  position: relative;
-  width: 1032px;
-  height: 50px;
-  font-size: 24px;
-`;
-
-export const Message = styled.input`
-  position: relative;
-  width: 1032px;
-  height: 300px;
-  font-size: 24px;
 `;
 
 export const ButtonServices = styled.button`
@@ -105,8 +85,8 @@ export const ButtonServices = styled.button`
   opacity: 0.9;
   color: #ffff;
   border: none;
+  margin: 2rem 0 2rem 0;
   font-size: 25px;
-  margin-bottom: 5%;
   &:hover {
     background-color: #EB003f;
     color: #ffff;
@@ -114,18 +94,6 @@ export const ButtonServices = styled.button`
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
-  }
-  @media only screen and (max-width: 600px) {
-    width: 220px;
-    height: 55px;
-    &:hover {
-      width: 220px;
-      height: 55px;
-      color: white;
-      box-shadow: 0 0px 4px 4px #EB003f, 0 0px 0px 0px #63d0ff;
-      cursor: pointer;
-      transition-duration: 0.7s;
-    }
   }
 `;
 
@@ -142,22 +110,30 @@ export const RedDotImg = styled.img`
     
   }
 `;
-export const SectionWrapper = styled.div`
-  position: relative;
+
+export const Description = styled.p`
+  font-family: Montserrat;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  align-self: center;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  @media screen and (max-width: 789px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  `;
+
+export const DescriptionWrapper = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-`;
-
-export const SubLabel = styled.label`
-  position: relative;
-  font-size: 50px;
-  margin: 2rem 5rem;
-  color: #fff;
-`;
-
-export const Map = styled.iframe`
-  position: relative;
-  margin: auto;
-  border: 0;
-`;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  `;
