@@ -8,7 +8,9 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background-color: #040142;
+    background: #00000069;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
     display: grid;
     align-items: center;
     top: 0;
@@ -38,28 +40,29 @@ export const SidebarWrapper = styled.div`
 `
 
 export const SidebarMenu = styled.ul`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
-    text-align: center;
-    @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }
+    display: flex;
+    flex-direction: column;
+    float: right;
 `
 
-export const SidebarLink = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+export const SidebarLink = styled(LinkR)`
     font-size: 1.5rem;
+    margin: 2rem;
     text-decoration: none;
+    text-align: right;
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
     color:  #fff;
     cursor: pointer;
+    &.active{
+        border-bottom: 3px solid #fff;
+        transition: 0.2s ease-in-out;
+        border-width: 0 0 3px;
+    }
     &:hover{
-        color: #fff;
+        border-bottom: 5px solid #EB0000;
         transition: 0.2s ease-in-out;
     }
+   
 `
