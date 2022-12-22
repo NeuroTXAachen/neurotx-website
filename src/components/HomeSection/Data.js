@@ -12,7 +12,7 @@ export const homeDataObj = {
   redBgPoint: require("../../images/square.png"),
   cpuImage: require("../../images/cpu.png"),
   brainImage: require("../../images/brain.png"),
-  dottedImage: require("../../images/interface.png"),
+  vectorImage: require("../../images/vectors.png"),
   coverphoto: require("../../images/coverphoto.png"),
   projectdescription1:
     "Our projects involve mainly brain signal processing from EEG, and its translation into real-world applications by a brain-computer interface.",

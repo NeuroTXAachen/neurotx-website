@@ -79,7 +79,7 @@ export const ProjectDescriptionSection = styled.div`
 `;
 export const ProjectDescription = styled.p`
   margin-top: 4.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 24px;
   @media screen and (max-width: 789px) {
     font-family: "Montserrat";

@@ -5,7 +5,7 @@ import {
   BciWrapper,
   Description,
   SquaredImg,
-  SquaredWrapper,
+  SetEndWrapper,
   DottedImg,
   DottedWrapper,
   BoldDescription,
@@ -14,6 +14,7 @@ import {
   BciTextWrapper,
   DescriptionWrapper,
   TeamHeading,
+  SetTopWrapper,
 } from "./BciSection";
 
 import {
@@ -72,7 +73,7 @@ const HomeSection = ({
   redBgPoint,
   cpuImage,
   brainImage,
-  dottedImage,
+  vectorImage,
   projectdescription1,
   projectdescription2,
   projectdescription3,
@@ -116,40 +117,36 @@ const HomeSection = ({
         <BciTextWrapper>
           <BciHeading>We believe BCI is the Future</BciHeading>
           <DescriptionWrapper>
-            <Description>
-              Brain-computer interfaces, or BCIs, are a cutting-edge technology
-              that allows us to control devices with our thoughts by measuring
-              brain activity and translating it into digital commands.
-            </Description>
+            <div style={{display: "block"}}>
+              <Description>
+                Brain-computer interfaces, or BCIs, are a cutting-edge technology
+                that allows us to control devices with our thoughts by measuring
+                brain activity and translating it into digital commands.
+              </Description>
+            </div>
+            <div style={{display: "block"}}>
+              <Description>
+                From medicine and accessibility to gaming and entertainment, BCIs 
+                have the potential to revolutionize how we live and interact with 
+                the world. And we are just starting!
+              </Description>
+              <Description>
+                Wanna learn more? Check out our Free Webinars!
+              </Description>
+            </div>
           </DescriptionWrapper>
         </BciTextWrapper>
         <BciWrapper>
-          <SquaredWrapper>
-            <SquaredImg src={brainImage}></SquaredImg>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.
-            </Description>
-          </SquaredWrapper>
+          <SetTopWrapper>
+            <SquaredImg src={brainImage} />
+          </SetTopWrapper>
           <DottedWrapper>
-            <DottedImg src={dottedImage}></DottedImg>
-            <BoldDescription>BCI - Brain Computer interface</BoldDescription>
+            <DottedImg src={vectorImage} />
           </DottedWrapper>
-          <SquaredWrapper>
-            <SquaredImg src={cpuImage}></SquaredImg>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.
-            </Description>
-          </SquaredWrapper>
+          <SetEndWrapper>
+            <SquaredImg src={cpuImage} />
+          </SetEndWrapper>
         </BciWrapper>
-        <BciTextWrapper>
-          <DescriptionWrapper>
-            <Description style={{ textAlign: "center" }}>
-              Wanna learn more? Check out our Free Webinars!
-            </Description>
-          </DescriptionWrapper>
-        </BciTextWrapper>
       </BciSectionWrapper>
 
       <RedDotImg src={redBgPoint} alt="redbgpoint" />
@@ -179,18 +176,23 @@ const HomeSection = ({
       <ProjectSectionWrapper>
         <SectionHeading>events</SectionHeading>
         <Projects>
-          <RedAccent></RedAccent>
+          <RedAccent/>
           <EventWrapper>
             <ProjectImg src={coverphoto} />
             <ProjectImg src={coverphoto} />
             <ProjectDescriptionSection width={"70%"}>
-              <ProjectDescription>{projectdescription1}</ProjectDescription>
+              <ProjectDescription>
+                To spread our fascination with BCI, we often join events organized by 
+                the student committee or other partners. Follow us on instagram for more
+              </ProjectDescription>
             </ProjectDescriptionSection>
           </EventWrapper>
           <EventWrapper2 width={"25%"}>
             <ProjectImg marginTop={"25%"} width={"90%"} src={coverphoto} />
             <ProjectDescriptionSection width={"100%"}>
-              <ProjectDescription>{projectdescription1}</ProjectDescription>
+              <ProjectDescription>
+                We also have teambuilding from time to time to have fun with each other while enriching the team spirit!
+              </ProjectDescription>
             </ProjectDescriptionSection>
           </EventWrapper2>
         </Projects>

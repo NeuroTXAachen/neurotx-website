@@ -41,11 +41,10 @@ export const BciHeading = styled.h2`
 `;
 export const Description = styled.p`
   font-family: Montserrat;
-  width: 100%;
   font-size: 24px;
-  align-self: center;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 39.6px;
+  margin-bottom: 40px;
   letter-spacing: 0em;
   @media screen and (max-width: 769px) {
     font-size: 16px;
@@ -57,11 +56,11 @@ export const Description = styled.p`
 `;
 
 export const DescriptionWrapper = styled.div`
-  width: 36%;
+  width: 55%;
+  padding-top: 60px;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 180px;
   @media screen and (max-width: 769px) {
     width: 70%;
     margin-left: 15px;
@@ -84,21 +83,34 @@ export const BciTextWrapper = styled.div`
 `;
 
 export const BciWrapper = styled.div`
+  margin-top: -120px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
 
-export const SquaredWrapper = styled.div`
+export const SetEndWrapper = styled.div`
   padding: 30px;
-  width: 350px;
-  text-align: center;
+  width: fit-content;
+  height: 299px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+`;
+export const SetTopWrapper = styled.div`
+  padding: 30px;
+  width: fit-content;
+  height: 299px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 export const SquaredImg = styled.img`
-  width: 283px;
-  height: 259px;
+  width:  128px;
+  height: 128px;
 `;
 
 export const DottedImg = styled.img`
