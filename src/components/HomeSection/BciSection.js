@@ -6,7 +6,6 @@ export const BciSectionWrapper = styled.div`
   }
 `;
 
-
 export const TeamHeading = styled.h2`
   font-size: 50px;
   font-weight: 400;
@@ -14,14 +13,15 @@ export const TeamHeading = styled.h2`
   text-align: center;
   width: 100%;
   letter-spacing: 0em;
-  margin-bottom: ${({ marginBottom }) => marginBottom ? marginBottom : "40px"};
+  margin-bottom: ${({ marginBottom }) =>
+    marginBottom ? marginBottom : "40px"};
   @media screen and (max-width: 789px) {
     padding-top: 68px;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
   }
-  `;
+`;
 export const BciHeading = styled.h2`
   font-size: 50px;
   font-weight: 400;
@@ -29,7 +29,8 @@ export const BciHeading = styled.h2`
   text-align: center;
   width: 100%;
   letter-spacing: 0em;
-  margin-bottom: ${({ marginBottom }) => marginBottom ? marginBottom : "40px"};
+  margin-bottom: ${({ marginBottom }) =>
+    marginBottom ? marginBottom : "40px"};
   @media screen and (max-width: 789px) {
     padding-top: 68px;
     font-size: 24px;
@@ -37,7 +38,7 @@ export const BciHeading = styled.h2`
     width: 60%;
     line-height: 30px;
   }
-  `;
+`;
 export const Description = styled.p`
   font-family: Montserrat;
   width: 100%;
@@ -53,7 +54,7 @@ export const Description = styled.p`
     letter-spacing: 0em;
     text-align: left;
   }
-  `;
+`;
 
 export const DescriptionWrapper = styled.div`
   width: 36%;
@@ -67,14 +68,12 @@ export const DescriptionWrapper = styled.div`
     margin-right: auto;
     justify-content: left;
   }
-  `;
-
-
+`;
 
 export const BciTextWrapper = styled.div`
   display: flex;
   position: relative;
-  width: ${({ width }) => width ? width : "none"};
+  width: ${({ width }) => (width ? width : "none")};
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -82,24 +81,20 @@ export const BciTextWrapper = styled.div`
     align-items: left;
     justify-content: left;
   }
-
-  `;
+`;
 
 export const BciWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  `; 
-
+`;
 
 export const SquaredWrapper = styled.div`
   padding: 30px;
   width: 350px;
   text-align: center;
-  `;
-
-
+`;
 
 export const SquaredImg = styled.img`
   width: 283px;

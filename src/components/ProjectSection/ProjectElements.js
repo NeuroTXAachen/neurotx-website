@@ -33,13 +33,13 @@ export const Heading = styled.p`
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 10;
   margin: 0 5rem 0 5rem;
   max-width: 900px;
   font-size: 24px;
   color: #fff;
-  align-items:center;
+  align-items: center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
     margin: 5vw;
@@ -49,17 +49,17 @@ export const Subtitle = styled.p`
 export const ButtonServices = styled.button`
   width: 259px;
   height: 57px;
-  background-color: #EB0000;
-  background: #EB0000;
+  background-color: #eb0000;
+  background: #eb0000;
   opacity: 0.9;
   color: #ffff;
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
   &:hover {
-    background-color: #EB003f;
+    background-color: #eb003f;
     color: #ffff;
-    box-shadow: 0 0px 4px 4px #EB003f, 0 0px 0px 0px #EB003f;
+    box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #eb003f;
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
@@ -71,7 +71,7 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
-      box-shadow: 0 0px 4px 4px #EB003f, 0 0px 0px 0px #63d0ff;
+      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }
@@ -80,16 +80,15 @@ export const ButtonServices = styled.button`
 
 export const RedDotImg = styled.img`
   position: absolute;
-  margin-top: ${({ marginTop }) => marginTop ? marginTop : "-190px"};
-  width: ${({size}) => size ? size : "70%"};
-  right: ${({right}) => right ? right : "-150px"};
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "-190px")};
+  width: ${({ size }) => (size ? size : "70%")};
+  right: ${({ right }) => (right ? right : "-150px")};
   /* padding-left: 590px; */
   z-index: 0;
   opacity: 1;
   @media screen and (max-width: 768px) {
     display: none;
     right: 0;
-  
   }
 `;
 
@@ -112,9 +111,9 @@ export const ProjectText = styled.div`
   margin-top: 10rem;
   @media screen and (max-width: 768px) {
     margin-left: 0rem;
-    margin-top: 2rem;}
+    margin-top: 2rem;
+  }
 `;
-
 
 export const Image = styled.img`
   width: 25rem;
@@ -131,7 +130,7 @@ export const Name = styled.p`
   color: #fff;
   font-weight: 400;
   margin-top: 1rem;
-  border-left: 8px solid #FF0000;
+  border-left: 8px solid #ff0000;
   padding-left: 1rem;
   order: 2;
   @media screen and (max-width: 768px) {
@@ -148,29 +147,29 @@ export const Description = styled.p`
   font-size: 24px;
   color: #fff;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 1rem;
   order: 3;
   @media screen and (max-width: 768px) {
     order: 3;
   }
 `;
- export const ImageWrapper = styled.div`
- @media screen and (max-width: 768px) {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- }
- `;
- 
- export const RedAccent = styled.div`
- display: none;
- @media screen and (max-width: 768px) {
-  position: relative;
-  display: block;
-  width: 1rem;
-  height: 5rem;
-  background-color: #FF0000;
+export const ImageWrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const RedAccent = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    position: relative;
+    display: block;
+    width: 1rem;
+    height: 5rem;
+    background-color: #ff0000;
   }
 `;
