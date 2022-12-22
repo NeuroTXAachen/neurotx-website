@@ -191,7 +191,7 @@ const HomeSection = ({
               <SectionHeading>support us</SectionHeading>  
 
                 <SplitSectionTextWrapper>
-                  <RedAccent margin={"40px"}/>
+                  <RedAccent margin={"0 2rem 0 1rem"}/>
                   <Description >
                   If you wish to contribute to our efforts, donate to us directly or via PayPal.
                   Your ideas are also very important to us, so feel free to get in touch with us via email.
@@ -203,7 +203,7 @@ const HomeSection = ({
               <SectionHeading>join us</SectionHeading>
 
               <SplitSectionTextWrapper>
-                <RedAccent margin={"40px"} />
+                <RedAccent margin={"0 2rem 0 1rem"} />
                 <Description >
                 You cannot wait to build the future by your own hands, while getting to know great people along the way? 
                 Feel free to get in touch with us. No prior knowledge about Neurotechnology? 

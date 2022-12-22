@@ -28,7 +28,8 @@ export const SplitSectionTextWrapper = styled.div`
   width: ${({ width }) => width ? width : "60%"};
   flex-direction: row;
   justify-content: end;
-  align-items: right;
+  margin-right: 15%;
+  margin-left: auto;
 `;
 
 export const SplitSectionImgWrapper = styled.div`
