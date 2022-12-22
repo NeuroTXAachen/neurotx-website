@@ -10,6 +10,19 @@
   background-size: cover;
 }
 
+#disappearingProjSection {
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  #disappearingProjSection {
+    display: block;
+  }
+
+  #containedProjDesc{
+    display: none;
+  }
+}
 
 @font-face {
   font-family: "Krona One";
