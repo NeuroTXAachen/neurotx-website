@@ -34,13 +34,13 @@ export const Heading = styled.p`
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 10;
   margin: 0 5rem 0 5rem;
   max-width: 900px;
   font-size: 24px;
   color: #fff;
-  align-items:center;
+  align-items: center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
     margin: 5vw;
@@ -95,13 +95,12 @@ export const Label = styled.label`
   }
 `;
 
-
 export const Input = styled.input`
   position: relative;
   height: 4vw;
   font-size: 24px;
   padding: 0 0.4rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   @media screen and (max-width: 900px) {
     height: 8vw;
   }
@@ -110,8 +109,8 @@ export const RedAccent = styled.div`
   position: relative;
   width: 0.75rem;
   height: 4rem;
-  background-color: #FF0000;
-  margin: 0 2rem 0 0rem; 
+  background-color: #ff0000;
+  margin: 0 2rem 0 0rem;
   @media screen and (max-width: 768px) {
     margin: 0 2vh 0 0;
   }
@@ -128,8 +127,8 @@ export const Message = styled.textarea`
 export const ButtonServices = styled.button`
   width: 259px;
   height: 57px;
-  background-color: #EB0000;
-  background: #EB0000;
+  background-color: #eb0000;
+  background: #eb0000;
   opacity: 0.9;
   color: #ffff;
   border: none;
@@ -150,7 +149,7 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
-      box-shadow: 0 0px 4px 4px #EB003f, 0 0px 0px 0px #63d0ff;
+      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }
@@ -159,15 +158,14 @@ export const ButtonServices = styled.button`
 
 export const RedDotImg = styled.img`
   position: absolute;
-  margin-top: ${({ marginTop }) => marginTop ? marginTop : "-190px"};
-  width: ${({size}) => size ? size : "70%"};
-  right: ${({right}) => right ? right : "-350px"};
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "-190px")};
+  width: ${({ size }) => (size ? size : "70%")};
+  right: ${({ right }) => (right ? right : "-350px")};
   /* padding-left: 590px; */
   z-index: 0;
   opacity: 1;
   @media screen and (max-width: 768px) {
     display: none;
-    
   }
 `;
 export const SectionWrapper = styled.div`
@@ -201,17 +199,16 @@ export const Map = styled.iframe`
     width: 90%;
   }
 `;
- export const SubSection = styled.div`
+export const SubSection = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 0 2rem 0 10rem; 
+  margin: 0 2rem 0 10rem;
   @media screen and (max-width: 768px) {
     margin: 0 2vh 0 5vw;
   }
-  
-  `;
-   export const DonateSection = styled.div`
+`;
+export const DonateSection = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -221,31 +218,31 @@ export const Map = styled.iframe`
     margin: 7vh 5vw;
     flex-direction: column-reverse;
   }
-  `;
+`;
 
-  export const SubSectionText = styled.p`
+export const SubSectionText = styled.p`
   position: relative;
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 700px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
     max-width: 400px;
   }
-  `;
+`;
 
-  export const Image = styled.img`
+export const Image = styled.img`
   position: relative;
   width: 150px;
   @media screen and (max-width: 768px) {
-  margin-top: 2rem;
+    margin-top: 2rem;
   }
-  `;
+`;
 
-  export const Link = styled.a`
+export const Link = styled.a`
   text-decoration: none;
   margin-right: 5rem;
   @media screen and (max-width: 768px) {
     margin-right: 0;
   }
-  `;
+`;

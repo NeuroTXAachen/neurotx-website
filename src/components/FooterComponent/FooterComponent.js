@@ -1,5 +1,6 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NeuroTXDisc = styled.div`
   width: 50vw;
@@ -31,14 +32,12 @@ const ContactDiv = styled.div`
   }
 `;
 
-const ContactItem = styled.div`
-
-`;
+const ContactItem = styled.div``;
 
 const FooterBold = styled.p`
   font-style: italic;
   font-weight: 1000;
-  `;
+`;
 
 const ContactItemLink = styled.a`
   text-decoration: none; /* no underline */
@@ -55,7 +54,7 @@ const AddressDiv = styled.div`
     width: 100%;
     padding: 2.5rem 0rem;
   }
-  `;
+`;
 
 const FooterContainer = styled.div`
   font-size: 22px;
@@ -79,21 +78,18 @@ const FooterContainer = styled.div`
   }
 `;
 
-
-const FooterComponent = ({
-  neurotx,
-  repr,
-  copyright,
-  contact,
-  address,
-}) => {
-
-
+const FooterComponent = ({ neurotx, repr, copyright, contact, address }) => {
   return (
     <FooterContainer>
       <NeuroTXDisc>
         <Description>{neurotx}</Description>
-        <Description>{repr}</Description>
+        <Description>
+          {repr}{" "}
+          <Link style={{ color: "#040142" }} to="/policy">
+            Impressum
+          </Link>
+        </Description>
+
         <FooterBold>{copyright}</FooterBold>
       </NeuroTXDisc>
 
@@ -102,9 +98,11 @@ const FooterComponent = ({
         {contact.list.map((obj) => {
           return (
             <ContactItem>
-              <ContactItemLink target="_blank" href={obj.url}>{obj.title}</ContactItemLink>
+              <ContactItemLink target="_blank" href={obj.url}>
+                {obj.title}
+              </ContactItemLink>
             </ContactItem>
-          )
+          );
         })}
       </ContactDiv>
 
@@ -118,8 +116,8 @@ const FooterComponent = ({
         </Description>
       </AddressDiv>
     </FooterContainer>
-  )
-}
+  );
+};
 // <ContactItem>
 //   <FooterBold>{name}</FooterBold>
 //   {links.map(({ title, url }) => (

@@ -1,14 +1,13 @@
-import React from "react"
-import videojs from "video.js"
-import 'video.js/dist/video-js.css'
-import './home.scss'
+import React from "react";
+import videojs from "video.js";
+import "video.js/dist/video-js.css";
+import "./home.scss";
 
-const { useRef, useEffect } = require("react")
+const { useRef, useEffect } = require("react");
 
-
-let VideoComponent = ({ options })  => {
-  const vidref = useRef(null)
-  const playerref = useRef(null)
+let VideoComponent = ({ options }) => {
+  const vidref = useRef(null);
+  const playerref = useRef(null);
 
   useEffect(() => {
     const player = playerref.current;
@@ -18,19 +17,24 @@ let VideoComponent = ({ options })  => {
       if (!videoElement) return;
 
       playerref.current = videojs(videoElement, options);
-    };
-    
+    }
+
     return () => {
       if (player) {
         player.dispose();
         playerref.current = null;
       }
-    }
-  }, [options, vidref, playerref])
+    };
+  }, [options, vidref, playerref]);
 
-  return(
-    <video ref={vidref} className={"video-js vjs-default-skin vjs-1-1 vjs-show-big-play-button-on-pause"} />
-  )
-}
+  return (
+    <video
+      ref={vidref}
+      className={
+        "video-js vjs-default-skin vjs-1-1 vjs-show-big-play-button-on-pause"
+      }
+    />
+  );
+};
 
 export default VideoComponent;

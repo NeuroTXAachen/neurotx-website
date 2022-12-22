@@ -13,7 +13,7 @@ export const SplitDiv = styled.div`
 `;
 
 export const SplitSectionWrapper = styled.div`
-  width: ${({ width }) => width ? width : "none"};
+  width: ${({ width }) => (width ? width : "none")};
   justify-content: left;
   align-items: left;
   z-index: 2;
@@ -25,7 +25,7 @@ export const SplitSectionWrapper = styled.div`
 
 export const SplitSectionTextWrapper = styled.div`
   display: flex;
-  width: ${({ width }) => width ? width : "60%"};
+  width: ${({ width }) => (width ? width : "60%")};
   flex-direction: row;
   justify-content: end;
   margin-right: 15%;
@@ -43,7 +43,7 @@ export const SplitSectionImgWrapper = styled.div`
 `;
 
 export const PartnerImg = styled.img`
-  width : 13%;
+  width: 13%;
   margin: 0 5%;
   @media screen and (max-width: 789px) {
     width: 50%;

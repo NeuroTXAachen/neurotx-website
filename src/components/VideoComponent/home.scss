@@ -11,7 +11,7 @@
 */
 
 // The following are SCSS variables to automate some of the values.
-// But don't feel limited by them. Change/replace whatever you want. 
+// But don't feel limited by them. Change/replace whatever you want.
 
 // The color of icons, text, and the big play button border.
 // Try changing to #0f0
@@ -20,11 +20,10 @@ $primary-foreground-color: #fff; // #fff default
 // The default color of control backgrounds is mostly black but with a little
 // bit of blue so it can still be seen on all-black video frames, which are common.
 // Try changing to #900
-$primary-background-color: #f1f1f1;  // #2B333F default
+$primary-background-color: #f1f1f1; // #2B333F default
 
 // Try changing to true
 $center-big-play-button: true; // true default
-
 
 .video-js {
   /* The base font size controls the size of everything, not just text.
@@ -36,7 +35,7 @@ $center-big-play-button: true; // true default
   width: 1390px !important;
   height: 1382px !important;
   background-color: transparent;
-  
+
   /* The main font color changes the ICON COLORS as well as the text */
   color: $primary-foreground-color;
   @media screen and (max-width: 789px) {
@@ -58,7 +57,7 @@ $center-big-play-button: true; // true default
      Now that font size is set, the following em values will be a multiple of the
      new font size. If the font-size is 3em (30px), then setting any of
      the following values to 3em would equal 30px. 3 * font-size. */
-  $big-play-width: 2em; 
+  $big-play-width: 2em;
   /* 1.5em = 45px default */
   $big-play-height: 2em;
 
@@ -76,7 +75,7 @@ $center-big-play-button: true; // true default
     left: 50%;
     top: 27%;
     margin-left: -($big-play-width / 2);
-    margin-top: -($big-play-height / 2);   
+    margin-top: -($big-play-height / 2);
     @media screen and (max-width: 789px) {
       top: 42%;
     }
