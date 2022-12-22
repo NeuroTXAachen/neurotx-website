@@ -29,7 +29,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <Nav colorChange={colorChange}>
+      <Nav colorChange={colorChange} className="customNav">
         <NavbarContainer>
           <NavLogo to="home">
             <LogoImage

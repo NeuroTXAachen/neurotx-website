@@ -177,7 +177,6 @@ export const NavLinks = styled(LinkJ)`
 `;
 
 export const NavButton = styled.button`
-  color: #fff;
   background-color: #2283c9;
   border-radius: 8px;
   border: 1px solid #1ba4e5;

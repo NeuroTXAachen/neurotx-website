@@ -3,13 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const HomeContainer = styled.div`
-  color: #ffff;
   opacity: 100%;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: fit-content;
-  background-color: #040142;
   z-index: 0;
   @media screen and (max-width: 768px) {
     height: fit-content;
@@ -91,7 +89,7 @@ export const Heading1 = styled.p`
   font-size: 120px;
   margin-top: 310px;
   margin-right: 48%;
-  color: #fff;
+
   font-weight: 400;
   @media screen and (min-width: 769px) and (max-width: 1513px) {
     font-size: 90px;
@@ -110,7 +108,7 @@ export const Heading2 = styled.p`
   line-height: 1.2;
   margin-right: 30%;
   font-weight: 400;
-  color: #fff;
+
   @media screen and (min-width: 769px) and (max-width: 1513px) {
     font-size: 90px;
     margin-right: 0px;
@@ -128,7 +126,7 @@ export const Heading3 = styled.p`
   margin-top: 20px;
   margin-left: 40%;
   font-weight: 400;
-  color: #fff;
+
   @media screen and (min-width: 769px) and (max-width: 1513px) {
     font-size: 90px;
     margin-left: 0px;
@@ -146,7 +144,7 @@ export const Heading4 = styled.p`
   font-size: 120px;
   line-height: 1.2;
   font-weight: 400;
-  color: #fff;
+
   @media screen and (min-width: 769px) and (max-width: 1513px) {
     font-size: 90px;
     margin-left: 0px;
@@ -181,7 +179,7 @@ export const Subtitle = styled.p`
   max-width: 544px;
   font: "Montserrat";
   font-size: 24px;
-  color: #fff;
+
   align-items: center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
@@ -229,17 +227,14 @@ export const ButtonServices = styled.button`
   width: 259px;
   margin-top: 20px;
   height: 57px;
-  background-color: #eb0000;
+  background-color: #ff0000;
   background: #eb0000;
   opacity: 0.9;
-  color: #ffff;
+
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
   &:hover {
-    background-color: #eb003f;
-    color: #ffff;
-    box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #eb003f;
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
@@ -251,7 +246,6 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
-      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }

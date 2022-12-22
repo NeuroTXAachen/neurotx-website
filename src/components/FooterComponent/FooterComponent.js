@@ -41,7 +41,6 @@ const FooterBold = styled.p`
 
 const ContactItemLink = styled.a`
   text-decoration: none; /* no underline */
-  color: #040142;
 `;
 
 const AddressDiv = styled.div`
@@ -83,12 +82,7 @@ const FooterComponent = ({ neurotx, repr, copyright, contact, address }) => {
     <FooterContainer>
       <NeuroTXDisc>
         <Description>{neurotx}</Description>
-        <Description>
-          {repr}{" "}
-          <Link style={{ color: "#040142" }} to="/policy">
-            Impressum
-          </Link>
-        </Description>
+        <Description>{repr}</Description>
 
         <FooterBold>{copyright}</FooterBold>
       </NeuroTXDisc>
@@ -98,7 +92,11 @@ const FooterComponent = ({ neurotx, repr, copyright, contact, address }) => {
         {contact.list.map((obj) => {
           return (
             <ContactItem>
-              <ContactItemLink target="_blank" href={obj.url}>
+              <ContactItemLink
+                className="customLinks"
+                target="_blank"
+                href={obj.url}
+              >
                 {obj.title}
               </ContactItemLink>
             </ContactItem>

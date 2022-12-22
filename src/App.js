@@ -1,7 +1,6 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import { CgDarkMode } from "react-icons/cg";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,15 +15,24 @@ import Learn from "./pages/Learn";
 import Home from "./pages";
 import Impressum from "./pages/Impressum";
 
-// const Home = React.lazy(() => {
-//     return new Promise(resolve => {
-//       setTimeout(() => resolve(import('./pages')), 5000);
-//     });
-//   });
-
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
+  }, [theme]);
   return (
-    <>
+    <div className={`${theme}`}>
+      {/* <div className="floating-icon">
+        <CgDarkMode onClick={toggleTheme} />
+      </div> */}
       <Router>
         <Routes>
           <Route exact path="/home" element={<Home />} />
@@ -36,7 +44,7 @@ function App() {
           <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
