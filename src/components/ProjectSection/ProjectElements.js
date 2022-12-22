@@ -18,17 +18,14 @@ export const Heading = styled.p`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
-  padding-top: 5rem;
-  margin-left: 5rem;
+  padding-top: 10vh;
+  margin: 0 5rem 0 5rem;
   color: #fff;
   font-weight: 400;
-  @media screen and (min-width: 1200px) and (max-width: 1568px) {
-    font-size: 90px;
-  }
   @media screen and (max-width: 768px) {
-    font-size: 50px;
-    margin-left: 0%;
-    padding-top: 28%;
+    font-size: 60px;
+    margin: 5vw;
+    padding-top: 5vh;
     padding-left: 0%;
   }
 `;
@@ -36,14 +33,16 @@ export const Heading = styled.p`
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
   z-index: 10;
-  margin-left: 5rem;
+  margin: 0 5rem 0 5rem;
   max-width: 900px;
   font-size: 24px;
   color: #fff;
   align-items:center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
+    margin: 5vw;
   }
 `;
 
@@ -89,7 +88,8 @@ export const RedDotImg = styled.img`
   opacity: 1;
   @media screen and (max-width: 768px) {
     display: none;
-    
+    right: 0;
+  
   }
 `;
 
@@ -98,7 +98,11 @@ export const ProjectItem = styled.div`
   display: flex;
   flex-direction: row;
   width: 70%;
-  margin: 5rem 15rem;
+  margin: 5rem auto;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+  }
 `;
 export const ProjectText = styled.div`
   position: relative;
@@ -106,10 +110,19 @@ export const ProjectText = styled.div`
   flex-direction: column;
   margin-left: 5rem;
   margin-top: 10rem;
+  @media screen and (max-width: 768px) {
+    margin-left: 0rem;
+    margin-top: 2rem;}
 `;
+
 
 export const Image = styled.img`
   width: 25rem;
+  order: 1;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    order: 2;
+  }
 `;
 
 export const Name = styled.p`
@@ -120,6 +133,14 @@ export const Name = styled.p`
   margin-top: 1rem;
   border-left: 8px solid #FF0000;
   padding-left: 1rem;
+  order: 2;
+  @media screen and (max-width: 768px) {
+    margin-top: 0rem;
+    border: none;
+    padding-left: 0rem;
+    order: 1;
+    font-size: 40px;
+  }
 `;
 
 export const Description = styled.p`
@@ -127,5 +148,29 @@ export const Description = styled.p`
   font-size: 24px;
   color: #fff;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 1rem;
+  order: 3;
+  @media screen and (max-width: 768px) {
+    order: 3;
+  }
+`;
+ export const ImageWrapper = styled.div`
+ @media screen and (max-width: 768px) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ `;
+ 
+ export const RedAccent = styled.div`
+ display: none;
+ @media screen and (max-width: 768px) {
+  position: relative;
+  display: block;
+  width: 1rem;
+  height: 5rem;
+  background-color: #FF0000;
+  }
 `;

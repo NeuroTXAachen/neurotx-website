@@ -18,17 +18,14 @@ export const Heading = styled.p`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
-  padding-top: 5rem;
-  margin-left: 5rem;
+  padding-top: 10vh;
+  margin: 0 5rem 0 5rem;
   color: #fff;
   font-weight: 400;
-  @media screen and (min-width: 1200px) and (max-width: 1568px) {
-    font-size: 90px;
-  }
   @media screen and (max-width: 768px) {
-    font-size: 50px;
-    margin-left: 0%;
-    padding-top: 28%;
+    font-size: 60px;
+    margin: 5vw;
+    padding-top: 5vh;
     padding-left: 0%;
   }
 `;
@@ -36,14 +33,16 @@ export const Heading = styled.p`
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
   z-index: 10;
-  margin-left: 5rem;
+  margin: 0 5rem 0 5rem;
   max-width: 900px;
   font-size: 24px;
   color: #fff;
   align-items:center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
+    margin: 5vw;
   }
 `;
 
@@ -51,16 +50,17 @@ export const VideoWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-left: 5rem;
+  margin: 5rem auto;
   max-width: 1050px;
+
 `;
 export const Video = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 10rem;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem auto;
+  width: 90%;
+  height: 50vw;
 `;
 export const RedAccent = styled.div`
   position: relative;
@@ -68,6 +68,9 @@ export const RedAccent = styled.div`
   height: 5rem;
   background-color: #FF0000;
   margin: 0 2rem 0 5rem; 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Label = styled.label`
@@ -75,6 +78,10 @@ export const Label = styled.label`
   font-size: 50px;
   margin-bottom: 2rem;
   color: #fff;
+  @media screen and (max-width: 768px) {
+    padding-left: 5vh;
+    font-size: 30px;
+  }
 `;
 
 export const ButtonServices = styled.button`
@@ -136,4 +143,7 @@ export const DescriptionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
+  @media screen and (max-width: 789px) {
+    width: 80%;
+  }
   `;

@@ -22,22 +22,22 @@ const LearnSection = ({redBgPoint}) => {
                 <Label>Fun Facts & Brain Anatomy</Label>
                 <Video>
                     <RedAccent/>
-                    <iframe width="800px" height="430px" src="https://www.youtube.com/embed/B85LURaxh0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/B85LURaxh0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Video>
                 <Label>Signals Transduction</Label>
                 <Video>
                     <RedAccent/>
-                    <iframe width="800px" height="430px" src="https://www.youtube.com/embed/es2vuELsauc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/es2vuELsauc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Video>
                 <Label>Momentum of the 21st Century</Label>
                 <Video>
                     <RedAccent/>
-                    <iframe width="800px" height="430px" src="https://www.youtube.com/embed/1ZOuh1A77qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/1ZOuh1A77qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Video>
                 <Label>Ethics in Neuroscience</Label>
                 <Video>
                     <RedAccent/>
-                    <iframe width="800px" height="430px" src="https://www.youtube.com/embed/A8ivHmspNwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/A8ivHmspNwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Video>
                 
             </VideoWrapper>

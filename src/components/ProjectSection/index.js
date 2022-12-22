@@ -12,7 +12,12 @@ const ProjectSection =  ({projectopts,redBgPoint}) => {
             <RedDotImg src={redBgPoint} alt='Red Dot'/>
             <Heading>{'projects'}</Heading>
             <Subtitle>{'Our projects involve mainly brain signal processing, e.g. from EEG, and its translation into real-world practical engineering applications such as brain-computer interface.'}</Subtitle>
-            <Project {...projectopts}></Project>
+            {Object.keys(projectopts).map((key) => {
+                return (
+                <Project {...projectopts[key]}></Project>
+                );
+            })}
+             
         </Container>
     );
 }
