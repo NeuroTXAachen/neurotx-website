@@ -14,6 +14,7 @@ import Projects from "./pages/Projects";
 import Learn from "./pages/Learn";
 import Home from "./pages";
 import Impressum from "./pages/Impressum";
+import Error404 from "./pages/Error404";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -41,6 +42,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/policy" element={<Impressum />} />
+          <Route path="*" element={<Error404 />} />
           <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>

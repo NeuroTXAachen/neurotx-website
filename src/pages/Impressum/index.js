@@ -1,6 +1,7 @@
 import { FooterComponent } from "../../components/FooterComponent";
 import { footerDataObj } from "../../components/FooterComponent/FooterData";
-
+import { useState } from "react";
+import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import styled from "styled-components";
 
@@ -49,9 +50,15 @@ export const Subtitle = styled.p`
   }
 `;
 const Impressum = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <>
-      <Navbar></Navbar>
+    <div className="home">
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <Container>
         <Heading>Impressum</Heading>
         <Subtitle>
@@ -292,7 +299,7 @@ const Impressum = () => {
         </Subtitle>
       </Container>
       <FooterComponent {...footerDataObj} />
-    </>
+    </div>
   );
 };
 
