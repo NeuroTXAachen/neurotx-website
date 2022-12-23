@@ -15,6 +15,7 @@ import Learn from "./pages/Learn";
 import Home from "./pages";
 import Impressum from "./pages/Impressum";
 import Error404 from "./pages/Error404";
+import CookieConsent from "react-cookie-consent";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>
+      <CookieConsent debug={true}>This here</CookieConsent>
     </div>
   );
 }
