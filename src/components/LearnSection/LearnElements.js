@@ -49,7 +49,7 @@ export const VideoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
-  max-width: 1050px;
+  max-width: 1450px;
 `;
 export const Video = styled.div`
   position: relative;
