@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CarouselItem, Slider, Viewport, Indicators, PrevButton, NextButton, AbsIndicators } from "./Carousel";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useSwipeable } from "react-swipeable";
 
 const placeholder = require("../../images/placeholder-image.jpeg");
 
@@ -17,8 +18,13 @@ const Carousel = ({ children, height }) => {
     setActiveSlideIndex(newIndex)
   }
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => indexUpdate(activeSlideIndex + 1),
+    onSwipedRight: () => indexUpdate(activeSlideIndex - 1)
+  });
+
   return (
-    <Slider>
+    <Slider {...handlers}>
       <Indicators>
       <AbsIndicators>
         <PrevButton height={height} onClick={() => {
