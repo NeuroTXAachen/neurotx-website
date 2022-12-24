@@ -14,10 +14,13 @@
   display: none;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1222px) {
   #disappearingProjSection {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
   }
+  
 
   #containedProjDesc{
     display: none;
