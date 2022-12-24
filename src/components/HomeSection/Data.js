@@ -7,6 +7,7 @@ export const homeDataObj = {
   description:
     "We are NeuroTX,  a student team from Aachen, Germany aiming to cultivate a learning environment and  hands-on experience in the field of neurotechnology",
   waveImage: require("../../images/waves.png"),
+  sliderHeight: "300px",
   smallWaveImg: require("../../images/image 3.png"),
   backgroundPhilipp: require("../../images/DSC08470-2 1.png"),
   redBgPoint: require("../../images/square.png"),

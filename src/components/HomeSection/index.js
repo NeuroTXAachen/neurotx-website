@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import { FaArrowDown } from "react-icons/fa";
+import { React } from "react";
 
 import {
   BciWrapper,
@@ -51,6 +50,7 @@ import {
 } from "./HomeElements";
 
 import VideoComponent from "../VideoComponent/VideoComponent";
+
 import {
   PartnerImg,
   SplitDiv,
@@ -58,6 +58,8 @@ import {
   SplitSectionTextWrapper,
   SplitSectionWrapper,
 } from "./FinalSection";
+
+import { ImageSlider } from "../ImageSlider";
 
 const HomeSection = ({
   id,
@@ -67,6 +69,7 @@ const HomeSection = ({
   bgLine4,
   description,
   waveImage,
+  sliderHeight,
   smallWaveImg,
   coverphoto,
   backgroundPhilipp,
@@ -215,10 +218,13 @@ const HomeSection = ({
         <TeamHeading>
           We are a team of <br /> 15 members <br /> and growing!
         </TeamHeading>
-        <div style={{ margin: "830px" }}></div>
+        {/* <div style={{ margin: "830px" }}></div> */}
         {/* TODO create cards component from the outside 
               insert here as mini cards with appropriate class definition 
               REASON => use also in team as cards */}
+        <div style={{justifySelf: "center", alignSelf: "center", margin: "auto", width: "80%", display: "flex"}}>
+          <ImageSlider sliderHeight={sliderHeight}></ImageSlider>
+        </div>
 
         <SplitDiv>
           <SplitSectionWrapper width={"50%"}>
