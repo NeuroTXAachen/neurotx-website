@@ -27,6 +27,9 @@ import {
   ProjectImg,
   EventWrapper,
   EventWrapper2,
+  SliderContainer,
+  SliderDescription,
+  SliderWrapper,
 } from "./ProjectSection";
 
 import {
@@ -60,6 +63,7 @@ import {
 } from "./FinalSection";
 
 import { ImageSlider } from "../ImageSlider";
+import { Slider } from "../ImageSlider/Carousel";
 
 const HomeSection = ({
   id,
@@ -117,8 +121,8 @@ const HomeSection = ({
       </HomeWrapper>
 
       <BciSectionWrapper>
+        <BciHeading>We believe BCI is the Future</BciHeading>
         <BciTextWrapper>
-          <BciHeading>We believe BCI is the Future</BciHeading>
           <DescriptionWrapper>
             <div style={{display: "block"}}>
               <Description>
@@ -138,25 +142,25 @@ const HomeSection = ({
               </Description>
             </div>
           </DescriptionWrapper>
+          <BciWrapper>
+            <SetTopWrapper>
+              <SquaredImg src={brainImage} />
+            </SetTopWrapper>
+            <DottedWrapper>
+              <DottedImg src={vectorImage} />
+            </DottedWrapper>
+            <SetEndWrapper>
+              <SquaredImg src={cpuImage} />
+            </SetEndWrapper>
+          </BciWrapper>
         </BciTextWrapper>
-        <BciWrapper>
-          <SetTopWrapper>
-            <SquaredImg src={brainImage} />
-          </SetTopWrapper>
-          <DottedWrapper>
-            <DottedImg src={vectorImage} />
-          </DottedWrapper>
-          <SetEndWrapper>
-            <SquaredImg src={cpuImage} />
-          </SetEndWrapper>
-        </BciWrapper>
       </BciSectionWrapper>
 
       <RedDotImg src={redBgPoint} alt="redbgpoint" />
       <ProjectSectionWrapper>
         <SectionHeading>projects</SectionHeading>
         <Projects>
-          <RedAccent></RedAccent>
+          <RedAccent />
           <ProjectDescriptionSection id={"disappearingProjSection"}>
             <ProjectDescription>{projectdescription1}</ProjectDescription>
           </ProjectDescriptionSection>
@@ -222,9 +226,18 @@ const HomeSection = ({
         {/* TODO create cards component from the outside 
               insert here as mini cards with appropriate class definition 
               REASON => use also in team as cards */}
-        <div style={{justifySelf: "center", alignSelf: "center", margin: "auto", width: "80%", display: "flex"}}>
-          <ImageSlider sliderHeight={sliderHeight}></ImageSlider>
-        </div>
+        <SliderContainer> 
+          <SliderWrapper>
+            <ImageSlider sliderHeight={sliderHeight}></ImageSlider>
+          </SliderWrapper>
+          <div style={{margin: "auto", width: "80%", display: "flex"}}>
+              <RedAccent/>
+              <SliderDescription>
+                Our team members are engaging, international students from different field of study and backgrounds, 
+                mostly studying at RWTH Aachen University or FH Aachen. Get to know our team
+              </SliderDescription>
+          </div>
+        </SliderContainer>
 
         <SplitDiv>
           <SplitSectionWrapper width={"50%"}>

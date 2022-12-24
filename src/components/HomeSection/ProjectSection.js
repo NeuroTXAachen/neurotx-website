@@ -39,7 +39,23 @@ export const VidFrame = styled.div`
   height: 702px;
   z-index: 2;
   max-height: 702px;
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 1447px) and (min-width: 790px) {
+    height: 600px;
+  }
+  @media screen and (max-width: 1222px) and (min-width: 720px) {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 100%;
+    height: 610px;
+  }
+  @media screen and (max-width: 719px) {
+    width: 90%;
+    max-width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 500px) {
     width: 90%;
     max-width: 90%;
     height: 400px;
@@ -48,19 +64,48 @@ export const VidFrame = styled.div`
   }
 `;
 
+export const SliderContainer = styled.div`
+  margin-bottom: 180px;
+`;
+
+export const SliderDescription = styled.p`
+  margin-left: 3rem; 
+  width: 40%;
+  text-align: left;
+  @media screen and (max-width: 769px) {
+    margin-top: 30px;
+    width: 80%;
+  }
+`;
+
+export const SliderWrapper = styled.div`
+  justify-self: center; 
+  align-self: center; 
+  margin: auto; 
+  width: 80%; 
+  display: flex;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 769px) {
+    width: 100%;
+  }
+`; 
+
 export const RedAccent = styled.div`
   width: 10px;
   height: 60px;
   background-color: #ff0000;
   margin: ${({ margin }) => (margin ? margin : "0 2rem 0 12rem")};
-  @media screen and (max-width: 789px) {
+  @media screen and (max-width: 1222px) {
     display: none;
   }
 `;
 export const Projects = styled.div`
   display: flex;
-  @media screen and (max-width: 789px) {
+  @media screen and (max-width: 1222px) {
     flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const ProjectDescriptionSection = styled.div`
@@ -71,6 +116,9 @@ export const ProjectDescriptionSection = styled.div`
   align-items: flex-end;
   margin-left: 2rem;
   z-index: 1;
+  @media screen and (max-width: 1222px) and (min-width: 790px) {
+    width: 60%;
+  }
   @media screen and (max-width: 789px) {
     margin-left: 0rem;
     width: 80%;
