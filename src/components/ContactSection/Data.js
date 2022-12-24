@@ -8,7 +8,6 @@ export const contactDataObj = {
   redBgPoint: require("../../images/square.png"),
   cpuImage: require("../../images/cpu.png"),
   brainImage: require("../../images/brain.png"),
-  dottedImage: require("../../images/interface.png"),
   coverphoto: require("../../images/coverphoto.png"),
   paypalImage: require("../../images/PaypalButton.png"),
   projectdescription1:

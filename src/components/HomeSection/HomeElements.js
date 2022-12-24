@@ -227,10 +227,12 @@ export const ButtonServices = styled.button`
   width: 259px;
   margin-top: 20px;
   height: 57px;
-  background-color: #ff0000;
   background: #eb0000;
   opacity: 0.9;
-
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic !important;
+  font-weight: bold;
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
