@@ -28,6 +28,23 @@ export const Heading = styled.p`
   }
 `;
 
+export const Socials = styled.div`
+  width: 100%;
+  height: 50px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-top: auto;
+`;
+
+export const ImageNameDiv = styled.div`
+  @media screen and (max-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    flex: 1;
+  }
+`;
+
 export const Subtitle = styled.p`
   position: relative;
   line-height: 1.2;
@@ -48,6 +65,8 @@ export const MemberWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 1em;
   margin: 5vw auto;
   max-width: 1200px;
   @media screen and (max-width: 768px) {
@@ -106,7 +125,7 @@ export const MemberItem = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: ${({width}) => width ? width : "25%"};
   margin: 0 2.5rem;
   @media screen and (max-width: 768px) {
     display: inline;
@@ -118,7 +137,9 @@ export const MemberItem = styled.div`
 export const Image = styled.img`
   width: 100%;
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 54%;
+    height: auto;
+    display: inline;
   }
 `;
 
@@ -131,9 +152,11 @@ export const Name = styled.p`
   border-left: 8px solid #ff0000;
   padding-left: 1rem;
   @media screen and (max-width: 768px) {
+    border-left: 0px solid #ff0000;
     width: 50%;
-    min-height: 300px;
-    margin-left: 5vw;
+    min-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
     display: inline;
   }
 `;
@@ -154,10 +177,11 @@ export const Title = styled.p`
   margin-top: 1rem;
 `;
 
-export const Social = styled.p`
+export const Social = styled.a`
   position: relative;
-  font-size: 16px;
-
+  font-size: 40px;
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   margin-top: 1rem;
 `;
