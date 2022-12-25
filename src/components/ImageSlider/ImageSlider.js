@@ -51,7 +51,7 @@ const Carousel = ({ children, height }) => {
   )
 }
 
-const ImageSlider = ({sliderHeight}) => {
+const ImageSlider = ({sliderHeight, teamData}) => {
   
   return (
     <Carousel height={sliderHeight}>

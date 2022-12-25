@@ -21,7 +21,7 @@ export const homeDataObj = {
     "Having the benefit of the disabled in mind, we are developing Xavier, a prototype electric wheelchair controlled by brain signals.",
   projectdescription3: "But that’s not all. Discover More of our projects!",
   vidJSOptions: {
-    autoplay: false,
+    autoplay: true,
     fluid: true,
     responsive: true,
     controls: true,

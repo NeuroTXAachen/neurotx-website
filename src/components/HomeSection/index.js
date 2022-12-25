@@ -228,7 +228,9 @@ const HomeSection = ({
               REASON => use also in team as cards */}
         <SliderContainer> 
           <SliderWrapper>
-            <ImageSlider sliderHeight={sliderHeight}></ImageSlider>
+            <ImageSlider sliderHeight={sliderHeight}>
+              {/* add kids with react over team */}
+            </ImageSlider>
           </SliderWrapper>
           <div style={{margin: "auto", width: "80%", display: "flex"}}>
               <RedAccent/>

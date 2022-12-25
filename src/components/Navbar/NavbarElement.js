@@ -3,9 +3,9 @@ import { Link as LinkS } from "react-scroll";
 import { Link as LinkJ } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: #00000069;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background: ${({ colorChange }) => (colorChange ? "#ffff" : "#040142")};
+  /* -webkit-backdrop-filter: saturate(300%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px); */
   height: 60px;
   display: flex;
   font-family: "Krona One";
@@ -148,6 +148,7 @@ export const NavMenu2 = styled.ul`
 export const NavItem = styled.li`
   height: 50px;
   margin-left: 55px;
+  color: ${({ colorChange }) => (colorChange ? "#ffff" : "blue")} !important;
   @media screen and (max-width: 1253px) and (min-width: 778px) {
     margin: auto;
   }
@@ -160,12 +161,14 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkJ)`
   display: flex;
-  color: #fff;
+  /* color: #fff; */
   align-items: center;
   text-decoration: none;
   font-size: 20px;
   padding: 0 0.8rem;
   padding-top: 0px;
+  transition: 0.2s ease-in;
+  color: ${({ colorChange }) => (colorChange ? "#040142" : "#ffff")} !important;
   height: 100%;
   cursor: pointer;
   &.active {

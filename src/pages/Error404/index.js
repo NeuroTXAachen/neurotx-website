@@ -26,7 +26,7 @@ export const BigError = styled.h1`
   font-size: 20rem;
   color: #fff;
   margin: 5vw;
-  fomt-family: "Krona One", sans-serif;
+  font-family: "Krona One", sans-serif;
   font-weight: 700;
   @media screen and (max-width: 768px) {
     font-size: 10rem;
@@ -35,6 +35,8 @@ export const BigError = styled.h1`
 
 export const SmallError = styled.h2`
   font-size: 2rem;
+  width: 60%;
+  z-index: 30;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   margin: 2vw 5vw;
@@ -84,12 +86,14 @@ const Error404 = () => {
   const randomIndex = Math.floor(Math.random() * messages.length);
   const errorMessage = messages[randomIndex];
   return (
-    <div className="Home">
+    <div className="Home" style={{width: "100%", overflow: "hidden", opacity: "100%", position: "relative", zIndex: 0}}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <RedDotImg src={redBgPoint} alt="redbgpoint" />
       <Navbar toggle={toggle} />
       <BigError>404</BigError>
+      <div style={{zIndex: 4}}>
       <SmallError>{errorMessage}</SmallError>
+      </div>
       <ButtonServices to="/">Go Back Home</ButtonServices>
       <FooterComponent {...footerDataObj} />
     </div>

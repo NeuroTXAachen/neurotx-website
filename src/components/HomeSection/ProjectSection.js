@@ -8,6 +8,7 @@ export const SectionHeading = styled.h1`
   font-family: "Krona One", sans-serif;
   margin: 5rem;
   font-size: 70px;
+  font-weight: 400;
   @media screen and (max-width: 789px) {
     font-weight: 400;
     font-size: 32px;
@@ -127,7 +128,7 @@ export const ProjectDescriptionSection = styled.div`
 `;
 export const ProjectDescription = styled.p`
   margin-top: 4.5rem;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-size: 24px;
   @media screen and (max-width: 789px) {
     font-family: "Montserrat";
@@ -161,4 +162,11 @@ export const EventWrapper2 = styled.div`
     flex-direction: column;
     width: 100%;
   }
+`;
+
+export const MemberTape = styled.div`
+  width: auto;
+`;
+export const MiniImage = styled.div`
+  width: auto;
 `;
