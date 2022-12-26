@@ -1,22 +1,47 @@
-import React, { useState } from "react";
-import { CarouselItem, Slider, Viewport, Indicators, PrevButton, NextButton, AbsIndicators } from "./Carousel";
+import React, { useEffect, useState } from "react";
+import { CarouselItem, Slider, Viewport, Indicators, PrevButton, NextButton, AbsIndicators, MiniImage } from "./Carousel";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useSwipeable } from "react-swipeable";
+import MiniMember from "./Member";
 
-const placeholder = require("../../images/placeholder-image.jpeg");
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  if (width < 769) {
+    return 2;
+  } else if (width < 1200) {
+    return 4;
+  } else {
+    return 6;
+  }
+}
 
-const Carousel = ({ children, height }) => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0)
+const Carousel = ({ children }) => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [numInView, setnumInView] = useState(getWindowDimensions()) 
   
   const indexUpdate = (newIndex) => {
     if (newIndex < 0) {
       newIndex = 0;
-    } else if (newIndex >= React.Children.count(children)) {
-      newIndex = React.Children.count(children) - 1;
+    } else if (newIndex >= React.Children.count(children) - numInView + 1) {
+      newIndex = 0;
     }
 
     setActiveSlideIndex(newIndex)
   }
+
+  useEffect(() => {
+    const resizeListener = () => {
+      // change width from the state object
+      setnumInView(getWindowDimensions());
+    };
+
+    window.addEventListener("resize", resizeListener)
+
+    return () => {
+      // remove resize listener
+      window.removeEventListener('resize', resizeListener);
+    }
+  }, []);
 
   const handlers = useSwipeable({
     onSwipedLeft: () => indexUpdate(activeSlideIndex + 1),
@@ -27,23 +52,23 @@ const Carousel = ({ children, height }) => {
     <Slider {...handlers}>
       <Indicators>
       <AbsIndicators>
-        <PrevButton height={height} onClick={() => {
+        <PrevButton onClick={() => {
           indexUpdate(activeSlideIndex - 1)
         }}>
           <IoIosArrowBack />
         </PrevButton>
 
-        <NextButton height={height} onClick={() => {
+        <NextButton onClick={() => {
           indexUpdate(activeSlideIndex + 1)
         }}>
           <IoIosArrowForward />
         </NextButton>
       </AbsIndicators>
       </Indicators>
-      <Viewport style={{transform: `translateX(-${activeSlideIndex * 100}%)`}}> {/* contains viewable instances (6 images) */}
+      <Viewport style={{transform: `translateX(-${activeSlideIndex * (100 / (numInView))}%)`}}> {/* contains viewable instances (6 images) */}
         {
           React.Children.map(children, (child, index) => {
-            return React.cloneElement(child, { width: "100%", height: `${height}` })
+            return React.cloneElement(child, { width: `${(100 / (numInView))}%` })
           })
         }
       </Viewport>
@@ -51,14 +76,16 @@ const Carousel = ({ children, height }) => {
   )
 }
 
-const ImageSlider = ({sliderHeight, teamData}) => {
-  
+const ImageSlider = ({teamData}) => {
   return (
-    <Carousel height={sliderHeight}>
-      <CarouselItem>Item 1 </CarouselItem>
-      <CarouselItem>Item 2 </CarouselItem>
-      <CarouselItem>Item 3 </CarouselItem> 
-      <CarouselItem>Item 4 </CarouselItem>
+    <Carousel teamData={teamData}>
+      {teamData.map((member, index) => {
+        return (
+          <CarouselItem> 
+            <MiniMember props={member} />
+          </CarouselItem>
+        )
+      })}
     </Carousel>
   )
 }
