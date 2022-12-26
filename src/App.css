@@ -14,6 +14,10 @@
   display: none;
 }
 
+p {
+  font-family: Montserrat;
+}
+
 @media only screen and (max-width: 1222px) {
   #disappearingProjSection {
     display: flex;
