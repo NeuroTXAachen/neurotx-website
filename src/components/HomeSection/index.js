@@ -86,6 +86,7 @@ const HomeSection = ({
   projectdescription3,
   vidJSOptions,
   partnersImgs,
+  teamData,
 }) => {
   return (
     <HomeContainer id={id}>
@@ -228,9 +229,7 @@ const HomeSection = ({
               REASON => use also in team as cards */}
         <SliderContainer> 
           <SliderWrapper>
-            <ImageSlider sliderHeight={sliderHeight}>
-              {/* add kids with react over team */}
-            </ImageSlider>
+            <ImageSlider sliderHeight={sliderHeight} teamData={teamData.memberData} />
           </SliderWrapper>
           <div style={{margin: "auto", width: "80%", display: "flex"}}>
               <RedAccent/>

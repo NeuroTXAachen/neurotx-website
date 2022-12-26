@@ -163,10 +163,3 @@ export const EventWrapper2 = styled.div`
     width: 100%;
   }
 `;
-
-export const MemberTape = styled.div`
-  width: auto;
-`;
-export const MiniImage = styled.div`
-  width: auto;
-`;
