@@ -20,6 +20,7 @@ import {
   Map,
   Link,
   Image,
+  RadioInput,
 } from "./ContactElements";
 
 const ContactSection = ({ redBgPoint, paypalImage }) => {
@@ -57,19 +58,28 @@ const ContactSection = ({ redBgPoint, paypalImage }) => {
           </FormField>
         </FormRow>
         <FormRow>
-          <FormField>
+          <FormField width={"50%"}>
             <Label>University*</Label>
           </FormField>
           <FormField>
-            <Input
-              type="radio"
-              name="RWTH Aachen"
-              value="RWTH Aachen"
-              checked={true}
-            />{" "}
-            RWTH Aachen
-            <Input type="radio" name="FH Aachen" value="FH Aachen" /> FH Aachen
-            <Input type="radio" name="other" value="other" /> Other
+            <div>
+              <RadioInput
+                type="radio"
+                name="RWTH Aachen"
+                value="RWTH Aachen"
+                id={"rwthAachen"}
+                checked={true}
+              />
+              <Label for={"rwthAachen"}>RWTH Aachen</Label>
+            </div>
+            <div>
+              <RadioInput type="radio" id={"fhAachen"} name="RWTH Aachen" value="FH Aachen" /> 
+              <Label for={"fhAachen"}>FH Aachen</Label>
+            </div>
+            <div>
+              <RadioInput type="radio" id={"other"} name="RWTH Aachen" value="other" /> 
+              <Label for={"other"}>Other</Label>
+            </div>
           </FormField>
         </FormRow>
         <FormRow>
@@ -92,7 +102,6 @@ const ContactSection = ({ redBgPoint, paypalImage }) => {
         <SubSection>
           <RedAccent />
           <SubSectionText>
-            {" "}
             NeuroTX Aachen e.V., <br />
             Collective Incubator e. V. <br />
             Jülicher Str. 209 <br />

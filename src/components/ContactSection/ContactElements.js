@@ -13,7 +13,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Heading = styled.p`
+export const Heading = styled.h1`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
@@ -65,9 +65,9 @@ export const FormRow = styled.div`
 
 export const FormField = styled.div`
   position: relative;
-  display: flex;
+  display: ${({display}) => display ? display : "flex"};
   flex-direction: column;
-  width: 100%;
+  width: ${( {width} ) => width ? width : "100%"};
 `;
 
 export const NameFormField = styled.div`
@@ -100,6 +100,22 @@ export const Input = styled.input`
     height: 8vw;
   }
 `;
+
+export const RadioInput = styled.input`
+  position: relative;
+  margin: 20px;
+  height: 25px; 
+  width: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 165%;
+  @media screen and (max-width: 900px) {
+    height: 8vw;
+  }
+`;
+
 export const RedAccent = styled.div`
   position: relative;
   width: 0.75rem;
@@ -165,16 +181,22 @@ export const RedDotImg = styled.img`
 `;
 export const SectionWrapper = styled.div`
   position: relative;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
 `;
 
-export const SubLabel = styled.label`
-  position: relative;
-  font-size: 60px;
-  margin: 2rem 5rem;
-
+export const SubLabel = styled.h1`
+  font-family: 'Krona One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
   @media screen and (max-width: 768px) {
     font-size: 50px;
     margin: 1vw 5vw;
@@ -188,7 +210,7 @@ export const Map = styled.iframe`
   margin: auto;
   padding: 2vh 1vh;
   border: 0;
-  width: 70%;
+  width: 100%;
   height: 500px;
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -218,6 +240,7 @@ export const DonateSection = styled.div`
 export const SubSectionText = styled.p`
   position: relative;
   font-size: 24px;
+  margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   max-width: 700px;
   @media screen and (max-width: 768px) {
