@@ -83,7 +83,7 @@ export const HeadingDiv = styled.div`
     margin-left: 4%;
   }
 `;
-export const Heading1 = styled.p`
+export const Heading1 = styled.h1`
   position: relative;
   line-height: 1.2;
   font-size: 120px;
@@ -102,7 +102,7 @@ export const Heading1 = styled.p`
   }
 `;
 
-export const Heading2 = styled.p`
+export const Heading2 = styled.h1`
   position: relative;
   font-size: 120px;
   line-height: 1.2;
@@ -119,7 +119,7 @@ export const Heading2 = styled.p`
   }
 `;
 
-export const Heading3 = styled.p`
+export const Heading3 = styled.h1`
   position: relative;
   line-height: 1.2;
   font-size: 120px;
@@ -138,7 +138,7 @@ export const Heading3 = styled.p`
   }
 `;
 
-export const Heading4 = styled.p`
+export const Heading4 = styled.h1`
   position: relative;
   margin-left: 65%;
   font-size: 120px;
