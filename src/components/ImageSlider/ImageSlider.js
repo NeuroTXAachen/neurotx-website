@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CarouselItem, Slider, Viewport, Indicators, PrevButton, NextButton, AbsIndicators, MiniImage } from "./Carousel";
+import { CarouselItem, Slider, Viewport, PrevButton, NextButton } from "./Carousel";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useSwipeable } from "react-swipeable";
 import MiniMember from "./Member";
@@ -50,21 +50,11 @@ const Carousel = ({ children }) => {
 
   return (
     <Slider {...handlers}>
-      <Indicators>
-      <AbsIndicators>
-        <PrevButton onClick={() => {
-          indexUpdate(activeSlideIndex - 1)
-        }}>
-          <IoIosArrowBack />
-        </PrevButton>
-
-        <NextButton onClick={() => {
-          indexUpdate(activeSlideIndex + 1)
-        }}>
-          <IoIosArrowForward />
-        </NextButton>
-      </AbsIndicators>
-      </Indicators>
+      <PrevButton onClick={() => {
+            indexUpdate(activeSlideIndex - 1)
+          }}>
+            <IoIosArrowBack />
+      </PrevButton>
       <Viewport style={{transform: `translateX(-${activeSlideIndex * (100 / (numInView))}%)`}}> {/* contains viewable instances (6 images) */}
         {
           React.Children.map(children, (child, index) => {
@@ -72,6 +62,11 @@ const Carousel = ({ children }) => {
           })
         }
       </Viewport>
+      <NextButton onClick={() => {
+          indexUpdate(activeSlideIndex + 1)
+        }}>
+          <IoIosArrowForward />
+      </NextButton>
     </Slider>
   )
 }

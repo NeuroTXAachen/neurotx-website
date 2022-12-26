@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 export const Viewport = styled.div`
   white-space: nowrap; 
+  order: 2;
   transition: transform 0.3s; 
 `;
 
 export const Slider = styled.div`
   overflow: hidden;
-  display: relative;
+  margin: 40px auto;
+  z-index: 4;
+  display: flex;
   width: 100%;
 `;
 
@@ -29,7 +32,6 @@ export const AbsIndicators = styled.div`
   position: absolute;
   width: 100%;
   display: flex;
-  margin-top: 5%;
   flex-direction: row;
   justify-content: space-between;
 `;
@@ -40,7 +42,7 @@ const StyledButton = styled.button`
 
 export const PrevButton = styled.button`
   order: 1;
-  height: 100px;
+  height: inherit;
   width: 40px;
   border: none;
   z-index: 4;
@@ -55,9 +57,9 @@ export const PrevButton = styled.button`
 `;
 
 export const NextButton = styled.button`
-  order: 2;
+  order: 3;
   z-index: 4;
-  height: 100px;
+  height: inherit;
   width: 40px;
   border: none;
   text-align: center;
