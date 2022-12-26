@@ -3,9 +3,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NeuroTXDisc = styled.div`
-  width: 50vw;
+  width: 30%;
   padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 1222px) and (min-width: 790px) {
+    padding: 0%;
+  }
   @media screen and (max-width: 789px) {
     text-align: center;
     width: 60%;
@@ -19,12 +22,15 @@ const Description = styled.p`
 `;
 
 const ContactDiv = styled.div`
-  width: 25vw;
+  width: 12%;
   display: block;
   justify-content: left;
   align-items: left;
   padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 1222px) and (min-width: 790px) {
+    padding: 0%;
+  }
   @media screen and (max-width: 789px) {
     text-align: center;
     width: 100%;
@@ -44,10 +50,13 @@ const ContactItemLink = styled.a`
 `;
 
 const AddressDiv = styled.div`
-  width: 25vw;
+  width: 20%;
   left: 200px;
   padding: 4rem;
   margin: auto;
+  @media screen and (max-width: 1222px) and (min-width: 790px) {
+    padding: 0%;
+  }
   @media screen and (max-width: 789px) {
     text-align: center;
     width: 100%;
@@ -116,10 +125,5 @@ const FooterComponent = ({ neurotx, repr, copyright, contact, address }) => {
     </FooterContainer>
   );
 };
-// <ContactItem>
-//   <FooterBold>{name}</FooterBold>
-//   {links.map(({ title, url }) => (
-//     <ContactItemLink href={url}>{title}</ContactItemLink>
-//   ))}
-// </ContactItem>
+
 export default FooterComponent;
