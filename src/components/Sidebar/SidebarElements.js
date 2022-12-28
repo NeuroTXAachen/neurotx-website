@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #00000069;
+  background: white;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   display: grid;
@@ -21,7 +21,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #040142;
 `;
 
 export const Icon = styled.div`
@@ -48,12 +48,14 @@ export const SidebarLink = styled(LinkR)`
   font-size: 1.5rem;
   margin: 2rem;
   text-decoration: none;
+  color: rgb(4, 1, 66);
   text-align: right;
   list-style: none;
   transition: 0.2s ease-in-out;
-  text-decoration: none;
-  color: #fff;
   cursor: pointer;
+  &:visited {
+    color: rgb(4, 1, 66);
+  }
   &.active {
     border-bottom: 3px solid #fff;
     transition: 0.2s ease-in-out;

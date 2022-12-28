@@ -11,8 +11,9 @@ import {
   DescriptionWrapper,
   ButtonServices,
 } from "./LearnElements";
+import { WaveImg } from "../HomeSection/HomeElements";
 
-const LearnSection = ({ redBgPoint }) => {
+const LearnSection = ({ redBgPoint, waveImage }) => {
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
@@ -36,6 +37,13 @@ const LearnSection = ({ redBgPoint }) => {
             allowfullscreen
           ></iframe>
         </Video>
+
+        <WaveImg
+          src={waveImage}
+          alt="waveImg"
+          right={"55%"}
+          style={{ rotate: "80deg" }}
+        />
         <Label>Signals Transduction</Label>
         <Video>
           <RedAccent />
@@ -49,6 +57,18 @@ const LearnSection = ({ redBgPoint }) => {
             allowfullscreen
           ></iframe>
         </Video>
+        <RedDotImg
+          src={redBgPoint}
+          alt="redbgpoint"
+          marginTop={"250vh"}
+          right={"70%"}
+        />
+        <WaveImg
+          src={waveImage}
+          alt="waveImage"
+          right={"-55%"}
+          marginTop={"150vh"}
+        />
         <Label>Momentum of the 21st Century</Label>
         <Video>
           <RedAccent />

@@ -47,35 +47,40 @@ function App() {
           <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>
-      <CookieConsent style={{
-        backgroundColor: "#ffff",
-        color: "#040142",
-      }} debug={true} 
-          enableDeclineButton
-          flipButtons
-          buttonStyle={{
-            background: "#fff",
-            width: "fit-content",
-            color: "#040142",
-            fontSize: "16px",
-            fontWeight: "bolder",
-            padding: "4px 20px",
-            border: "2px solid #040142",
-          }}
-          declineButtonStyle={{
-            width: "fit-content",
-            padding: "4px 20px",
-            fontSize: "16px",
-            background: "#fff",
-            color: "#040142",
-            fontWeight: "bolder",
-            border: "2px solid #040142",
-          }}
-          buttonText={"Accept"} 
-          declineButtonText={"Reject"} 
-          dec>
-        We use cookies to ensure that we give you the best experience on our website. 
-        If you continue to use this site, we will assume that you accept our use of cookies.
+      <CookieConsent
+        style={{
+          backgroundColor: "#ffff",
+          color: "#040142",
+        }}
+        debug={true}
+        enableDeclineButton
+        flipButtons
+        buttonStyle={{
+          background: "#fff",
+          width: "fit-content",
+          color: "#040142",
+          fontSize: "16px",
+          fontWeight: "bolder",
+          padding: "4px 20px",
+          border: "2px solid #040142",
+        }}
+        declineButtonStyle={{
+          width: "fit-content",
+          padding: "4px 20px",
+          fontSize: "16px",
+          background: "#fff",
+          color: "#040142",
+          fontWeight: "bolder",
+          border: "2px solid #040142",
+        }}
+        buttonText={"Accept"}
+        declineButtonText={"Reject"}
+        dec
+      >
+        We use cookies to ensure that we give you the best experience on our
+        website. If you continue to use this site, we will assume that you
+        accept our use of cookies. For more information, please read our{" "}
+        <a href="/policy">impressum</a>.
       </CookieConsent>
     </div>
   );

@@ -11,18 +11,17 @@ export const Container = styled.div`
     height: fit-content;
   }
 `;
-
-export const Heading = styled.p`
+export const Heading = styled.h1`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
   padding-top: 10vh;
   margin: 0 5rem 0 5rem;
-
   font-weight: 400;
   @media screen and (max-width: 768px) {
     font-size: 60px;
     margin: 5vw;
+    font-weight: 800;
     padding-top: 5vh;
     padding-left: 0%;
   }
@@ -33,7 +32,7 @@ export const Socials = styled.div`
   height: 50px;
   align-self: flex-end;
   justify-self: flex-end;
-  margin-top: auto;
+  padding: 1rem 0rem;
 `;
 
 export const ImageNameDiv = styled.div`
@@ -76,20 +75,60 @@ export const MemberWrapper = styled.div`
   }
 `;
 
+export const SectionWrapper = styled.div`
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+`;
+
+export const SubLabel = styled.h1`
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+    margin: 1vw 5vw;
+    padding-top: 5vh;
+    padding-left: 0%;
+  }
+`;
+export const AlumniWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 1em;
+  margin: 5vw auto;
+  max-width: 1200px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
+
 export const ButtonServices = styled.button`
   width: 259px;
+  margin-top: 20px;
   height: 57px;
-  background-color: #eb0000;
   background: #eb0000;
   opacity: 0.9;
-
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic !important;
+  font-weight: 1000;
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
   &:hover {
-    background-color: #eb003f;
-
-    box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #eb003f;
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
@@ -101,7 +140,6 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
-      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }
@@ -125,7 +163,7 @@ export const MemberItem = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: ${({width}) => width ? width : "25%"};
+  width: ${({ width }) => (width ? width : "25%")};
   margin: 0 2.5rem;
   @media screen and (max-width: 768px) {
     display: inline;
@@ -146,18 +184,32 @@ export const Image = styled.img`
 export const Name = styled.p`
   position: relative;
   font-size: 38px;
-
-  font-weight: 400;
+  display: inline;
+  font-weight: 800;
   margin-top: 1rem;
-  border-left: 8px solid #ff0000;
+  max-width: 95%;
+  display: inline-block;
+  // border-left: 8px solid #ff0000;
   padding-left: 1rem;
   @media screen and (max-width: 768px) {
     border-left: 0px solid #ff0000;
-    width: 50%;
+    max-width: 50%;
     min-height: 30px;
     font-size: 20px;
     line-height: 30px;
-    display: inline;
+    display: inline-block;
+  }
+`;
+
+export const RedAccent = styled.div`
+  position: absolute;
+  width: 8px;
+  display: inline-block;
+  height: 50px;
+  background-color: #ff0000;
+  margin-top: 1.5rem;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -172,8 +224,8 @@ export const Description = styled.p`
 export const Title = styled.p`
   position: relative;
   font-size: 16px;
-
-  font-weight: 400;
+  font-weight: 1000;
+  font-style: italic;
   margin-top: 1rem;
 `;
 
@@ -183,5 +235,4 @@ export const Social = styled.a`
   color: white;
   font-weight: 400;
   text-decoration: none;
-  margin-top: 1rem;
 `;

@@ -15,6 +15,9 @@ export const homeDataObj = {
   brainImage: require("../../images/brain.png"),
   vectorImage: require("../../images/vectors.png"),
   coverphoto: require("../../images/coverphoto.png"),
+  eventPhoto0: require("../../images/events/Event0.png"),
+  eventPhoto1: require("../../images/events/Event1.png"),
+  eventPhoto2: require("../../images/events/Event2.png"),
   projectdescription1:
     "Our projects involve mainly brain signal processing from EEG, and its translation into real-world applications by a brain-computer interface.",
   projectdescription2:
