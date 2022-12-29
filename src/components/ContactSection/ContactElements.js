@@ -184,6 +184,11 @@ export const SectionWrapper = styled.div`
   margin-top: 5rem;
 `;
 
+export const ContactContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+`;
+
 export const SubLabel = styled.h1`
   font-family: "Krona One";
   font-style: normal;

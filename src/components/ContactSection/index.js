@@ -16,6 +16,7 @@ import {
   SubSection,
   DonateSection,
   SectionWrapper,
+  ContactContainer,
   SubLabel,
   Map,
   Link,
@@ -25,7 +26,7 @@ import {
 import { WaveImg } from "../HomeSection/HomeElements";
 const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
   return (
-    <>
+    <ContactContainer>
       <RedDotImg
         src={redBgPoint}
         alt="redbgpoint"
@@ -172,7 +173,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
           </DonateSection>
         </SectionWrapper>
       </Container>
-    </>
+    </ContactContainer>
   );
 };
 export default ContactSection;
