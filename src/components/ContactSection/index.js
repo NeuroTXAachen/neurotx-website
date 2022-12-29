@@ -58,7 +58,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
             "Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions."
           }
         </Subtitle>
-        <form name="contact" netlify-honeypot="bot-field" netlify>
+        <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <FormWrapper>
             <FormRow>
@@ -92,7 +92,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
                 <div>
                   <RadioInput
                     type="radio"
-                    name="University"
+                    name="university"
                     value="RWTH Aachen"
                     id={"rwthAachen"}
                     checked={true}
@@ -103,7 +103,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
                   <RadioInput
                     type="radio"
                     id={"fhAachen"}
-                    name="University"
+                    name="university"
                     value="FH Aachen"
                   />
                   <Label for={"fhAachen"}>FH Aachen</Label>
@@ -112,7 +112,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
                   <RadioInput
                     type="radio"
                     id={"other"}
-                    name="University"
+                    name="university"
                     value="other"
                   />
                   <Label for={"other"}>Other</Label>
