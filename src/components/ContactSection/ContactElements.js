@@ -23,7 +23,6 @@ export const Heading = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 60px;
     margin: 5vw;
-    font-weight: 800;
     padding-top: 5vh;
     padding-left: 0%;
   }
@@ -66,9 +65,9 @@ export const FormRow = styled.div`
 
 export const FormField = styled.div`
   position: relative;
-  display: ${({ display }) => (display ? display : "flex")};
+  display: ${({display}) => display ? display : "flex"};
   flex-direction: column;
-  width: ${({ width }) => (width ? width : "100%")};
+  width: ${( {width} ) => width ? width : "100%"};
 `;
 
 export const NameFormField = styled.div`
@@ -105,9 +104,9 @@ export const Input = styled.input`
 export const RadioInput = styled.input`
   position: relative;
   margin: 20px;
-  height: 25px;
+  height: 25px; 
   width: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -138,18 +137,18 @@ export const Message = styled.textarea`
 
 export const ButtonServices = styled.button`
   width: 259px;
-  margin-top: 20px;
   height: 57px;
+  background-color: #eb0000;
   background: #eb0000;
   opacity: 0.9;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-style: italic !important;
-  font-weight: 1000;
+
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
   &:hover {
+    // background-color: #EB003f;
+
+    // box-shadow: 0 0px 4px 4px #EB003f, 0 0px 0px 0px #EB003f;
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
@@ -161,6 +160,7 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
+      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }
@@ -169,11 +169,15 @@ export const ButtonServices = styled.button`
 
 export const RedDotImg = styled.img`
   position: absolute;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "-190px")};
   width: ${({ size }) => (size ? size : "70%")};
   right: ${({ right }) => (right ? right : "-350px")};
   /* padding-left: 590px; */
   z-index: 0;
   opacity: 1;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const SectionWrapper = styled.div`
   position: relative;
@@ -185,7 +189,7 @@ export const SectionWrapper = styled.div`
 `;
 
 export const SubLabel = styled.h1`
-  font-family: "Krona One";
+  font-family: 'Krona One';
   font-style: normal;
   font-weight: 400;
   font-size: 80px;

@@ -11,9 +11,8 @@ export const SectionHeading = styled.h1`
   font-weight: 400;
   @media screen and (max-width: 789px) {
     font-weight: 400;
-    font-size: 32pt;
+    font-size: 32px;
     margin: 20px;
-    margin-left: 5vw;
     line-height: 40px;
   }
 `;
@@ -71,30 +70,26 @@ export const SliderContainer = styled.div`
 `;
 
 export const SliderDescription = styled.p`
-  margin-left: 3rem;
+  margin-left: 3rem; 
   width: 40%;
-  line-height: 165%;
-  font-size: 24px;
   text-align: left;
   @media screen and (max-width: 769px) {
     margin-top: 30px;
     width: 80%;
-    font-size: 16pt;
-    line-height: 170%;
   }
 `;
 
 export const SliderWrapper = styled.div`
-  justify-self: center;
-  align-self: center;
-  margin: auto;
-  width: 80%;
+  justify-self: center; 
+  align-self: center; 
+  margin: auto; 
+  width: 80%; 
   display: flex;
   margin-bottom: 2rem;
   @media screen and (max-width: 769px) {
     width: 100%;
   }
-`;
+`; 
 
 export const RedAccent = styled.div`
   width: 10px;
@@ -120,28 +115,27 @@ export const ProjectDescriptionSection = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
-  margin-left: 5vw;
+  margin-left: 2rem;
   z-index: 1;
   @media screen and (max-width: 1222px) and (min-width: 790px) {
-    width: 95%;
-    line-height: 170%;
+    width: 60%;
   }
   @media screen and (max-width: 789px) {
-    width: 95%;
-    line-height: 170%;
+    margin-left: 0rem;
+    width: 80%;
+    margin: auto;
   }
 `;
 export const ProjectDescription = styled.p`
   margin-top: 4.5rem;
   font-family: Montserrat;
   font-size: 24px;
-  line-height: 165%;
   @media screen and (max-width: 789px) {
     font-family: "Montserrat";
     margin-top: 1.5rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 16pt;
+    font-size: 16px;
     line-height: 170%;
   }
 `;

@@ -174,7 +174,7 @@ export const SubtitleWrapper = styled.div`
 // Used more than once
 export const Subtitle = styled.p`
   position: relative;
-  line-height: 165%;
+  line-height: 1.2;
   z-index: 10;
   max-width: 544px;
   font: "Montserrat";
@@ -183,9 +183,6 @@ export const Subtitle = styled.p`
   align-items: center;
   @media screen and (max-width: 800px) {
     font-size: 16pt;
-    max-width: 80%;
-    line-height: 170%;
-    display: inline-block;
   }
 `;
 
@@ -235,7 +232,7 @@ export const ButtonServices = styled.button`
   color: white;
   font-family: "Montserrat", sans-serif;
   font-style: italic !important;
-  font-weight: 1000;
+  font-weight: bold;
   border: none;
   font-size: 25px;
   margin-bottom: 5%;

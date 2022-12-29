@@ -76,9 +76,6 @@ const HomeSection = ({
   sliderHeight,
   smallWaveImg,
   coverphoto,
-  eventPhoto0,
-  eventPhoto1,
-  eventPhoto2,
   backgroundPhilipp,
   redBgPoint,
   cpuImage,
@@ -125,47 +122,24 @@ const HomeSection = ({
       </HomeWrapper>
 
       <BciSectionWrapper>
-        <BciHeading>
-          We believe{" "}
-          <div
-            style={{
-              width: "fit-content",
-              borderBottom: "8px solid red",
-              display: "inline-block",
-            }}
-          >
-            BCIs
-          </div>{" "}
-          is the Future
-        </BciHeading>
+        <BciHeading>We believe BCI is the Future</BciHeading>
         <BciTextWrapper>
           <DescriptionWrapper>
-            <div style={{ display: "block" }}>
+            <div style={{display: "block"}}>
               <Description>
-                Brain-computer interfaces, or BCIs, are a cutting-edge
-                technology that allows us to control devices with our thoughts
-                by measuring brain activity and translating it into digital
-                commands.
+                Brain-computer interfaces, or BCIs, are a cutting-edge technology
+                that allows us to control devices with our thoughts by measuring
+                brain activity and translating it into digital commands.
               </Description>
             </div>
-            <div style={{ display: "block" }}>
+            <div style={{display: "block"}}>
               <Description>
-                From medicine and accessibility to gaming and entertainment,
-                BCIs have the potential to revolutionize how we live and
-                interact with the world. And we are just starting!
+                From medicine and accessibility to gaming and entertainment, BCIs 
+                have the potential to revolutionize how we live and interact with 
+                the world. And we are just starting!
               </Description>
               <Description>
-                Wanna learn more? Check out our{" "}
-                <div
-                  style={{
-                    width: "fit-content",
-                    color: "red",
-                    fontWeight: "1000",
-                    display: "inline-block",
-                  }}
-                >
-                  Free Webinars!
-                </div>
+                Wanna learn more? Check out our Free Webinars!
               </Description>
             </div>
           </DescriptionWrapper>
@@ -210,26 +184,22 @@ const HomeSection = ({
       <ProjectSectionWrapper>
         <SectionHeading>events</SectionHeading>
         <Projects>
-          <RedAccent />
+          <RedAccent/>
           <EventWrapper>
-            <ProjectImg src={eventPhoto0} />
-            <ProjectImg src={eventPhoto1} />
+            <ProjectImg src={coverphoto} />
+            <ProjectImg src={coverphoto} />
             <ProjectDescriptionSection width={"70%"}>
               <ProjectDescription>
-                To spread our fascination with BCI, we often join events
-                organized by the student committee or other partners.{" "}
-                <div style={{ color: "red", fontWeight: "1000" }}>
-                  Follow us on instagram for more{" "}
-                </div>
+                To spread our fascination with BCI, we often join events organized by 
+                the student committee or other partners. Follow us on instagram for more
               </ProjectDescription>
             </ProjectDescriptionSection>
           </EventWrapper>
           <EventWrapper2 width={"25%"}>
-            <ProjectImg marginTop={"25%"} width={"90%"} src={eventPhoto2} />
+            <ProjectImg marginTop={"25%"} width={"90%"} src={coverphoto} />
             <ProjectDescriptionSection width={"100%"}>
               <ProjectDescription>
-                We also have teambuilding from time to time to have fun with
-                each other while enriching the team spirit!
+                We also have teambuilding from time to time to have fun with each other while enriching the team spirit!
               </ProjectDescription>
             </ProjectDescriptionSection>
           </EventWrapper2>
@@ -251,36 +221,22 @@ const HomeSection = ({
       />
       <ProjectSectionWrapper>
         <TeamHeading>
-          We are a team of <br />{" "}
-          <div
-            style={{
-              width: "fit-content",
-              borderBottom: "8px solid red",
-              display: "inline-block",
-            }}
-          >
-            15
-          </div>{" "}
-          members <br /> and growing!
+          We are a team of <br /> 15 members <br /> and growing!
         </TeamHeading>
         {/* <div style={{ margin: "830px" }}></div> */}
         {/* TODO create cards component from the outside 
               insert here as mini cards with appropriate class definition 
               REASON => use also in team as cards */}
-        <SliderContainer>
+        <SliderContainer> 
           <SliderWrapper>
-            <ImageSlider
-              sliderHeight={sliderHeight}
-              teamData={teamData.memberData}
-            />
+            <ImageSlider sliderHeight={sliderHeight} teamData={teamData.memberData} />
           </SliderWrapper>
-          <div style={{ margin: "auto", width: "100%", display: "flex" }}>
-            <RedAccent />
-            <SliderDescription>
-              Our team members are engaging, international students from
-              different field of study and backgrounds, mostly studying at RWTH
-              Aachen University or FH Aachen. Get to know our team
-            </SliderDescription>
+          <div style={{margin: "auto", width: "80%", display: "flex"}}>
+              <RedAccent/>
+              <SliderDescription>
+                Our team members are engaging, international students from different field of study and backgrounds, 
+                mostly studying at RWTH Aachen University or FH Aachen. Get to know our team
+              </SliderDescription>
           </div>
         </SliderContainer>
 
@@ -289,7 +245,7 @@ const HomeSection = ({
             <SectionHeading>support us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"20px"} />
+              <RedAccent margin={"40px"} />
               <Description>
                 If you wish to contribute to our efforts, donate to us directly
                 or via PayPal. Your ideas are also very important to us, so feel
@@ -301,7 +257,7 @@ const HomeSection = ({
             <SectionHeading>join us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"25px"} />
+              <RedAccent margin={"40px"} />
               <Description>
                 You cannot wait to build the future by your own hands, while
                 getting to know great people along the way? Feel free to get in

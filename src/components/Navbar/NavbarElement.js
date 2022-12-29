@@ -93,8 +93,7 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-
-    color: ${({ colorChange }) => (colorChange ? "#040142" : "#ffff")};
+    color: #fff;
     top: -8px;
     right: 0;
     transform: translate(-100%, 60%);

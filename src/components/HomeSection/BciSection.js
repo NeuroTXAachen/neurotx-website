@@ -18,9 +18,9 @@ export const TeamHeading = styled.h2`
     marginBottom ? marginBottom : "40px"};
   @media screen and (max-width: 789px) {
     padding-top: 68px;
-    line-height: 30pt;
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: 400;
+    line-height: 30px;
   }
 `;
 export const BciHeading = styled.h2`
@@ -36,23 +36,22 @@ export const BciHeading = styled.h2`
   @media screen and (max-width: 789px) {
     padding-top: 68px;
     text-align: center;
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 30pt;
+    line-height: 30px;
   }
 `;
 export const Description = styled.p`
   font-family: Montserrat;
   font-size: 24px;
-  max-width: 80%;
   font-weight: 500;
-  line-height: 165%;
+  line-height: 39.6px;
   margin-bottom: 40px;
   letter-spacing: 0em;
   @media screen and (max-width: 769px) {
-    font-size: 16pt;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 170%;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
   }
@@ -66,6 +65,7 @@ export const DescriptionWrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   @media screen and (max-width: 769px) {
+    width: 70%;
     margin-left: 0px;
     justify-content: left;
     flex-direction: column;
@@ -90,7 +90,7 @@ export const BciWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 769px){
     margin-top: -70px;
     flex-direction: column;
   }
@@ -126,9 +126,9 @@ export const SetTopWrapper = styled.div`
 `;
 
 export const SquaredImg = styled.img`
-  width: 128px;
+  width:  128px;
   height: 128px;
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 769px){
     height: 40px;
     width: 40px;
   }
@@ -151,7 +151,7 @@ export const DottedWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 769px){
     height: 300px;
     width: 40px;
     transform: rotate(90deg);
