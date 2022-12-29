@@ -59,6 +59,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
           }
         </Subtitle>
         <form name="contact" netlify-honeypot="bot-field" netlify>
+          <input type="hidden" name="form-name" value="contact" />
           <FormWrapper>
             <FormRow>
               <NameFormField>
