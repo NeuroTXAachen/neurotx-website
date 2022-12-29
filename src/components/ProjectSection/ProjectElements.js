@@ -12,17 +12,17 @@ export const Container = styled.div`
   }
 `;
 
-export const Heading = styled.p`
+export const Heading = styled.h1`
   position: relative;
   line-height: 1.8;
   font-size: 120px;
   padding-top: 10vh;
   margin: 0 5rem 0 5rem;
-
   font-weight: 400;
   @media screen and (max-width: 768px) {
     font-size: 60px;
     margin: 5vw;
+    font-weight: 800;
     padding-top: 5vh;
     padding-left: 0%;
   }
@@ -46,18 +46,18 @@ export const Subtitle = styled.p`
 
 export const ButtonServices = styled.button`
   width: 259px;
+  margin-top: 20px;
   height: 57px;
-  background-color: #eb0000;
   background: #eb0000;
   opacity: 0.9;
-
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic !important;
+  font-weight: 1000;
   border: none;
   font-size: 25px;
   margin-bottom: 5%;
   &:hover {
-    background-color: #eb003f;
-
-    box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #eb003f;
     cursor: pointer;
     opacity: 1;
     transition-duration: 0.7s;
@@ -69,7 +69,6 @@ export const ButtonServices = styled.button`
       width: 220px;
       height: 55px;
       color: white;
-      box-shadow: 0 0px 4px 4px #eb003f, 0 0px 0px 0px #63d0ff;
       cursor: pointer;
       transition-duration: 0.7s;
     }

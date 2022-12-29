@@ -4,7 +4,6 @@ export const SplitDiv = styled.div`
   width: 90%;
   justify-content: left;
   align-items: left;
-  margin: auto;
   position: relative;
   display: flex;
   @media screen and (max-width: 789px) {
@@ -30,6 +29,10 @@ export const SplitSectionTextWrapper = styled.div`
   justify-content: end;
   margin-right: 15%;
   margin-left: auto;
+  @media screen and (max-width: 789px) {
+    width: 95%;
+    margin-left: 5vw;
+  }
 `;
 
 export const SplitSectionImgWrapper = styled.div`

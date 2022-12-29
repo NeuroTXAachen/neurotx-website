@@ -22,11 +22,10 @@ p {
   #disappearingProjSection {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 95%;
   }
-  
 
-  #containedProjDesc{
+  #containedProjDesc {
     display: none;
   }
 }

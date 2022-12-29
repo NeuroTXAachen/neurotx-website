@@ -38,24 +38,34 @@ const Navbar = ({ toggle }) => {
               alt="Logo"
             />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon colorChange={colorChange} onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks colorChange={colorChange} to="/home">home</NavLinks>
+              <NavLinks colorChange={colorChange} to="/home">
+                home
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks colorChange={colorChange} to="/learn">learn</NavLinks>
+              <NavLinks colorChange={colorChange} to="/learn">
+                learn
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks colorChange={colorChange} to="/projects">projects</NavLinks>
-            </NavItem> 
-            <NavItem>
-              <NavLinks colorChange={colorChange} to="/team">team</NavLinks>
+              <NavLinks colorChange={colorChange} to="/projects">
+                projects
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks colorChange={colorChange} to="/contact">contact</NavLinks>
+              <NavLinks colorChange={colorChange} to="/team">
+                team
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks colorChange={colorChange} to="/contact">
+                contact
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

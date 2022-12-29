@@ -2,75 +2,146 @@ export const teamDataObj = {
   id: "team",
   memberData: [
     {
-      name: "Dude dude",
+      name: "Shivam Singh Rajput",
       title: "President",
-      image: require("../../images/placeholder-image.jpeg"),
+      image: require("../../images/team/Shivam.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
     },
     {
-      name: "Dude Man",
+      name: "Dimitar Boev",
       title: "Vice President",
       image: require("../../images/placeholder-image.jpeg"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
     },
     {
-      name: "Man dude",
-      title: "Software",
-      image: require("../../images/placeholder-image.jpeg"),
+      name: "Mohamed Alhaskir",
+      title: "Founder, Software Team",
+      image: require("../../images/team/Mo.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
     },
     {
-      name: "Woman dude",
-      title: "Software",
-      image: require("../../images/placeholder-image.jpeg"),
+      name: "Ivan Karetić",
+      title: "Hardware Team",
+      image: require("../../images/team/Ivan.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
     },
     {
-      name: "Dude Woman",
-      title: "Software",
-      image: require("../../images/placeholder-image.jpeg"),
+      name: "Krittapas Boonpasart",
+      title: "Social Media Team",
+      image: require("../../images/team/Kris.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
+    },
+
+    {
+      name: "Akhil Verma",
+      title: "Hardware Team",
+      image: require("../../images/team/Akhil.JPG"),
+      description: "Master in Robotics at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
     },
     {
-      name: "Someone dude",
-      title: "Hardware",
-      image: require("../../images/placeholder-image.jpeg"),
+      name: "Josef Bolten",
+      title: "Public Relations Team",
+      image: require("../../images/team/Josef.JPG"),
+      description: "Master in Robotics at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Poojitha Reddy Nellipudi ",
+      title: "Hardware Team",
+      image: require("../../images/team/Poojitha.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
     },
     {
-      name: "Dude Someone",
-      title: "Hardware",
-      image: require("../../images/placeholder-image.jpeg"),
+      name: "Maroof Abdul Aziz",
+      title: "Hardware Team",
+      image: require("../../images/team/Maroof.JPG"),
+      description: "Master in Robotics at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Philipp",
+      title: "Software Team",
+      image: require("../../images/team/Philipp.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#"
-      }
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Nnanna Muoneke",
+      title: "Social Media Team",
+      image: require("../../images/team/Nnanna.JPG"),
+      description: "Master in Robotics at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
     },
   ],
   redBgPoint: require("../../images/square.png"),
+  alumniData: [
+    {
+      name: "Siddharth Singh",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Siddharth Singh",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Siddharth Singh",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    {
+      name: "Siddharth Singh",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+  ],
 };
