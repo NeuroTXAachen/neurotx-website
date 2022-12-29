@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/neurotx-web/static/css/main.9cb58218.css",
+    "main.js": "/neurotx-web/static/js/main.b21b9489.js",
+    "static/js/787.b0b77e3c.chunk.js": "/neurotx-web/static/js/787.b0b77e3c.chunk.js",
+    "static/media/Ivan.JPG": "/neurotx-web/static/media/Ivan.d6a14891b68ab70ca1e5.JPG",
+    "static/media/Shivam.JPG": "/neurotx-web/static/media/Shivam.668422ce5d782c857114.JPG",
+    "static/media/Nnanna.JPG": "/neurotx-web/static/media/Nnanna.49553c58b793ec11b661.JPG",
+    "static/media/Poojitha.JPG": "/neurotx-web/static/media/Poojitha.0cc5f3c42187367aaa88.JPG",
+    "static/media/Mo.JPG": "/neurotx-web/static/media/Mo.c5ed43f5cdca3ec8d931.JPG",
+    "static/media/ef84a11d-884e-4c27-b777-aa1b489ab79a.mp4": "/neurotx-web/static/media/ef84a11d-884e-4c27-b777-aa1b489ab79a.c5f10732843f3b051ecc.mp4",
+    "static/media/Josef.JPG": "/neurotx-web/static/media/Josef.32340e3796f1f7339494.JPG",
+    "static/media/Philipp.JPG": "/neurotx-web/static/media/Philipp.aad2cde213f1185d335d.JPG",
+    "static/media/Akhil.JPG": "/neurotx-web/static/media/Akhil.14bd63e17765d94910e8.JPG",
+    "static/media/Maroof.JPG": "/neurotx-web/static/media/Maroof.3eac495a7e804e66656a.JPG",
+    "static/media/Kris.JPG": "/neurotx-web/static/media/Kris.1ac46a2c91366a326198.JPG",
+    "static/media/square.png": "/neurotx-web/static/media/square.20ced5b06e4ee70c634d.png",
+    "static/media/waves.png": "/neurotx-web/static/media/waves.80b26ef2c65b67bfa45d.png",
+    "static/media/coverphoto.png": "/neurotx-web/static/media/coverphoto.cda4db21fcb6000fa5f6.png",
+    "static/media/Event2.png": "/neurotx-web/static/media/Event2.f578afa94fa2a6d01fd2.png",
+    "static/media/Xavier.png": "/neurotx-web/static/media/Xavier.2fbf9a4ccbf97fe9956a.png",
+    "static/media/Event0.png": "/neurotx-web/static/media/Event0.a603ba4980304c31179e.png",
+    "static/media/Bucky.png": "/neurotx-web/static/media/Bucky.7f986fcb589b77a966e6.png",
+    "static/media/Montserrat-Medium.ttf": "/neurotx-web/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
+    "static/media/Event1.png": "/neurotx-web/static/media/Event1.cbcacb5730e25065372a.png",
+    "static/media/DSC08470-2 1.png": "/neurotx-web/static/media/DSC08470-2 1.4504dca94c7a471e9f37.png",
+    "static/media/image 3.png": "/neurotx-web/static/media/image 3.f3c7d1b171ef7cf60826.png",
+    "static/media/BrainDream.png": "/neurotx-web/static/media/BrainDream.026210c58dfd9b117b4f.png",
+    "static/media/KronaOne-Regular.ttf": "/neurotx-web/static/media/KronaOne-Regular.97c7e647eef168b16a0b.ttf",
+    "static/media/brain.png": "/neurotx-web/static/media/brain.c04bf0623cc954f459dd.png",
+    "static/media/collectiveIncubator.png": "/neurotx-web/static/media/collectiveIncubator.8a4b712b56ba602371d8.png",
+    "static/media/placeholder-image.jpeg": "/neurotx-web/static/media/placeholder-image.8c84566a7ea4355ab04c.jpeg",
+    "index.html": "/neurotx-web/index.html",
+    "main.9cb58218.css.map": "/neurotx-web/static/css/main.9cb58218.css.map",
+    "main.b21b9489.js.map": "/neurotx-web/static/js/main.b21b9489.js.map",
+    "787.b0b77e3c.chunk.js.map": "/neurotx-web/static/js/787.b0b77e3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cb58218.css",
+    "static/js/main.b21b9489.js"
+  ]
+}
