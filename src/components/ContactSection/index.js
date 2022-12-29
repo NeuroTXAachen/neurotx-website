@@ -58,7 +58,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
             "Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions."
           }
         </Subtitle>
-        <FormWrapper>
+        <FormWrapper netlify>
           <FormRow>
             <NameFormField>
               <Label>First Name*</Label>
@@ -129,7 +129,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
               Details like “How did you hear about us?” or “Why are you
               interested in NeuroTX?” will be helpful to us.
             </Label>
-            <ButtonServices>Send</ButtonServices>
+            <ButtonServices type="submit">Send</ButtonServices>
           </FormRow>
         </FormWrapper>
         <SectionWrapper>

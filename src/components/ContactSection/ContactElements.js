@@ -44,7 +44,7 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled.form`
   position: relative;
   display: flex;
   flex-direction: column;
