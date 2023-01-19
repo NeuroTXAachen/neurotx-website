@@ -251,7 +251,7 @@ const HomeSection = ({
       />
       <ProjectSectionWrapper>
         <TeamHeading>
-          We are a team of TEST <br />{" "}
+          We are a team of <br />{" "}
           <div
             style={{
               width: "fit-content",
