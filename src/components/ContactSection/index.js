@@ -58,7 +58,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
             "Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions."
           }
         </Subtitle>
-        <form name="contact" netlify-honeypot="bot-field" netlify>
+        <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <FormWrapper>
             <FormRow>
