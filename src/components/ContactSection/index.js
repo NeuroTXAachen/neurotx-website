@@ -59,80 +59,83 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
             "Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions."
           }
         </Subtitle>
-        <FormWrapper>
-          <FormRow>
-            <NameFormField>
-              <Label>First Name*</Label>
-              <Input type="text" name="firstname" />
-            </NameFormField>
+        <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <FormWrapper>
+            <FormRow>
+              <NameFormField>
+                <Label>First Name*</Label>
+                <Input type="text" name="firstname" />
+              </NameFormField>
 
-            <NameFormField>
-              <Label>Last Name*</Label>
-              <Input type="text" name="lastname" />
-            </NameFormField>
-          </FormRow>
-          <FormRow>
-            <FormField>
-              <Label>Email*</Label>
-              <Input type="email" name="email" />
-            </FormField>
-          </FormRow>
-          <FormRow>
-            <FormField>
-              <Label>Field of Study*</Label>
-              <Input type="text" name="studies" />
-            </FormField>
-          </FormRow>
-          <FormRow>
-            <FormField width={"50%"}>
-              <Label>University*</Label>
-            </FormField>
-            <FormField>
-              <div>
-                <RadioInput
-                  type="radio"
-                  name="RWTH Aachen"
-                  value="RWTH Aachen"
-                  id={"rwthAachen"}
-                  checked={true}
-                />
-                <Label for={"rwthAachen"}>RWTH Aachen</Label>
-              </div>
-              <div>
-                <RadioInput
-                  type="radio"
-                  id={"fhAachen"}
-                  name="RWTH Aachen"
-                  value="FH Aachen"
-                />
-                <Label for={"fhAachen"}>FH Aachen</Label>
-              </div>
-              <div>
-                <RadioInput
-                  type="radio"
-                  id={"other"}
-                  name="RWTH Aachen"
-                  value="other"
-                />
-                <Label for={"other"}>Other</Label>
-              </div>
-            </FormField>
-          </FormRow>
-          <FormRow>
-            <FormField>
-              <Label>Message*</Label>
-              <Message type="text" name="message" />
-              <Label></Label>
-            </FormField>
-          </FormRow>
-          <FormRow>
-            <Label>
-              Details like “How did you hear about us?” or “Why are you
-              interested in NeuroTX?” will be helpful to us.
-            </Label>
-            <ButtonServices>Send</ButtonServices>
-          </FormRow>
-        </FormWrapper>
+              <NameFormField>
+                <Label>Last Name*</Label>
+                <Input type="text" name="lastname" />
+              </NameFormField>
+            </FormRow>
+            <FormRow>
+              <FormField>
+                <Label>Email*</Label>
+                <Input type="email" name="email" />
+              </FormField>
+            </FormRow>
+            <FormRow>
+              <FormField>
+                <Label>Field of Study*</Label>
+                <Input type="text" name="studies" />
+              </FormField>
+            </FormRow>
+            <FormRow>
+              <FormField width={"50%"}>
+                <Label>University*</Label>
+              </FormField>
+              <FormField>
+                <div>
+                  <RadioInput
+                    type="radio"
+                    name="University"
+                    value="RWTH Aachen"
+                    id={"rwthAachen"}
+                    checked={true}
+                  />
+                  <Label for={"rwthAachen"}>RWTH Aachen</Label>
+                </div>
+                <div>
+                  <RadioInput
+                    type="radio"
+                    id={"fhAachen"}
+                    name="University"
+                    value="FH Aachen"
+                  />
+                  <Label for={"fhAachen"}>FH Aachen</Label>
+                </div>
+                <div>
+                  <RadioInput
+                    type="radio"
+                    id={"other"}
+                    name="University"
+                    value="other"
+                  />
+                  <Label for={"other"}>Other</Label>
+                </div>
+              </FormField>
+            </FormRow>
+            <FormRow>
+              <FormField>
+                <Label>Message*</Label>
+                <Message type="text" name="message" />
+                <Label></Label>
+              </FormField>
+            </FormRow>
+            <FormRow>
+              <Label>
+                Details like “How did you hear about us?” or “Why are you
+                interested in NeuroTX?” will be helpful to us.
+              </Label>
+              <ButtonServices type="submit">Send</ButtonServices>
+            </FormRow>
+          </FormWrapper>
+        </form>
         <SectionWrapper>
           <SubLabel>location</SubLabel>
           <SubSection>
