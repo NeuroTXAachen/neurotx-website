@@ -52,7 +52,7 @@ function App() {
           backgroundColor: "#ffff",
           color: "#040142",
         }}
-        debug={true}
+        debug={false}
         enableDeclineButton
         flipButtons
         buttonStyle={{
