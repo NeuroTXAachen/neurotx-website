@@ -7,16 +7,37 @@ import {
   Video,
   RedAccent,
   RedDotImg,
+  RedDotImg2,
+  WaveImg1,
+  WaveImg2,
   Description,
   DescriptionWrapper,
   ButtonServices,
 } from "./LearnElements";
-import { WaveImg } from "../HomeSection/HomeElements";
 
 const LearnSection = ({ redBgPoint, waveImage }) => {
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
+
+      <WaveImg1
+        src={waveImage}
+        alt="waveImage"
+        position={"absolute"}
+        right={"-55%"}
+        marginTop={"150vh"}
+      />
+      <RedDotImg2
+        src={redBgPoint}
+        alt="redbgpoint"
+        right={"50%"}
+      />
+      <WaveImg2
+        src={waveImage}
+        alt="waveImage"
+        right={"55%"}
+        marginTop={"50vh"}
+      />
       <Heading>{"learn"}</Heading>
       <Subtitle>
         {
@@ -37,13 +58,6 @@ const LearnSection = ({ redBgPoint, waveImage }) => {
             allowfullscreen
           ></iframe>
         </Video>
-
-        <WaveImg
-          src={waveImage}
-          alt="waveImg"
-          right={"55%"}
-          style={{ rotate: "80deg" }}
-        />
         <Label>Signals Transduction</Label>
         <Video>
           <RedAccent />
@@ -63,12 +77,7 @@ const LearnSection = ({ redBgPoint, waveImage }) => {
           marginTop={"250vh"}
           right={"70%"}
         />
-        <WaveImg
-          src={waveImage}
-          alt="waveImage"
-          right={"-55%"}
-          marginTop={"150vh"}
-        />
+        
         <Label>Momentum of the 21st Century</Label>
         <Video>
           <RedAccent />

@@ -1,5 +1,6 @@
 export const teamDataObj = {
   id: "team",
+  waveImage: require("../../images/waves.png"),
   memberData: [
     {
       name: "Shivam Singh Rajput",
@@ -115,33 +116,33 @@ export const teamDataObj = {
   ],
   redBgPoint: require("../../images/square.png"),
   alumniData: [
-    {
-      name: "Siddharth Singh",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Siddharth Singh",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Siddharth Singh",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Siddharth Singh",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
+    // {
+    //   name: "Siddharth Singh",
+    //   socials: {
+    //     github: "#",
+    //     linkedIn: "#",
+    //   },
+    // },
+    // {
+    //   name: "Siddharth Singh",
+    //   socials: {
+    //     github: "#",
+    //     linkedIn: "#",
+    //   },
+    // },
+    // {
+    //   name: "Siddharth Singh",
+    //   socials: {
+    //     github: "#",
+    //     linkedIn: "#",
+    //   },
+    // },
+    // {
+    //   name: "Siddharth Singh",
+    //   socials: {
+    //     github: "#",
+    //     linkedIn: "#",
+    //   },
+    // },
   ],
 };

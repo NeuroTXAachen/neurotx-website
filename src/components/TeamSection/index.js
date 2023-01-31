@@ -4,6 +4,9 @@ import {
   Subtitle,
   MemberWrapper,
   RedDotImg,
+  RedDotImg2,
+  WaveImg1,
+  WaveImg2,
   AlumniWrapper,
   SectionWrapper,
   SubLabel,
@@ -37,10 +40,29 @@ const AlumniSection = ({ children, memberopts }) => {
   );
 };
 
-const TeamSection = ({ memberData, alumniData, redBgPoint }) => {
+const TeamSection = ({ memberData, alumniData, redBgPoint, waveImage }) => {
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
+
+<WaveImg1
+  src={waveImage}
+  alt="waveImage"
+  position={"absolute"}
+  right={"-55%"}
+  marginTop={"150vh"}
+/>
+<RedDotImg2
+  src={redBgPoint}
+  alt="redbgpoint"
+  right={"50%"}
+/>
+<WaveImg2
+  src={waveImage}
+  alt="waveImage"
+  right={"55%"}
+  marginTop={"50vh"}
+/>
       <Heading>{"team"}</Heading>
       <Subtitle>
         {

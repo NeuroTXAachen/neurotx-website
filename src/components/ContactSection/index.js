@@ -11,7 +11,10 @@ import {
   Message,
   ButtonServices,
   RedDotImg,
+  RedDotImg2,
   RedAccent,
+  WaveImg1,
+  WaveImg2,
   SubSectionText,
   SubSection,
   DonateSection,
@@ -22,36 +25,33 @@ import {
   Image,
   RadioInput,
 } from "./ContactElements";
-import { WaveImg } from "../HomeSection/HomeElements";
+
 const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
   return (
     <>
-      <RedDotImg
-        src={redBgPoint}
-        alt="redbgpoint"
-        marginTop={"25vh"}
-        right={"70%"}
-      />
-      <WaveImg
+      
+      <Container>
+      <RedDotImg src={redBgPoint} alt="Red Dot" />
+
+      <WaveImg1
         src={waveImage}
         alt="waveImage"
+        position={"absolute"}
         right={"-55%"}
         marginTop={"150vh"}
       />
-      <RedDotImg
+      <RedDotImg2
         src={redBgPoint}
         alt="redbgpoint"
-        marginTop={"250vh"}
-        right={"70%"}
+        right={"50%"}
       />
-      <WaveImg
+      <WaveImg2
         src={waveImage}
         alt="waveImage"
         right={"55%"}
         marginTop={"50vh"}
       />
-      <Container>
-        <RedDotImg src={redBgPoint} alt="Red Dot" />
+        
         <Heading>{"contact"}</Heading>
         <Subtitle>
           {

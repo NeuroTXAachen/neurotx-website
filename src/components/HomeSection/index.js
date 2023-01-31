@@ -44,10 +44,12 @@ import {
   Heading4,
   Subtitle,
   RedDotImg,
+  RedDotImg2,
+  WaveImg1,
+  WaveImg2,
   BodyTextWrapper,
   ForegroundHome,
   ButtonServices,
-  WaveImg,
   ServiceButtonWrapper,
   AdaptiveDiv,
 } from "./HomeElements";
@@ -94,7 +96,26 @@ const HomeSection = ({
   return (
     <HomeContainer id={id}>
       <HomeWrapper>
-        <RedDotImg src={redBgPoint} alt="redbgpoint" />
+      <RedDotImg src={redBgPoint} alt="Red Dot" />
+
+      <WaveImg1
+        src={waveImage}
+        alt="waveImage"
+        position={"absolute"}
+        right={"-55%"}
+        marginTop={"150vh"}
+      />
+      <RedDotImg2
+        src={redBgPoint}
+        alt="redbgpoint"
+        right={"50%"}
+      />
+      <WaveImg2
+        src={waveImage}
+        alt="waveImage"
+        right={"55%"}
+        marginTop={"50vh"}
+      />
 
         <BodyTextWrapper id="de">
           <ForegroundWrapper>
@@ -108,7 +129,6 @@ const HomeSection = ({
               <ForegroundHome src={backgroundPhilipp} />
             </div>
           </ForegroundWrapper>
-          <WaveImg src={waveImage} alt="waveImg" right={"-55%"} />
           <HeadingDiv>
             <Heading1>{bgLine1}</Heading1>
             <Heading2>{bgLine2}</Heading2>
@@ -203,7 +223,6 @@ const HomeSection = ({
           </ProjectDescriptionSection>
         </Projects>
         <AdaptiveDiv rotation={"70deg"}>
-          <WaveImg src={waveImage} alt="waveImg" />
         </AdaptiveDiv>
       </ProjectSectionWrapper>
 
@@ -243,12 +262,7 @@ const HomeSection = ({
         marginTop={"-420px"}
         right={"70%"}
       />
-      <WaveImg
-        src={waveImage}
-        alt="waveImage"
-        right={"-55%"}
-        marginTop={"-20%"}
-      />
+      
       <ProjectSectionWrapper>
         <TeamHeading>
           We are a team of <br />{" "}

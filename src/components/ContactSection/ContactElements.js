@@ -171,10 +171,54 @@ export const RedDotImg = styled.img`
   position: absolute;
   width: ${({ size }) => (size ? size : "70%")};
   right: ${({ right }) => (right ? right : "-350px")};
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "50px")};
+  /* padding-left: 590px; */
+  z-index: 0;
+  opacity: 1;
+  
+`;
+
+export const RedDotImg2 = styled.img`
+  position: absolute;
+  width: ${({ size }) => (size ? size : "70%")};
+  right: ${({ right }) => (right ? right : "-350px")};
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "750px")};
   /* padding-left: 590px; */
   z-index: 0;
   opacity: 1;
 `;
+
+export const WaveImg1 = styled.img`
+  position: absolute;
+  width: 100%;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "-100px")};
+  right: ${({ right }) => (right ? right : "none")};
+  /* padding-left: 810px; */
+  z-index: 0;
+  opacity: 1;
+  @media screen and (max-width: 768px) {
+    top: 200px;
+    -webkit-transform: scaleX(-1.5);
+    transform: scaleX(-1.5);
+    left: -300px;
+  }
+`;
+export const WaveImg2 = styled.img`
+  position: absolute;
+  width: 100%;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : "-100px")};
+  right: ${({ right }) => (right ? right : "none")};
+  /* padding-left: 810px; */
+  z-index: 0;
+  opacity: 1;
+  @media screen and (max-width: 768px) {
+    top: 200px;
+    -webkit-transform: scaleX(-1.5);
+    transform: scaleX(-1.5);
+    right: -300px;
+  }
+`;
+
 export const SectionWrapper = styled.div`
   position: relative;
   width: 80%;
