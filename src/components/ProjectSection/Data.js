@@ -21,4 +21,5 @@ export const projectDataObj = {
     },
   },
   redBgPoint: require("../../images/square.png"),
+  waveImage: require("../../images/waves.png"),
 };
