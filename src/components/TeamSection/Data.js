@@ -5,8 +5,8 @@ export const teamDataObj = {
     {
       name: "Shivam Singh Rajput",
       title: "President",
-      image: require("../../images/team/Shivam.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      image: require("../../images/team/Shivam.jpeg"),
+      description: "Master Computer Science",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -16,7 +16,7 @@ export const teamDataObj = {
       name: "Dimitar Boev",
       title: "Vice President",
       image: require("../../images/placeholder-image.jpeg"),
-      description: "Master Computer Science at RWTH Aachen",
+      description: "Master Computer Science",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -25,8 +25,8 @@ export const teamDataObj = {
     {
       name: "Mohamed Alhaskir",
       title: "Founder, Software Team",
-      image: require("../../images/team/Mo.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      image: require("../../images/team/Mo.jpeg"),
+      description: "Master Computer Science",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -35,8 +35,8 @@ export const teamDataObj = {
     {
       name: "Ivan Karetić",
       title: "Hardware Team",
-      image: require("../../images/team/Ivan.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      image: require("../../images/team/Ivan.jpeg"),
+      description: "Master Computer Science",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -45,8 +45,8 @@ export const teamDataObj = {
     {
       name: "Krittapas Boonpasart",
       title: "Social Media Team",
-      image: require("../../images/team/Kris.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      image: require("../../images/team/Kris.jpeg"),
+      description: "Master Computer Science",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -56,8 +56,8 @@ export const teamDataObj = {
     {
       name: "Akhil Verma",
       title: "Hardware Team",
-      image: require("../../images/team/Akhil.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
+      image: require("../../images/team/Akhil.jpeg"),
+      description: "Master in Robotics",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -66,8 +66,8 @@ export const teamDataObj = {
     {
       name: "Josef Bolten",
       title: "Public Relations Team",
-      image: require("../../images/team/Josef.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
+      image: require("../../images/team/Josef.jpeg"),
+      description: "Master in Robotics",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -75,9 +75,9 @@ export const teamDataObj = {
     },
     {
       name: "Poojitha Reddy Nellipudi ",
-      title: "Hardware Team",
-      image: require("../../images/team/Poojitha.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      title: "Software Team",
+      image: require("../../images/team/Poojitha.jpeg"),
+      description: "Robotic Systems Engineering",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -86,8 +86,8 @@ export const teamDataObj = {
     {
       name: "Maroof Abdul Aziz",
       title: "Hardware Team",
-      image: require("../../images/team/Maroof.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
+      image: require("../../images/team/Maroof.jpeg"),
+      description: "Master in Robotics",
       socials: {
         github: "#",
         linkedIn: "#",
@@ -96,18 +96,28 @@ export const teamDataObj = {
     {
       name: "Philipp",
       title: "Software Team",
-      image: require("../../images/team/Philipp.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
+      image: require("../../images/team/Philipp.jpeg"),
+      description: "Biomedical Engineering",
       socials: {
         github: "#",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/philipp-ljubarskij-73a45b236",
+      },
+    },
+    {
+      name: "Majd Hamza",
+      title: "Software Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Master Computer Science",
+      socials: {
+        github: "https://github.com/majitsima",
+        linkedIn: "https://www.linkedin.com/in/majd-hamza/",
       },
     },
     {
       name: "Nnanna Muoneke",
       title: "Social Media Team",
-      image: require("../../images/team/Nnanna.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
+      image: require("../../images/team/Nnanna.jpeg"),
+      description: "Technik Kommunikation",
       socials: {
         github: "#",
         linkedIn: "#",
