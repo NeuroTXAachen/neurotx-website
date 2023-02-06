@@ -26,20 +26,20 @@ export const teamDataObj = {
       name: "Mohamed Alhaskir",
       title: "Founder, Software Team",
       image: require("../../images/team/Mo.jpeg"),
-      description: "Master Computer Science",
+      description: "Phd Medical Informatics",
       socials: {
-        github: "#",
-        linkedIn: "#",
+        github: "https://github.com/Mohamed-Alhaskir",
+        linkedIn: "https://www.linkedin.com/in/mohamed-alhaskir-20342717a/",
       },
     },
     {
       name: "Ivan Karetić",
       title: "Hardware Team",
       image: require("../../images/team/Ivan.jpeg"),
-      description: "Master Computer Science",
+      description: "Master Electrical Engineering ",
       socials: {
         github: "#",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/ivan-karetić-52a627247",
       },
     },
     {
@@ -74,6 +74,16 @@ export const teamDataObj = {
       },
     },
     {
+      name: "Marko Karetić",
+      title: "Public Relations Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Master Computer Science",
+      socials: {
+        github: "#",
+        linkedIn: "https://www.linkedin.com/in/marko-kareti%C4%87-34849a232/",
+      },
+    },
+    {
       name: "Poojitha Reddy Nellipudi ",
       title: "Software Team",
       image: require("../../images/team/Poojitha.jpeg"),
@@ -94,8 +104,8 @@ export const teamDataObj = {
       },
     },
     {
-      name: "Philipp",
-      title: "Software Team",
+      name: "Philipp Ljubarskij ",
+      title: "Software, Hardware and Management Team",
       image: require("../../images/team/Philipp.jpeg"),
       description: "Biomedical Engineering",
       socials: {
@@ -121,6 +131,16 @@ export const teamDataObj = {
       socials: {
         github: "#",
         linkedIn: "#",
+      },
+    },
+    {
+      name: "Usama Azhar",
+      title: "Software and Hardware Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Electrical and Computer Engineering ",
+      socials: {
+        github: "#",
+        linkedIn: "https://www.linkedin.com/in/usama-a-707818109",
       },
     },
   ],
