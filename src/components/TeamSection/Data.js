@@ -84,7 +84,7 @@ export const teamDataObj = {
       },
     },
     {
-      name: "Poojitha Reddy Nellipudi ",
+      name: "Poojitha Reddy Nellipudi",
       title: "Software Team",
       image: require("../../images/team/Poojitha.jpeg"),
       description: "Robotic Systems Engineering",
@@ -104,7 +104,7 @@ export const teamDataObj = {
       },
     },
     {
-      name: "Philipp Ljubarskij ",
+      name: "Philipp Ljubarskij",
       title: "Software, Hardware and Management Team",
       image: require("../../images/team/Philipp.jpeg"),
       description: "Biomedical Engineering",
@@ -146,13 +146,13 @@ export const teamDataObj = {
   ],
   redBgPoint: require("../../images/square.png"),
   alumniData: [
-    // {
-    //   name: "Siddharth Singh",
-    //   socials: {
-    //     github: "#",
-    //     linkedIn: "#",
-    //   },
-    // },
+    {
+      name: "Timothé Scheich",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
     // {
     //   name: "Siddharth Singh",
     //   socials: {
