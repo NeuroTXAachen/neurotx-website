@@ -107,7 +107,7 @@ export const teamDataObj = {
       name: "Philipp Ljubarskij",
       title: "Software, Hardware and Management Team",
       image: require("../../images/team/Philipp.jpeg"),
-      description: "Biomedical Engineering",
+      description: "BiomedicalEngineering",
       socials: {
         github: "#",
         linkedIn: "https://www.linkedin.com/in/philipp-ljubarskij-73a45b236",
