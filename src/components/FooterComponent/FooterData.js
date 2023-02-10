@@ -15,7 +15,7 @@ export const footerDataObj = {
   address: {
     name: "NeuroTX Aachen e.V.",
     co: "Collective Incubator e.V.",
-    street: "Jülicher Str. 209",
+    street: "Jülicher Straße 209c",
     postcode: "52070",
     city: "Aachen",
   },
