@@ -103,7 +103,7 @@ export const RedAccent = styled.div`
   margin: ${({ margin }) => (margin ? margin : "0 2rem 0 12rem")};
   @media screen and (max-width: 1222px) {
     display: none;
-   }
+  }
 `;
 export const Projects = styled.div`
   display: flex;
