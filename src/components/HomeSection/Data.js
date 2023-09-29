@@ -22,7 +22,7 @@ export const homeDataObj = {
     "Our projects involve mainly brain signal processing from EEG, and its translation into real-world applications by a brain-computer interface.",
   projectdescription2:
     "Having the benefit of the disabled in mind, we are developing Xavier, a prototype electric wheelchair controlled by brain signals.",
-  projectdescription3: "But that’s not all. Discover More of our projects!",
+  projectdescription3: "But that’s not all. Discover More about projects!",
   vidJSOptions: {
     autoplay: true,
     fluid: true,
@@ -56,5 +56,6 @@ export const homeDataObj = {
     asta: require("../../images/asta.png"),
     collectiveInc: require("../../images/collectiveIncubator.png"),
     techAachen: require("../../images/techAachen_Logo 2.png"),
+    gtec:   require("../../images/gtec-logo.png"),
   },
 };

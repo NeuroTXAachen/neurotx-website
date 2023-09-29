@@ -1,5 +1,7 @@
 import { React } from "react";
-
+import {
+  NavLinks2,
+} from "../Navbar/NavbarElement"
 import {
   BciWrapper,
   Description,
@@ -118,7 +120,7 @@ const HomeSection = ({
           <SubtitleWrapper>
             <Subtitle>{description}</Subtitle>
             <ServiceButtonWrapper>
-              <ButtonServices>Join Us!</ButtonServices>
+              <ButtonServices><NavLinks2 to="/contact">Join Us!</NavLinks2></ButtonServices>
             </ServiceButtonWrapper>
           </SubtitleWrapper>
         </BodyTextWrapper>
@@ -289,7 +291,7 @@ const HomeSection = ({
             <SectionHeading>support us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"20px"} />
+              <RedAccent />
               <Description>
                 If you wish to contribute to our efforts, donate to us directly
                 or via PayPal. Your ideas are also very important to us, so feel
@@ -301,7 +303,7 @@ const HomeSection = ({
             <SectionHeading>join us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"25px"} />
+              <RedAccent />
               <Description>
                 You cannot wait to build the future by your own hands, while
                 getting to know great people along the way? Feel free to get in
@@ -325,6 +327,7 @@ const HomeSection = ({
               <PartnerImg src={partnersImgs.asta} />
               <PartnerImg src={partnersImgs.collectiveInc} />
               <PartnerImg src={partnersImgs.techAachen} />
+              <PartnerImg src={partnersImgs.gtec}/>
             </SplitSectionImgWrapper>
           </SplitSectionWrapper>
         </SplitDiv>

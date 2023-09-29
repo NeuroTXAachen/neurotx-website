@@ -168,7 +168,7 @@ export const SubtitleWrapper = styled.div`
     margin-top: 200px;
     text-align: left;
     margin-left: 0%;
-    padding: 0% 5% 0% 15%;
+    padding: 0% 5% 0% 5%;
   }
 `;
 // Used more than once

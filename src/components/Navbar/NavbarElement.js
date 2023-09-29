@@ -180,6 +180,14 @@ export const NavLinks = styled(LinkJ)`
   }
 `;
 
+export const NavLinks2 = styled(LinkJ)`
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  color: #ffffff;
+`;
+
 export const NavButton = styled.button`
   background-color: #2283c9;
   border-radius: 8px;

@@ -49,5 +49,16 @@
     "gh-pages": "^4.0.0",
     "react-router-dom": "^6.6.1",
     "video.js": "^7.20.3"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeuroTXAachen/neurotx-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeuroTXAachen/neurotx-website/issues"
   }
 }

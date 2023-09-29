@@ -53,6 +53,7 @@ export const Description = styled.p`
     font-size: 16pt;
     font-weight: 500;
     line-height: 170%;
+    max-width: 100%
     letter-spacing: 0em;
     text-align: left;
   }
@@ -62,10 +63,9 @@ export const DescriptionWrapper = styled.div`
   width: 55%;
   padding-top: 60px;
   display: flex;
-  gap: 10%;
   align-items: flex-start;
   justify-content: center;
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 768px) {
     margin-left: 0px;
     justify-content: left;
     flex-direction: column;
@@ -81,6 +81,8 @@ export const BciTextWrapper = styled.div`
   align-items: center;
   @media screen and (max-width: 769px) {
     flex-direction: row;
+    justify-content: left;
+    padding: 0 7% 0 7%;
   }
 `;
 
@@ -107,6 +109,7 @@ export const SetEndWrapper = styled.div`
     height: auto;
     width: 100%;
     justify-content: flex-start;
+    scale: 1.8;
     margin-left: -7px;
   }
 `;
@@ -122,6 +125,7 @@ export const SetTopWrapper = styled.div`
     width: 100%;
     justify-content: flex-end;
     height: auto;
+    scale:1.8;
   }
 `;
 
@@ -152,8 +156,9 @@ export const DottedWrapper = styled.div`
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 769px) {
-    height: 300px;
+    height: 630px;
     width: 40px;
+    scale: 1.8;
     transform: rotate(90deg);
   }
 `;
