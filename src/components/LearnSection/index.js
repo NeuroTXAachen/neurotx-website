@@ -12,6 +12,7 @@ import {
   ButtonServices,
 } from "./LearnElements";
 import { WaveImg } from "../HomeSection/HomeElements";
+import { NavLinks2 } from "../Navbar/NavbarElement";
 
 const LearnSection = ({ redBgPoint, waveImage }) => {
   return (
@@ -101,7 +102,7 @@ const LearnSection = ({ redBgPoint, waveImage }) => {
           We might also organize seminars and events in the future. Make sure
           you don’t miss out by following our Instagram.
         </Description>
-        <ButtonServices>Instagram</ButtonServices>
+        <ButtonServices><a style={{textDecoration : 'none', color: '#ffffff'}} target="_blank" href="https://www.instagram.com/neurotx.aachen/">Instagram</a></ButtonServices>
       </DescriptionWrapper>
     </Container>
   );
