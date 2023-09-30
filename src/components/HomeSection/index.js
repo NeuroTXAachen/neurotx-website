@@ -291,7 +291,7 @@ const HomeSection = ({
             <SectionHeading>support us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"20px"} />
+              <RedAccent />
               <Description>
                 If you wish to contribute to our efforts, donate to us directly
                 or via PayPal. Your ideas are also very important to us, so feel
@@ -303,7 +303,7 @@ const HomeSection = ({
             <SectionHeading>join us</SectionHeading>
 
             <SplitSectionTextWrapper>
-              <RedAccent margin={"25px"} />
+              <RedAccent />
               <Description>
                 You cannot wait to build the future by your own hands, while
                 getting to know great people along the way? Feel free to get in
