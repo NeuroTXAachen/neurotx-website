@@ -46,7 +46,7 @@ export const ForegroundHome = styled.img`
 export const HomeWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
-  height: 1200px;
+  height: 1500px;
   @media only screen and (max-width: 600px) {
     height: 900px;
   }
