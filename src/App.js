@@ -37,6 +37,7 @@ function App() {
       </div> */}
       <Router>
         <Routes>
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/projects" element={<Projects />} />
@@ -44,7 +45,6 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/policy" element={<Impressum />} />
           <Route path="*" element={<Error404 />} />
-          <Route path="/" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>
       <CookieConsent
