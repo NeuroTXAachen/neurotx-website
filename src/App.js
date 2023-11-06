@@ -37,8 +37,8 @@ function App() {
       </div> */}
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
