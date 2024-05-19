@@ -41,7 +41,7 @@ const TeamSection = ({ memberData, alumniData, redBgPoint }) => {
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
-      <Heading>{"team"}</Heading>
+      <Heading>{"TEAM"}</Heading>
       <Subtitle>
         {
           "Our team members are engaging, international students from different field of study and backgrounds, mostly studying at RWTH Aachen University or FH Aachen."
@@ -53,7 +53,7 @@ const TeamSection = ({ memberData, alumniData, redBgPoint }) => {
         })}
       </MemberSection>
       <SectionWrapper>
-        <SubLabel>{"alumni"}</SubLabel>
+        <SubLabel>{"ALUMNI"}</SubLabel>
         <AlumniSection>
           {alumniData.map((props) => {
             return <Alumni props={props}></Alumni>;

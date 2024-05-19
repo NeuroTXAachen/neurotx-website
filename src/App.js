@@ -30,6 +30,7 @@ function App() {
     localStorage.setItem("theme", theme);
     document.body.className = theme;
   }, [theme]);
+  //in functions only possible to return one element
   return (
     <div className={`${theme}`}>
       {/* <div className="floating-icon">
