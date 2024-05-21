@@ -89,13 +89,22 @@ export const teamDataObj = {
       description: "Bachelor Computer Science at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "www.linkedin.com/in/zeyneb-güven-4186a3232",
+        linkedIn: "https://www.linkedin.com/in/zeyneb-g%C3%BCven-4186a3232/",
       },
     },
-    
+    {
+      name: "Ahmet Dursun Umut Özdemir",
+      title: "Hardware Team",
+      image: require("../../images/team/bw/Umut.jpeg"),
+      description: "Bachelor Electrical Engineering and Information at RWTH Aachen",
+      socials: {
+        github: "https://github.com/adumut",
+        linkedIn: "https://de.linkedin.com/in/ahmet-dursun-umut-%C3%B6zdemir-687a821b5",
+      },
+    },
     {
       name: "Zilvan Mondry",
-      title: "Software Team",
+      title: "Hardware Team",
       image: require("../../images/placeholder-image.jpeg"),
       description: "Bachelor Electrical Engineering at RWTH Aachen",
       socials: {
@@ -112,51 +121,25 @@ export const teamDataObj = {
         github: "#",
         linkedIn: "#",
       },
-    },
-    {
-      name: "Ahmet Dursun Umut Özdemir",
-      title: "Hardware Team",
-      image: require("../../images/team/bw/Umut.jpeg"),
-      description: "Bachelor Electrical Engineering and Information at RWTH Aachen",
-      socials: {
-        github: "https://github.com/adumut",
-        linkedIn: "https://de.linkedin.com/in/ahmet-dursun-umut-%C3%B6zdemir-687a821b5",
-      },
     }
   ],
   redBgPoint: require("../../images/square.png"),
   alumniData: [
     {
-      name: "Siddharth Singh",
+      name: "Mohamed Alhaskir",
+      title: "Founder, Software Team",
+      image: require("../../images/team/bw/Mo.JPG"),
+      description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
         linkedIn: "#",
       },
     },
+    
     {
       name: "Shivam Singh Rajput",
       title: "President",
       image: require("../../images/team/bw/Shivam.JPG"),
-      description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Dimitar Boev",
-      title: "Vice President",
-      image: require("../../images/placeholder-image.jpeg"),
-      description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Mohamed Alhaskir",
-      title: "Founder, Software Team",
-      image: require("../../images/team/bw/Mo.JPG"),
       description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
@@ -174,11 +157,30 @@ export const teamDataObj = {
       },
     },
     {
-      name: "Siddharth Singh",
+      name: "Dimitar Boev",
+      title: "Vice President",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Master Computer Science at RWTH Aachen",
       socials: {
         github: "#",
         linkedIn: "#",
       },
     },
+    {
+      name: "Siddharth Singh",
+      image: require("../../images/placeholder-image.jpeg"),
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },
+    /*,
+    {
+      name: "Siddharth Singh",
+      socials: {
+        github: "#",
+        linkedIn: "#",
+      },
+    },*/
   ],
 };

@@ -9,6 +9,8 @@ import {
   SubLabel,
 } from "./TeamElements";
 
+import { NavLinks2 } from "../Navbar/NavbarElement";
+import { DescriptionWrapper, Description, ButtonServices } from "../LearnSection/LearnElements";
 import Member from "./Member";
 import Alumni from "./Alumni";
 import React, { useState } from "react";
@@ -60,6 +62,14 @@ const TeamSection = ({ memberData, alumniData, redBgPoint }) => {
           })}
         </AlumniSection>
       </SectionWrapper>
+      <DescriptionWrapper>
+        <Description>
+          Wanna be part of our team? Feel free to get in touch with us.
+          No prior knowledge abut Neurotechnology?<br />
+          Don't worry, you can learn on the fly!
+        </Description>
+        <ButtonServices><NavLinks2 to="/contact">Get In Touch</NavLinks2></ButtonServices>
+      </DescriptionWrapper>
     </Container>
   );
 };
