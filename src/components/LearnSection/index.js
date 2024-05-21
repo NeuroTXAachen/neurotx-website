@@ -18,7 +18,7 @@ const LearnSection = ({ redBgPoint, waveImage }) => {
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
-      <Heading>{"learn"}</Heading>
+      <Heading>{"LEARN"}</Heading>
       <Subtitle>
         {
           "To help you start from beginner’s level, we offer online interactive workshops and webinars for free. These are some recording from our seminar."
