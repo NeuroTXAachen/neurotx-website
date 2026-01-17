@@ -4,11 +4,11 @@ export const teamDataObj = {
     {
       name: "Philipp Ljubarskij",
       title: "President, Software Team",
-      image: require("../../images/team/bw/Philipp.JPG"),
+      image: require("../../images/team/bw/Philipp.png"),
       description: "Master Biomedical Systems Engineering at RWTH Aachen",
       socials: {
         github: "#",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/philipp-ljubarskij-73a45b236",
       },
     },
     {

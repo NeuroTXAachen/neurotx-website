@@ -1,7 +1,7 @@
 export const footerDataObj = {
   neurotx:
     "NeuroTX Aachen e.V. ist eingetragen beim Amtsgericht Aachen, Nr. VR 6094.",
-  repr: "Vertretungsberechtigter Vorstand gemäß § 26 BGB: Mohamed Alhaskir.",
+  repr: "Vertretungsberechtigter Vorstand gemäß § 26 BGB: Philipp Ljubarskij.",
   copyright: "Copyright © 2022 NeuroTX-Aachen",
   contact: {
     name: "Contact us",
