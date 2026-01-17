@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+   "short_name": "NeuroTX",
+  "name": "NeuroTX Aachen - Student Initiative für Neurotechnologie",
+  "description": "Studentische Initiative für Neurotechnologie an der RWTH Aachen",
   "icons": [
     {
       "src": "favicon.ico",
