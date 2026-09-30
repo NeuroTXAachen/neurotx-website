@@ -1,9 +1,21 @@
-import { Container, Heading, Subtitle, RedDotImg } from "./ProjectElements";
+import {
+  Container,
+  Heading,
+  Subtitle,
+  RedDotImg,
+  GroupHeading,
+  CurrentProjects,
+} from "./ProjectElements";
 import Project from "./Project";
 import { DescriptionWrapper, Description, ButtonServices } from "../LearnSection/LearnElements";
 import { NavLinks2 } from "../Navbar/NavbarElement";
 
-const ProjectSection = ({ projectopts, redBgPoint }) => {
+const ProjectSection = ({ currentProjects, previousProjects, redBgPoint }) => {
+  const renderProjects = (projects, compact = false) =>
+    Object.keys(projects).map((key) => (
+      <Project {...projects[key]} compact={compact} key={key} />
+    ));
+
   return (
     <Container>
       <RedDotImg src={redBgPoint} alt="Red Dot" />
@@ -13,9 +25,10 @@ const ProjectSection = ({ projectopts, redBgPoint }) => {
           "Our projects involve mainly brain signal processing, e.g. from EEG, and its translation into real-world practical engineering applications such as brain-computer interface."
         }
       </Subtitle>
-      {Object.keys(projectopts).map((key) => {
-        return <Project {...projectopts[key]}></Project>;
-      })}
+      <GroupHeading>Current Projects</GroupHeading>
+      <CurrentProjects>{renderProjects(currentProjects, true)}</CurrentProjects>
+      <GroupHeading>Previous Projects</GroupHeading>
+      {renderProjects(previousProjects)}
       <DescriptionWrapper>
         <Description>
           Wanna find out more about our projects?<br />

@@ -14,7 +14,6 @@ import {
   BciSectionWrapper,
   BciTextWrapper,
   DescriptionWrapper,
-  TeamHeading,
   SetTopWrapper,
 } from "./BciSection";
 
@@ -29,9 +28,6 @@ import {
   ProjectImg,
   EventWrapper,
   EventWrapper2,
-  SliderContainer,
-  SliderDescription,
-  SliderWrapper,
 } from "./ProjectSection";
 
 import {
@@ -64,9 +60,6 @@ import {
   SplitSectionWrapper,
 } from "./FinalSection";
 
-import { ImageSlider } from "../ImageSlider";
-import { Slider } from "../ImageSlider/Carousel";
-
 const HomeSection = ({
   id,
   bgLine1,
@@ -75,7 +68,6 @@ const HomeSection = ({
   bgLine4,
   description,
   waveImage,
-  sliderHeight,
   smallWaveImg,
   coverphoto,
   eventPhoto0,
@@ -91,7 +83,6 @@ const HomeSection = ({
   projectdescription3,
   vidJSOptions,
   partnersImgs,
-  teamData,
 }) => {
   return (
     <HomeContainer id={id}>
@@ -120,7 +111,7 @@ const HomeSection = ({
           <SubtitleWrapper>
             <Subtitle>{description}</Subtitle>
             <ServiceButtonWrapper>
-              <ButtonServices><NavLinks2 to="/contact">Join Us!</NavLinks2></ButtonServices>
+              <ButtonServices><NavLinks2 to="/join-us">Join Us!</NavLinks2></ButtonServices>
             </ServiceButtonWrapper>
           </SubtitleWrapper>
         </BodyTextWrapper>
@@ -238,54 +229,7 @@ const HomeSection = ({
         </Projects>
       </ProjectSectionWrapper>
 
-      <RedDotImg
-        src={redBgPoint}
-        alt="redbgpoint"
-        size={"805px"}
-        marginTop={"-420px"}
-        right={"70%"}
-      />
-      <WaveImg
-        src={waveImage}
-        alt="waveImage"
-        right={"-55%"}
-        marginTop={"-20%"}
-      />
       <ProjectSectionWrapper>
-        <TeamHeading>
-          We are a team of <br />{" "}
-          <div
-            style={{
-              width: "fit-content",
-              borderBottom: "8px solid red",
-              display: "inline-block",
-            }}
-          >
-            15
-          </div>{" "}
-          members <br /> and growing!
-        </TeamHeading>
-        {/* <div style={{ margin: "830px" }}></div> */}
-        {/* TODO create cards component from the outside 
-              insert here as mini cards with appropriate class definition 
-              REASON => use also in team as cards */}
-        <SliderContainer>
-          <SliderWrapper>
-            <ImageSlider
-              sliderHeight={sliderHeight}
-              teamData={teamData.memberData}
-            />
-          </SliderWrapper>
-          <div style={{ margin: "auto", width: "100%", display: "flex" }}>
-            <RedAccent />
-            <SliderDescription>
-              Our team members are engaging, international students from
-              different field of study and backgrounds, mostly studying at RWTH
-              Aachen University or FH Aachen. Get to know our team
-            </SliderDescription>
-          </div>
-        </SliderContainer>
-
         <SplitDiv>
           <SplitSectionWrapper width={"50%"}>
             <SectionHeading>support us</SectionHeading>

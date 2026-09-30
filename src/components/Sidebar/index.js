@@ -29,6 +29,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/learn">learn</SidebarLink>
           <SidebarLink to="/projects">projects</SidebarLink>
           <SidebarLink to="/team">team</SidebarLink>
+          <SidebarLink to="/join-us">join us</SidebarLink>
           <SidebarLink to="/contact">contact</SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>

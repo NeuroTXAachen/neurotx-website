@@ -174,6 +174,9 @@ export const MemberItem = styled.div`
 
 export const Image = styled.img`
   width: 100%;
+  background-color: ${({ $squareImage }) =>
+    ($squareImage ? "inherit" : "transparent")};
+  object-fit: cover;
   @media screen and (max-width: 768px) {
     width: 54%;
     height: auto;
@@ -181,13 +184,19 @@ export const Image = styled.img`
   }
 `;
 
+export const NameWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
 export const Name = styled.p`
   position: relative;
   font-size: 38px;
   display: inline;
   font-weight: 800;
-  margin-top: 1rem;
+  margin: 1rem 0 0;
   max-width: 95%;
+  white-space: nowrap;
   display: inline-block;
   // border-left: 8px solid #ff0000;
   padding-left: 1rem;
@@ -197,17 +206,19 @@ export const Name = styled.p`
     min-height: 30px;
     font-size: 20px;
     line-height: 30px;
+    white-space: normal;
     display: inline-block;
   }
 `;
 
 export const RedAccent = styled.div`
   position: absolute;
+  top: 1.5rem;
+  left: 0;
   width: 8px;
   display: inline-block;
   height: 50px;
   background-color: #ff0000;
-  margin-top: 1.5rem;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -218,7 +229,7 @@ export const Description = styled.p`
   font-size: 16px;
 
   font-weight: 400;
-  margin-top: 1rem;
+  margin: 1rem 0 0;
 `;
 
 export const Title = styled.p`
@@ -226,7 +237,7 @@ export const Title = styled.p`
   font-size: 16px;
   font-weight: 1000;
   font-style: italic;
-  margin-top: 1rem;
+  margin: 0.5rem 0 0;
 `;
 
 export const Social = styled.a`

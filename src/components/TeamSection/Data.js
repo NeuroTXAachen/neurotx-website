@@ -2,7 +2,112 @@ export const teamDataObj = {
   id: "team",
   memberData: [
     {
+      name: "Umut Özdemir",
+      title: "President, Xavier Team",
+      image: require("../../images/team/bw/Umut.jpeg"),
+      description: "Bachelor Computer Engineering at RWTH Aachen",
+      socials: {
+        github: "https://github.com/adumut",
+        linkedIn: "https://de.linkedin.com/in/ahmet-dursun-umut-%C3%B6zdemir-687a821b5",
+      },
+    },
+    {
+      name: "Zilvan Mondry",
+      title: "Vice President, Xavier Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
+    {
+      name: "Denis Yildirim",
+      email: "denis.yildirim@rwth-aachen.de",
+      title: "Bucky Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "https://www.linkedin.com/in/denis-yildirim",
+      },
+    },
+    {
+      name: "Ali Ata Can Gündüz",
+      email: "ali-ata-can.guenduez@rwth-aachen.de",
+      title: "Bucky Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "https://www.linkedin.com/in/alican-gunduz-432781383/",
+      },
+    },
+    {
+      name: "Ada Yazici",
+      email: "ada.yazici@rwth-aachen.de",
+      title: "Xavier Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Computer Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "http://www.linkedin.com/in/ada-yazici" },
+    },
+    {
+      name: "Ayca Guven",
+      email: "ayca.gueven@rwth-aachen.de",
+      title: "Xavier Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Computer Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
+    {
+      name: "Abdel Hamid Djorf",
+      email: "abdel.hamid.djorf@rwth-aachen.de",
+      title: "Bucky Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
+    {
+      name: "Ege Mert Essiz",
+      email: "ege.essiz@rwth-aachen.de",
+      title: "Research Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Chemistry at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn: "https://www.linkedin.com/in/ege-mert-e%C5%9Fsiz-730188195/",
+      },
+    },
+    {
+      name: "Erkin Kabakci",
+      email: "erkin.kabakci@rwth-aachen.de",
+      title: "Xavier Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
+    {
+      name: "Sumant Suhas Pakhare",
+      email: "sumant-suhas.pakhare@rwth-aachen.de",
+      title: "Xavier Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Master Robotic Systems Engineering at RWTH Aachen",
+      socials: {
+        github: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/sumantpakhare?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      },
+    },
+    {
+      name: "Hamza Saglam",
+      title: "Bucky Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Electrical Engineering at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
+  ],
+  redBgPoint: require("../../images/square.png"),
+  alumniData: [
+    {
       name: "Philipp Ljubarskij",
+      squareImage: true,
       title: "President, Software Team",
       image: require("../../images/team/bw/Philipp.png"),
       description: "Master Biomedical Systems Engineering at RWTH Aachen",
@@ -26,61 +131,42 @@ export const teamDataObj = {
       title: "Hardware Team",
       image: require("../../images/team/bw/Ivan.JPG"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Krittapas Boonpasart",
       title: "Social Media Team",
       image: require("../../images/team/bw/KrisNew.jpg"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Josef Bolten",
       title: "Public Relations Team",
       image: require("../../images/team/bw/Josef.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      description: "Master Robotics at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
     },
     {
-      name: "Poojitha Reddy Nellipudi ",
+      name: "Poojitha Reddy Nellipudi",
       title: "Hardware Team",
       image: require("../../images/team/bw/Poojitha.JPG"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Maroof Abdul Aziz",
       title: "Hardware Team",
       image: require("../../images/team/bw/Maroof.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      description: "Master Robotics at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
     },
-    
     {
       name: "Nnanna Muoneke",
       title: "Social Media Team",
       image: require("../../images/team/bw/Nnanna.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      description: "Master Robotics at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Zeyneb Güven",
@@ -93,94 +179,44 @@ export const teamDataObj = {
       },
     },
     {
-      name: "Ahmet Dursun Umut Özdemir",
-      title: "Hardware Team",
-      image: require("../../images/team/bw/Umut.jpeg"),
-      description: "Bachelor Electrical Engineering and Information at RWTH Aachen",
-      socials: {
-        github: "https://github.com/adumut",
-        linkedIn: "https://de.linkedin.com/in/ahmet-dursun-umut-%C3%B6zdemir-687a821b5",
-      },
-    },
-    {
-      name: "Zilvan Mondry",
-      title: "Hardware Team",
-      image: require("../../images/placeholder-image.jpeg"),
-      description: "Bachelor Electrical Engineering at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },
-    {
-      name: "Amarachi Vazidlule",
-      title: "Software Team",
-      image: require("../../images/placeholder-image.jpeg"),
-      description: "Bachelor Molecular Biotechnology at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    }
-  ],
-  redBgPoint: require("../../images/square.png"),
-  alumniData: [
-    {
       name: "Mohamed Alhaskir",
       title: "Founder, Software Team",
       image: require("../../images/team/bw/Mo.JPG"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
-    
     {
       name: "Shivam Singh Rajput",
       title: "President",
       image: require("../../images/team/bw/Shivam.JPG"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Akhil Verma",
       title: "Hardware Team",
       image: require("../../images/team/bw/Akhil.JPG"),
-      description: "Master in Robotics at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      description: "Master Robotics at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Dimitar Boev",
       title: "Vice President",
       image: require("../../images/placeholder-image.jpeg"),
       description: "Master Computer Science at RWTH Aachen",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
     {
       name: "Siddharth Singh",
       image: require("../../images/placeholder-image.jpeg"),
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
+      socials: { github: "#", linkedIn: "#" },
     },
-    /*,
     {
-      name: "Siddharth Singh",
-      socials: {
-        github: "#",
-        linkedIn: "#",
-      },
-    },*/
+      name: "Amarachi Vazidlule",
+      title: "Software Team",
+      image: require("../../images/placeholder-image.jpeg"),
+      description: "Bachelor Molecular Biotechnology at RWTH Aachen",
+      socials: { github: "#", linkedIn: "#" },
+    },
   ],
 };

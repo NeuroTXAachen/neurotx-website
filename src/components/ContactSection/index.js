@@ -56,7 +56,7 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
         <Heading>{"contact"}</Heading>
         <Subtitle>
           {
-            "Please use this form to contact us, give us a feedback or any other contributions. We are currently recruiting! Check available positions on our social media or contact us for further questions."
+            "Please use this form to contact us, give us a feedback or any other contributions."
           }
         </Subtitle>
         <FormWrapper>
@@ -126,10 +126,6 @@ const ContactSection = ({ waveImage, redBgPoint, paypalImage }) => {
             </FormField>
           </FormRow>
           <FormRow>
-            <Label>
-              Details like “How did you hear about us?” or “Why are you
-              interested in NeuroTX?” will be helpful to us.
-            </Label>
             <ButtonServices>Send</ButtonServices>
           </FormRow>
         </FormWrapper>

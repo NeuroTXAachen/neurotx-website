@@ -8,8 +8,8 @@ import {
   Socials,
   Image,
   RedAccent,
+  NameWrapper,
 } from "./TeamElements";
-
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const Member = ({ props, width }) => {
@@ -17,96 +17,41 @@ const Member = ({ props, width }) => {
   const image = props.image;
   const description = props.description;
   const jobTitle = props.title;
+  const squareImage = props.squareImage;
   const linkedIn = props.socials.linkedIn;
   const github = props.socials.github;
+  const nameParts = name.trim().split(" ");
+  const renderedName = (
+    <>
+      {nameParts.slice(0, -1).join(" ")}
+      <br />
+      {nameParts[nameParts.length - 1]}
+    </>
+  );
 
-  //don't display any social icons if member hasn't entered any
-  if(props.socials.linkedIn === "#" && props.socials.github === "#"){
-    return (
-      <>
-        <MemberItem width={width}>
-          <ImageNameDiv>
-            <Image src={image}></Image>
-            <div style={{ display: "inline-block" }}>
-              <RedAccent />
-              <Name>{name}</Name>
-            </div>
-          </ImageNameDiv>
-          <Description>{description}</Description>
-          <Title>{jobTitle}</Title>
-        </MemberItem>
-      </>
-    );
-  //don't display linkedin icon if no member has not entered one
-  }else if(props.socials.linkedIn === "#"){
-    return (
-      <>
-        <MemberItem width={width}>
-          <ImageNameDiv>
-            <Image src={image}></Image>
-            <div style={{ display: "inline-block" }}>
-              <RedAccent />
-              <Name>{name}</Name>
-            </div>
-          </ImageNameDiv>
-          <Description>{description}</Description>
-          <Title>{jobTitle}</Title>
+  const content = (
+    <>
+      <MemberItem width={width}>
+        <ImageNameDiv>
+          <Image $squareImage={squareImage} src={image}></Image>
+          <NameWrapper>
+            <RedAccent />
+            <Name>{renderedName}</Name>
+          </NameWrapper>
+        </ImageNameDiv>
+        <Description>{description}</Description>
+        <Title>{jobTitle}</Title>
+        {linkedIn !== "#" || github !== "#" ? (
           <Socials>
-            <Social target="_blank" href={github}>
-              <FaGithubSquare />
-            </Social>
+            {linkedIn !== "#" && <Social target="_blank" href={linkedIn}><FaLinkedin /></Social>}
+            {github !== "#" && <Social target="_blank" href={github}><FaGithubSquare /></Social>}
           </Socials>
-        </MemberItem>
-      </>
-    );
-  //don't display github icon if no member has not entered one
-}else if(props.socials.github === "#"){
-  return (
-    <>
-      <MemberItem width={width}>
-        <ImageNameDiv>
-          <Image src={image}></Image>
-          <div style={{ display: "inline-block" }}>
-            <RedAccent />
-            <Name>{name}</Name>
-          </div>
-        </ImageNameDiv>
-        <Description>{description}</Description>
-        <Title>{jobTitle}</Title>
-        <Socials>
-          <Social target="_blank" href={linkedIn}>
-            <FaLinkedin />
-          </Social>
-        </Socials>
+        ) : null}
       </MemberItem>
     </>
   );
-  //member has entered both profile links
-}else{
-  return (
-    <>
-      <MemberItem width={width}>
-        <ImageNameDiv>
-          <Image src={image}></Image>
-          <div style={{ display: "inline-block" }}>
-            <RedAccent />
-            <Name>{name}</Name>
-          </div>
-        </ImageNameDiv>
-        <Description>{description}</Description>
-        <Title>{jobTitle}</Title>
-        <Socials>
-          <Social target="_blank" href={linkedIn}>
-            <FaLinkedin />
-          </Social>
-          <Social target="_blank" href={github}>
-            <FaGithubSquare />
-          </Social>
-        </Socials>
-      </MemberItem>
-    </>
-  );
-}
+
+  return content;
 };
 
 export default Member;

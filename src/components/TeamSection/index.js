@@ -68,7 +68,7 @@ const TeamSection = ({ memberData, alumniData, redBgPoint }) => {
           No prior knowledge abut Neurotechnology?<br />
           Don't worry, you can learn on the fly!
         </Description>
-        <ButtonServices><NavLinks2 to="/contact">Get In Touch</NavLinks2></ButtonServices>
+        <ButtonServices><NavLinks2 to="/join-us">Join Us</NavLinks2></ButtonServices>
       </DescriptionWrapper>
     </Container>
   );

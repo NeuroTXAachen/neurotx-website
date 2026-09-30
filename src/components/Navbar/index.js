@@ -63,6 +63,11 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
+              <NavLinks colorChange={colorChange} to="/join-us">
+                join us
+              </NavLinks>
+            </NavItem>
+            <NavItem>
               <NavLinks colorChange={colorChange} to="/contact">
                 contact
               </NavLinks>

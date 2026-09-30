@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Contact from "./pages/Contact";
+import JoinUs from "./pages/JoinUs";
 import Team from "./pages/Team";
 import Projects from "./pages/Projects";
 import Learn from "./pages/Learn";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/learn" element={<Learn />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/join-us" element={<JoinUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/policy" element={<Impressum />} />
           <Route path="*" element={<Error404 />} />

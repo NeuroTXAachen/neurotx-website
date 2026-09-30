@@ -44,6 +44,29 @@ export const Subtitle = styled.p`
   }
 `;
 
+export const GroupHeading = styled.h2`
+  position: relative;
+  width: 70%;
+  margin: 4rem auto 0.5rem;
+  font-family: "Krona One", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: 4rem auto 0.5rem;
+    font-size: 32px;
+  }
+`;
+
+export const CurrentProjects = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+`;
+
 export const ButtonServices = styled.button`
   width: 259px;
   margin-top: 20px;
@@ -92,9 +115,9 @@ export const RedDotImg = styled.img`
 export const ProjectItem = styled.div`
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ $compact }) => ($compact ? "column" : "row")};
   width: 70%;
-  margin: 5rem auto;
+  margin: ${({ $compact }) => ($compact ? "1.5rem auto" : "5rem auto")};
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 90%;
@@ -104,8 +127,8 @@ export const ProjectText = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
-  margin-top: 10rem;
+  margin-left: ${({ $compact }) => ($compact ? "0" : "5rem")};
+  margin-top: ${({ $compact }) => ($compact ? "0" : "10rem")};
   @media screen and (max-width: 768px) {
     margin-left: 0rem;
     margin-top: 2rem;

@@ -8,15 +8,15 @@ import {
   RedAccent,
 } from "./ProjectElements";
 
-const Member = ({ name, image, description }) => {
+const Member = ({ name, image, description, compact }) => {
   return (
     <>
-      <ProjectItem>
-        <ImageWrapper>
+      <ProjectItem $compact={compact}>
+        {image && <ImageWrapper>
           <RedAccent />
           <Image src={image}></Image>
-        </ImageWrapper>
-        <ProjectText>
+        </ImageWrapper>}
+        <ProjectText $compact={compact}>
           <Name>{name}</Name>
           <Description>{description}</Description>
         </ProjectText>
