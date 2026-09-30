@@ -26,11 +26,11 @@ The production bundle is written to `build/`.
 
 ## Deployment
 
-The live site is deployed through Vercel from the repository's production branch. The configured production URL is:
+The live site is deployed through Netlify from the repository's production branch. The configured production URL is:
 
-<https://neurotx-website.vercel.app>
+<https://neurotx.de>
 
-The `homepage` field in `package.json` matches this URL so that production asset paths resolve correctly.
+The `homepage` field in `package.json` matches this URL so that production asset paths resolve correctly. Netlify publishes the production build automatically after updates to `main`.
 
 ## Main routes
 
